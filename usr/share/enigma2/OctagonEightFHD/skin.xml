@@ -4473,26 +4473,26 @@
   </screen>
   <screen name="Wlanstatus" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <!-- Background -->
-  <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
-  <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="600,60" zPosition="-12" />
-  <eLabel backgroundColor="white" position="200,center" size="1300,1000" zPosition="-20" />
-  <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="52,57" size="596,56" zPosition="-11" valign="center" />
-  <!-- Page Title / Widget -->
-  <eLabel text="Wireless Network Status..." position="95,61" size="525,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
-  <widget source="status" render="Label" font="FHD; 30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="220,135" size="1250,800" transparent="1" />
-  <!-- /*Buttons-->
-  <eLabel backgroundColor="white" name="" position="220,973" size="1250,2" zPosition="-9" />
-  <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_red.png" position="220,987" size="40,40" />
-  <widget source="key_red" render="Label" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="265,987" size="260,40" transparent="1" zPosition="1" />
-  <!-- Clock -->
-  <eLabel backgroundColor="OE_Background" position="1535,45" size="380,70" transparent="0" zPosition="-10" />
-  <eLabel backgroundColor="white" position="1530,40" size="390,80" transparent="0" zPosition="-20" />
-  <widget backgroundColor="OE_Background" font="FHD; 65" halign="left" position="1725,33" render="Label" size="169,80" source="global.CurrentTime" transparent="1" valign="top">
-    <convert type="ClockToText">Format:%H:%M</convert>
-  </widget>
-  <widget backgroundColor="OE_Background" font="Regular; 26" halign="right" position="1540,79" render="Label" size="175,35" source="global.CurrentTime" transparent="1">
-    <convert type="ClockToText">Format:%e. %b</convert>
-  </widget>
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
+    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="600,60" zPosition="-12" />
+    <eLabel backgroundColor="white" position="200,center" size="1300,1000" zPosition="-20" />
+    <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="52,57" size="596,56" zPosition="-11" valign="center" />
+    <!-- Page Title / Widget -->
+    <eLabel text="Wireless Network Status..." position="95,61" size="525,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
+    <widget source="status" render="Label" font="FHD; 30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="220,135" size="1250,800" transparent="1" />
+    <!-- /*Buttons-->
+    <eLabel backgroundColor="white" name="" position="220,973" size="1250,2" zPosition="-9" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_red.png" position="220,987" size="40,40" />
+    <widget source="key_red" render="Label" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="265,987" size="260,40" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <eLabel backgroundColor="OE_Background" position="1535,45" size="380,70" transparent="0" zPosition="-10" />
+    <eLabel backgroundColor="white" position="1530,40" size="390,80" transparent="0" zPosition="-20" />
+    <widget backgroundColor="OE_Background" font="FHD; 65" halign="left" position="1725,33" render="Label" size="169,80" source="global.CurrentTime" transparent="1" valign="top">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="OE_Background" font="Regular; 26" halign="right" position="1540,79" render="Label" size="175,35" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
     <widget backgroundColor="OE_Background" font="Regular; 26" halign="right" position="1540,46" render="Label" size="175,35" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
@@ -5779,6 +5779,28 @@
       <convert type="ClockToText">Format:%A</convert>
     </widget>
   </screen>
+  <screen name="StreamingClientsInfo" title="" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080" transparent="0">
+  <!-- Left Menu Backgrounds Template -->
+  <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1190,990" zPosition="-15" />
+  <eLabel backgroundColor="white" foregroundColor="OE_Background" name="" position="200,center" size="1200,1000" zPosition="-20" />
+  <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="52,72" size="586,68" zPosition="-11" />
+  <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,70" size="590,72" zPosition="-12" />
+  <!-- Left Menu Content -->
+  <eLabel text="Streaming Clients Info" backgroundColor="OE_Background" font="Regular; 40" position="75,75" size="550,60" transparent="1" halign="left" />
+  <widget name="ScrollLabel" font="Regular; 28" split="1" dividechar=":" colposition="0" backgroundColor="OE_Background" position="220,155" size="1150,850" transparent="1" valign="center" />
+  <!-- Clock -->
+  <eLabel backgroundColor="OE_Background" position="1535,45" size="380,70" transparent="0" zPosition="-10" />
+  <eLabel backgroundColor="white" position="1530,40" size="390,80" transparent="0" zPosition="-20" />
+  <widget backgroundColor="OE_Background" font="FHD; 65" halign="left" position="1725,33" render="Label" size="169,80" source="global.CurrentTime" transparent="1" valign="top">
+    <convert type="ClockToText">Format:%H:%M</convert>
+  </widget>
+  <widget backgroundColor="OE_Background" font="Regular; 26" halign="right" position="1540,79" render="Label" size="175,35" source="global.CurrentTime" transparent="1">
+    <convert type="ClockToText">Format:%e. %b</convert>
+  </widget>
+  <widget backgroundColor="OE_Background" font="Regular; 26" halign="right" position="1540,46" render="Label" size="175,35" source="global.CurrentTime" transparent="1">
+    <convert type="ClockToText">Format:%A</convert>
+  </widget>
+</screen>
   <screen backgroundColor="OE_Background" flags="wfNoBorder" name="Standby" position="0,0" size="1920,1080" title="Standby" />
   <screen backgroundColor="transparent" flags="wfNoBorder" name="SubtitleDisplay" position="0,0" size="1920,1080" zPosition="-1" />
   <screen backgroundColor="transparent" flags="wfNoBorder" name="SubservicesQuickzap" position="570,900" size="840,150" title="Subservices">
