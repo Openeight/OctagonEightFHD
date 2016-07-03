@@ -1,0 +1,35 @@
+<skin>
+	<!--  Original Skin: OctagonEightSD by SkinMania  -->
+	<!--  SKIN FILE -->
+	<!--  OctagonEightSD TEMPLATES FILE by Octagon -->
+	<!--  ## Head ##  -->
+	
+	<!-- CLOCK TEMPLATES -->
+	<screen name="Clock1">	
+      <eLabel backgroundColor="OE_Background" position="1535,45" size="380,70" transparent="0" zPosition="-10" />
+      <eLabel backgroundColor="white" position="1530,40" size="390,80" transparent="0" zPosition="-20" />
+      <widget backgroundColor="OE_Background" font="FHD; 65" halign="left" position="1725,33" render="Label" size="169,80" source="global.CurrentTime" transparent="1" valign="top">
+        <convert type="ClockToText">Format:%H:%M</convert>
+      </widget>
+      <widget backgroundColor="OE_Background" font="Regular; 26" halign="right" position="1540,79" render="Label" size="175,35" source="global.CurrentTime" transparent="1">
+        <convert type="ClockToText">Format:%e. %b</convert>
+      </widget>
+      <widget backgroundColor="OE_Background" font="Regular; 26" halign="right" position="1540,46" render="Label" size="175,35" source="global.CurrentTime" transparent="1">
+        <convert type="ClockToText">Format:%A</convert>
+      </widget>
+	</screen>
+	
+	<screen name="Clock2">	
+
+	</screen>
+	
+	<!-- BACKGROUND TEMPLATES -->
+	<screen name="Background1">
+
+	</screen>
+	
+	<screen name="Background2">
+
+	</screen>	
+		
+</skin>
