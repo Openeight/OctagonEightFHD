@@ -648,4 +648,335 @@
     <panel name="Clock1" />
   </screen>
   
+  <!-- TURKvod -->
+  <screen name="TURKvodPlaylist" title="Playlist" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
+    <!-- Backgrounds -->
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="22,center" size="1236,1056" zPosition="-15" />
+    <eLabel backgroundColor="white" foregroundColor="OE_Background" name="" position="1065,200" size="745,720" zPosition="-14" />
+    <eLabel backgroundColor="white" name="" position="35,1005" size="1210,2" zPosition="-9" />
+    <eLabel backgroundColor="white" position="20,center" size="1240,1060" zPosition="-20" />
+    <eLabel backgroundColor="un800000" foregroundColor="OE_Background" name="" position="2,22" size="1486,56" zPosition="-11" valign="center" />
+    <!-- Background 2 -->
+    <eLabel backgroundColor="OE_Background" position="1067,202" size="741,716" zPosition="-13" />
+    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="0,20" size="1490,60" zPosition="-12" />
+    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="1072,175" size="731,55" zPosition="-12" />
+    <eLabel backgroundColor="un800000" name="" position="1074,177" size="727,51" zPosition="-11" />
+    <!-- Page Title / Widget -->
+    <eLabel text="TURKvod Playlist" backgroundColor="OE_Background" font="Regular; 32" position="40,28" size="260,50" transparent="1" />
+    <widget name="Listbox1" itemHeight="42" font="Regular; 32" backgroundColor="OE_Background" enableWrapAround="1" position="40,100" scrollbarMode="showOnDemand" size="1000,840" transparent="1" />
+    <widget name="description" position="1085,250" size="700,200" font="Regular; 28" backgroundColor="OE_Background" transparent="1" halign="center" />
+    <widget name="playlist" position="1087,180" size="700,45" font="Regular; 32" halign="center" valign="center" backgroundColor="OE_Background" transparent="1" />
+    <widget name="poster" position="1132,475" size="250,365" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TURKvod/img/clear.png" zPosition="1" transparent="1" alphatest="blend" />
+    <widget name="version" position="1065,1015" size="180,40" font="FHD; 30" backgroundColor="OE_Background" transparent="1" halign="right" />
+    <ePixmap position="1480,600" size="280,105" pixmap="OctagonEightFHD/plugins/turkvod2.png" transparent="0" alphatest="blend" />
+    <eLabel backgroundColor="white" name="" position="1080,860" size="710,2" zPosition="-9" />
+    <!-- Button - Bar -->
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_menu.png" position="370,31" size="64,43" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_exit.png" position="690,31" size="64,43" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/plugins/key_plus.png" position="1082,875" size="32,28" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/plugins/key_minus.png" position="1380,875" size="32,28" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_red.png" position="35,1017" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_green.png" position="295,1017" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_yellow.png" position="555,1017" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_blue.png" position="815,1017" size="40,40" />
+    <widget name="cekis" backgroundColor="OE_Background" font="Regular; 28" halign="left" position="85,1017" size="200,40" transparent="1" zPosition="1" />
+    <widget name="indirilen" backgroundColor="OE_Background" font="Regular; 28" halign="left" position="345,1017" size="200,40" transparent="1" zPosition="1" />
+    <widget name="lokal" backgroundColor="OE_Background" font="Regular; 28" halign="left" position="605,1017" size="200,40" transparent="1" zPosition="1" />
+    <widget name="filme_don" backgroundColor="OE_Background" font="Regular; 28" halign="left" position="865,1017" size="200,40" transparent="1" zPosition="1" />
+    <widget name="menu" backgroundColor="OE_Background" font="Regular; 28" halign="left" position="438,31" size="240,40" transparent="1" zPosition="1" />
+    <widget name="gecmis" backgroundColor="OE_Background" font="Regular; 28" halign="left" position="760,31" size="240,40" transparent="1" zPosition="1" />
+    <widget name="chplus" backgroundColor="OE_Background" font="Regular; 28" halign="left" position="1120,870" size="240,40" transparent="1" zPosition="1" />
+    <widget name="chminus" backgroundColor="OE_Background" font="Regular; 28" halign="left" position="1422,870" size="240,40" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <widget backgroundColor="OE_Background" font="EL_Standard; 48" halign="left" position="1335,15" render="Label" size="150,60" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="OE_Background" font="Regular; 26" halign="right" position="1095,31" render="Label" size="225,35" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A, %e. %b</convert>
+    </widget>
+  </screen>
+  <screen name="TURKvodVideoPlayer" title="Videothek" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
+    <!-- Template -->
+    <eLabel backgroundColor="OE_Background" name="InfoBar" position="5,890" size="1550,155" zPosition="-15" />
+    <eLabel backgroundColor="white" name="" position="center,885" size="1920,165" zPosition="-20" />
+    <eLabel backgroundColor="white" foregroundColor="OE_Background" name="" position="1550,835" size="300,235" zPosition="-13" />
+    <eLabel backgroundColor="OE_Background" position="1552,837" size="296,231" zPosition="-12" />
+    <eLabel backgroundColor="un800000" position="1850,890" size="65,155" zPosition="-11" />
+    <!-- /* Widgets -->
+    <widget name="state" backgroundColor="OE_Background" font="FHD; 30" halign="center" position="1564,845" size="269,45" transparent="1" zPosition="1" />
+    <widget name="cover" position="1634,632" size="130,194" zPosition="1" transparent="1" alphatest="blend" />
+    <widget name="pico" position="50,966" size="14,14" zPosition="1" transparent="1" alphatest="blend" />
+    <widget backgroundColor="OE_Background" font="Regular;40" halign="center" noWrap="1" position="220,901" render="Label" size="1055,60" source="session.CurrentService" transparent="1">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+    <widget source="session.CurrentService" render="PositionGauge" pointer="OctagonEightFHD/colors/00A4C400.png:1345,0" size="1345,8" position="75,968" transparent="1" zPosition="1">
+      <convert type="ServicePosition">Gauge</convert>
+    </widget>
+    <widget backgroundColor="OE_Background" font="Regular; 30" foregroundColor="OE_Foreground" halign="left" position="75,910" render="Label" shadowColor="OE_Background" shadowOffset="-1,-1" size="145,42" source="session.CurrentService" transparent="1" valign="center">
+      <convert type="ServicePosition">Position,ShowHours</convert>
+    </widget>
+    <widget backgroundColor="OE_Background" font="Regular; 30" foregroundColor="OE_Foreground" halign="right" position="1275,910" render="Label" size="145,42" source="session.CurrentService" transparent="1" valign="center">
+      <convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
+    </widget>
+    <widget backgroundColor="OE_Background" font="Regular; 45" foregroundColor="OE_Foreground" halign="center" position="1585,890" render="Label" size="229,65" source="session.CurrentService" transparent="1" valign="center">
+      <convert type="ServicePosition">Length</convert>
+    </widget>
+    <eLabel backgroundColor="OE_Accent1" foregroundColor="OE_Accent1" name="new eLabel" position="75,971" size="1345,2" zPosition="-1" />
+    <!-- /* Info -->
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/my_icons/dolby_off.png" position="1751,967" size="63,32" zPosition="1" />
+    <widget alphatest="blend" pixmap="OctagonEightFHD/my_icons/dolby_on.png" position="1751,967" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="2">
+      <convert type="ServiceInfo">IsMultichannel</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/my_icons/format_off.png" position="1668,967" size="63,32" zPosition="1" />
+    <widget alphatest="blend" pixmap="OctagonEightFHD/my_icons/format_on.png" position="1668,967" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="2">
+      <convert type="ServiceInfo">IsWidescreen</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/my_icons/hd_off.png" position="1585,967" size="63,32" zPosition="1" />
+    <widget alphatest="blend" pixmap="OctagonEightFHD/my_icons/hd_on.png" position="1585,967" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="2">
+      <convert type="ServiceInfo">VideoWidth</convert>
+      <convert type="ValueRange">721,1980</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget backgroundColor="OE_Background" font="Regular; 28" foregroundColor="OE_Foreground" halign="right" position="1612,1020" render="Label" size="75,32" source="session.CurrentService" transparent="1" valign="center">
+      <convert type="ServiceInfo">VideoWidth</convert>
+    </widget>
+    <eLabel backgroundColor="OE_Background" font="Regular; 26" foregroundColor="OE_Foreground" halign="center" position="1687,1020" size="26,32" text="x" transparent="1" valign="center" />
+    <widget backgroundColor="OE_Background" font="Regular; 28" foregroundColor="OE_Foreground" halign="left" position="1713,1020" render="Label" size="75,32" source="session.CurrentService" transparent="1" valign="center">
+      <convert type="ServiceInfo">VideoHeight</convert>
+    </widget>
+    <!-- Button - Bar -->
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_red.png" position="73,997" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_green.png" position="323,997" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_text.png" position="865,996" size="64,43" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_video.png" position="1160,996" size="64,43" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_blue.png" position="573,997" size="40,40" />
+    <widget name="kaydet" backgroundColor="OE_Background" font="Regular; 28" halign="left" position="118,997" size="200,40" transparent="1" zPosition="1" />
+    <widget name="tsenable" backgroundColor="OE_Background" font="Regular; 28" halign="left" position="368,997" size="200,40" transparent="1" zPosition="1" />
+    <widget name="cont_play" backgroundColor="OE_Background" font="Regular; 28" halign="left" position="618,997" size="200,40" transparent="1" zPosition="1" />
+    <widget name="altyazi" backgroundColor="OE_Background" font="Regular; 28" halign="left" position="940,997" size="200,40" transparent="1" zPosition="1" />
+    <widget name="paylas" backgroundColor="OE_Background" font="Regular; 28" halign="left" position="1233,997" size="200,40" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <panel name="Clock1" />
+  </screen>
+  <screen name="turkQuality" title="Episode selector" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <!-- Background -->
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
+    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="1000,60" zPosition="-12" />
+    <eLabel backgroundColor="white" position="200,center" size="1300,1000" zPosition="-20" />
+    <eLabel backgroundColor="un800000" foregroundColor="OE_Background" name="" position="52,57" size="996,56" zPosition="-11" valign="center" />
+    <!-- Page Title / Widget -->
+    <widget render="Label" source="Title" position="95,61" size="950,50" font="EL_Standard; 32" backgroundColor="OE_Background" transparent="1" />
+    <ePixmap position="1360,70" size="100,40" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TURKvod/plugin.png" zPosition="3" transparent="1" alphatest="blend" />
+    <eLabel backgroundColor="white" name="" position="220,185" size="1250,2" zPosition="-9" />
+    <widget name="menulabel" position="220,135" size="1250,45" font="FHD; 30" backgroundColor="OE_Background" transparent="1" />
+    <widget name="menulist" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="220,205" size="1250,800" transparent="1" />
+    <!-- Clock -->
+    <panel name="Clock1" />
+  </screen>
+  <screen name="In_form" title="" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
+    <!-- Backgrounds -->
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="22,center" size="1236,1056" zPosition="-15" />
+    <eLabel backgroundColor="white" foregroundColor="OE_Background" name="" position="1065,200" size="745,720" zPosition="-14" />
+    <eLabel backgroundColor="white" position="20,center" size="1240,1060" zPosition="-20" />
+    <eLabel backgroundColor="un800000" foregroundColor="OE_Background" name="" position="2,22" size="1486,56" zPosition="-11" valign="center" />
+    <!-- Background 2 -->
+    <eLabel backgroundColor="OE_Background" position="1067,202" size="741,716" zPosition="-13" />
+    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="0,20" size="1490,60" zPosition="-12" />
+    <!-- Page Title / Widget -->
+    <eLabel text="Info" backgroundColor="OE_Background" font="Regular; 32" position="40,28" size="260,50" transparent="1" />
+    <ePixmap position="1140,104" size="100,40" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TURKvod/plugin.png" zPosition="3" transparent="1" alphatest="blend" />
+    <widget name="aciklama" position="40,120" size="1000,55" font="FHD; 33" backgroundColor="OE_Background" transparent="1" />
+    <widget name="baslik" position="40,180" size="1000,55" font="FHD; 33" backgroundColor="OE_Background" transparent="1" />
+    <widget name="list" itemHeight="34" font="Regular; 32" backgroundColor="OE_Background" enableWrapAround="1" position="40,250" scrollbarMode="showOnDemand" size="1000,798" transparent="1" />
+    <widget name="text" itemHeight="42" font="Regular; 28" scrollbarMode="showOnDemand" position="1085,270" size="700,590" backgroundColor="OE_Background" transparent="1" halign="left" />
+    <!-- Clock -->
+    <widget backgroundColor="OE_Background" font="EL_Standard; 48" halign="left" position="1335,15" render="Label" size="150,60" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="OE_Background" font="Regular; 26" halign="right" position="1095,31" render="Label" size="225,35" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A, %e. %b</convert>
+    </widget>
+  </screen>
+  <screen name="plugin_kt" title="Playlist" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <!-- Background -->
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
+    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="600,60" zPosition="-12" />
+    <eLabel backgroundColor="white" position="200,center" size="1300,1000" zPosition="-20" />
+    <eLabel backgroundColor="un800000" foregroundColor="OE_Background" name="" position="52,57" size="596,56" zPosition="-11" valign="center" />
+    <!-- Page Title / Widget -->
+    <widget name="baslik" position="65,61" size="580,50" font="EL_Standard; 32" backgroundColor="un800000" transparent="1" />
+    <ePixmap position="1370,65" size="100,40" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TURKvod/plugin.png" zPosition="3" transparent="1" alphatest="blend" />
+    <eLabel backgroundColor="white" name="" position="220,195" size="1250,2" zPosition="-9" />
+    <eLabel text="Uyelik Aktif Olmasini Istiyorsaniz Bilgileri Dogru Girmelisiniz" position="220,130" size="1250,55" font="FHD; 33" backgroundColor="OE_Background" transparent="1" />
+    <widget name="config" itemHeight="42" font="Regular; 30" backgroundColor="OE_Background" enableWrapAround="1" position="220,210" scrollbarMode="showOnDemand" size="1250,750" transparent="1" />
+    <!-- /*Buttons-->
+    <eLabel backgroundColor="white" name="" position="220,973" size="1250,2" zPosition="-9" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_red.png" position="220,987" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_green.png" position="535,987" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_blue.png" position="850,987" size="40,40" />
+    <widget name="uyelik_kay" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="265,987" size="260,40" transparent="1" zPosition="1" />
+    <widget name="ayarlari_kaydet" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="580,987" size="260,40" transparent="1" zPosition="1" />
+    <widget name="pas" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="895,987" size="260,40" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <panel name="Clock1" />
+  </screen>
+  <screen name="vodeScreen" title="TURKvod Video Download Listesi" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <!-- Background -->
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
+    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="600,60" zPosition="-12" />
+    <eLabel backgroundColor="white" position="200,center" size="1300,1000" zPosition="-20" />
+    <eLabel backgroundColor="un800000" foregroundColor="OE_Background" name="" position="52,57" size="596,56" zPosition="-11" valign="center" />
+    <!-- Page Title / Widget -->
+    <widget source="Title" render="Label" position="65,61" size="580,50" font="EL_Standard; 32" backgroundColor="un800000" transparent="1" />
+    <ePixmap position="1370,65" size="100,40" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TURKvod/plugin.png" zPosition="3" transparent="1" alphatest="blend" />
+    <widget source="movielist" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="220,135" size="1250,855" transparent="1">
+      <convert type="TemplatedMultiContent">
+                       {"template": [
+			            MultiContentEntryText(pos = (10, 2), size = (600, 45), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the name
+			            MultiContentEntryText(pos = (620, 0), size = (270, 45), font=1, flags = RT_HALIGN_RIGHT, text = 2), # index 2 is the state
+			            MultiContentEntryProgress(pos = (900, 10), size = (200, 25), percent = -3), # index 3 should be progress
+			            MultiContentEntryText(pos = (1100, 5), size = (140, 45), font=1, flags = RT_HALIGN_RIGHT, text = 4), # index 4 is the percentage
+                                    ],
+                                    "fonts": [gFont("Regular",28),gFont("Regular",22)],
+                                    "itemHeight": 45
+                                    }
+              </convert>
+    </widget>
+    <!-- Clock -->
+    <panel name="Clock1" />
+  </screen>
+  <screen name="font" title="Playlist" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <!-- Background -->
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
+    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="1000,60" zPosition="-12" />
+    <eLabel backgroundColor="white" position="200,center" size="1300,1000" zPosition="-20" />
+    <eLabel backgroundColor="un800000" foregroundColor="OE_Background" name="" position="52,57" size="996,56" zPosition="-11" valign="center" />
+    <!-- Page Title / Widget -->
+    <widget name="baslik" position="95,61" size="950,50" font="EL_Standard; 32" backgroundColor="OE_Background" transparent="1" />
+    <ePixmap position="1360,70" size="100,40" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TURKvod/plugin.png" zPosition="3" transparent="1" alphatest="blend" />
+    <widget name="pico" alphatest="blend" backgroundColor="OE_Background" position="220,135" size="1250,800" transparent="1" />
+    <!-- Clock -->
+    <panel name="Clock1" />
+  </screen>
+  <screen name="plugin_pay" title="Playlist" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <!-- Background -->
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
+    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="800,60" zPosition="-12" />
+    <eLabel backgroundColor="white" position="200,center" size="1300,1000" zPosition="-20" />
+    <eLabel backgroundColor="un800000" foregroundColor="OE_Background" name="" position="52,57" size="796,56" zPosition="-11" valign="center" />
+    <!-- Page Title / Widget -->
+    <widget name="baslik" position="95,61" size="750,50" font="EL_Standard; 32" backgroundColor="OE_Background" transparent="1" />
+    <ePixmap position="1360,70" size="100,40" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TURKvod/plugin.png" zPosition="3" transparent="1" alphatest="blend" />
+    <widget name="config" itemHeight="42" font="FHD; 30" backgroundColor="OE_Background" position="220,135" size="1250,798" transparent="1" />
+    <!-- /*Buttons-->
+    <eLabel backgroundColor="white" name="" position="220,973" size="1250,2" zPosition="-9" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_red.png" position="220,987" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_green.png" position="535,987" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_yellow.png" position="850,987" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_blue.png" position="1165,987" size="40,40" />
+    <widget name="pay_ekle" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="265,987" size="260,40" transparent="1" zPosition="1" />
+    <widget name="ark_gonder" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="580,987" size="260,40" transparent="1" zPosition="1" />
+    <widget name="oz_ekle" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="895,987" size="260,40" transparent="1" zPosition="1" />
+    <widget name="oz_sil" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="1210,987" size="260,40" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <panel name="Clock1" />
+  </screen>
+  <screen name="plugin_ka" title="Playlist" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <!-- Background -->
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
+    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="800,60" zPosition="-12" />
+    <eLabel backgroundColor="white" position="200,center" size="1300,1000" zPosition="-20" />
+    <eLabel backgroundColor="un800000" foregroundColor="OE_Background" name="" position="52,57" size="796,56" zPosition="-11" valign="center" />
+    <!-- Page Title / Widget -->
+    <widget name="baslik" position="95,61" size="750,50" font="EL_Standard; 32" backgroundColor="OE_Background" transparent="1" />
+    <ePixmap position="1360,70" size="100,40" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TURKvod/plugin.png" zPosition="3" transparent="1" alphatest="blend" />
+    <widget name="config" itemHeight="42" font="FHD; 30" backgroundColor="OE_Background" position="220,135" size="1250,798" transparent="1" />
+    <!-- /*Buttons-->
+    <eLabel backgroundColor="white" name="" position="220,973" size="1250,2" zPosition="-9" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_red.png" position="220,987" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_green.png" position="535,987" size="40,40" />
+    <widget name="uyelik_kay" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="265,987" size="260,40" transparent="1" zPosition="1" />
+    <widget name="ayarlari_kaydet" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="580,987" size="260,40" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <panel name="Clock1" />
+  </screen>
+  <screen name="RenAy" title="Playlist" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <!-- Background -->
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
+    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="800,60" zPosition="-12" />
+    <eLabel backgroundColor="white" position="200,center" size="1300,1000" zPosition="-20" />
+    <eLabel backgroundColor="un800000" foregroundColor="OE_Background" name="" position="52,57" size="796,56" zPosition="-11" valign="center" />
+    <!-- Page Title / Widget -->
+    <widget name="baslik" position="95,61" size="750,50" font="EL_Standard; 32" backgroundColor="OE_Background" transparent="1" />
+    <ePixmap position="1360,70" size="100,40" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TURKvod/plugin.png" zPosition="3" transparent="1" alphatest="blend" />
+    <widget name="config" itemHeight="42" font="FHD; 30" backgroundColor="OE_Background" position="220,135" size="1250,798" transparent="1" />
+    <!-- /*Buttons-->
+    <eLabel backgroundColor="white" name="" position="220,973" size="1250,2" zPosition="-9" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_red.png" position="220,987" size="40,40" />
+    <widget name="ayarlari_kaydet" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="265,987" size="260,40" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <panel name="Clock1" />
+  </screen>
+  <screen name="KeyBoard" title="Virtual KeyBoard" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <!-- Background -->
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
+    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="800,60" zPosition="-12" />
+    <eLabel backgroundColor="white" position="200,center" size="1300,1000" zPosition="-20" />
+    <eLabel backgroundColor="un800000" foregroundColor="OE_Background" name="" position="52,57" size="796,56" zPosition="-11" valign="center" />
+    <!-- Page Title / Widget -->
+    <widget render="Label" source="Title" position="95,61" size="750,50" font="EL_Standard; 32" backgroundColor="OE_Background" transparent="1" />
+    <ePixmap position="1360,70" size="100,40" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TURKvod/plugin.png" zPosition="3" transparent="1" alphatest="blend" />
+    <widget name="header" font="FHD; 30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="center" position="220,150" size="1250,50" transparent="1" />
+    <eLabel backgroundColor="white" position="295,220" size="1100,70" zPosition="1" />
+    <eLabel backgroundColor="OE_Background" position="300,225" size="1090,60" zPosition="2" font="Regular; 24" />
+    <widget backgroundColor="OE_Background" font="FHD; 32" foregroundColor="OE_Foreground" halign="right" name="text" noWrap="1" position="305,227" size="1070,55" zPosition="3" />
+    <widget name="list" selectionDisabled="1" position="375,320" size="950,620" transparent="1" />
+    <!-- Clock -->
+    <panel name="Clock1" />
+  </screen>
+  <screen name="TurkvodSearch" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <!-- Background -->
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
+    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="800,60" zPosition="-12" />
+    <eLabel backgroundColor="white" position="200,center" size="1300,1000" zPosition="-20" />
+    <eLabel backgroundColor="un800000" foregroundColor="OE_Background" name="" position="52,57" size="796,56" zPosition="-11" valign="center" />
+    <!-- Page Title / Widget -->
+    <eLabel text="TURKVOD ARAMA LISTESI" position="95,61" size="750,50" font="EL_Standard; 32" backgroundColor="OE_Background" transparent="1" />
+    <ePixmap position="1360,70" size="100,40" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TURKvod/plugin.png" zPosition="3" transparent="1" alphatest="blend" />
+    <widget name="selection" itemHeight="42" font="FHD; 30" scrollbarMode="showNever" backgroundColor="OE_Background" position="220,135" size="1250,798" transparent="1" />
+    <!-- /*Buttons-->
+    <eLabel backgroundColor="white" name="" position="220,973" size="1250,2" zPosition="-9" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_red.png" position="220,987" size="40,40" />
+    <eLabel text="Sil" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="265,987" size="260,40" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <panel name="Clock1" />
+  </screen>
+  <screen name="plugin_gun" title="" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
+    <!-- Backgrounds -->
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="22,center" size="1236,1056" zPosition="-15" />
+    <eLabel backgroundColor="white" foregroundColor="OE_Background" name="" position="1065,200" size="745,720" zPosition="-14" />
+    <eLabel backgroundColor="white" position="20,center" size="1240,1060" zPosition="-20" />
+    <eLabel backgroundColor="un800000" foregroundColor="OE_Background" name="" position="2,22" size="1486,56" zPosition="-11" valign="center" />
+    <!-- Background 2 -->
+    <eLabel backgroundColor="OE_Background" position="1067,202" size="741,716" zPosition="-13" />
+    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="0,20" size="1490,60" zPosition="-12" />
+    <!-- Page Title / Widget -->
+    <eLabel text="TURKvod" backgroundColor="OE_Background" font="Regular; 32" position="40,28" size="260,50" transparent="1" />
+    <ePixmap position="1140,104" size="100,40" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TURKvod/plugin.png" zPosition="3" transparent="1" alphatest="blend" />
+    <widget name="baslik" position="40,120" size="1000,55" font="FHD; 33" backgroundColor="OE_Background" transparent="1" />
+    <widget name="menulist" itemHeight="42" font="Regular; 28" scrollbarMode="showOnDemand" enableWrapAround="0" backgroundColor="OE_Background" position="40,200" size="1000,712" transparent="1" />
+    <widget name="res" font="Regular; 28" scrollbarMode="showOnDemand" position="1085,270" size="700,590" backgroundColor="OE_Background" transparent="1" halign="left" />
+    <widget name="ver" position="40,1000" size="1200,45" font="FHD; 30" backgroundColor="OE_Background" transparent="1" />
+    <widget name="durum" position="40,950" size="1200,45" font="FHD; 30" backgroundColor="OE_Background" transparent="1" />
+    <!-- Clock -->
+    <widget backgroundColor="OE_Background" font="EL_Standard; 48" halign="left" position="1335,15" render="Label" size="150,60" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="OE_Background" font="Regular; 26" halign="right" position="1095,31" render="Label" size="225,35" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A, %e. %b</convert>
+    </widget>
+  </screen>  
+  
 </skin>
