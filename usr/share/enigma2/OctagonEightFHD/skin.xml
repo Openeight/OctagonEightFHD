@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <skin>
-  <!-- OctagonEightFHD Skin v2.2a for Octagon image, by SkinMania -->
+  <!-- OctagonEightFHD Skin v2.2b for Octagon image, by SkinMania -->
   <!-- OctagonEightFHD Skin is only for www.octagon-forum.eu -->
   <!-- Recommended to use with XPicons (220x132) -->
   <!-- You are NOT allowed to modify and redistribute OctagonEightFHD Skin and all graphics -->
@@ -114,7 +114,7 @@
     <alias name="PlayList" font="FHD" size="30" height="50"/>
     <alias name="fstabMenuList" font="FHD" size="30" height="50"/>
     <alias name="PiconManagerList" font="FHD" size="30" height="50"/>
-    <alias name="RSList" font="FHD" size="30" height="50"/>	
+    <alias name="RSList" font="FHD" size="30" height="50"/>
   </fonts>
   <subtitles>
     <sub font="Regular;30" name="Subtitle_TTX" shadowColor="#40101010" shadowOffset="3,3" />
@@ -3990,38 +3990,29 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
-  <screen name="UnhandledKey" title="UnhandledKey" backgroundColor="transparent" flags="wfNoBorder" position="center,0" size="800,120" transparent="0" zPosition="10">
+  <screen name="UnhandledKey" title="UnhandledKey" backgroundColor="transparent" flags="wfNoBorder" position="center,20" size="81,81" transparent="0" zPosition="10">
     <!-- Background -->
-    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="85,50" size="320,60" zPosition="-45" />
-    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="0,55" size="245,50" zPosition="-12" />
-    <eLabel backgroundColor="white" position="80,45" size="330,70" zPosition="-50" />
-    <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="2,57" size="241,46" zPosition="-11" valign="center" />
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="3,3" size="75,75" zPosition="-45" />
+    <eLabel backgroundColor="white" position="0,0" size="81,81" zPosition="-50" />
     <!-- Page Title / Widget -->
-    <eLabel text="Unsupported" backgroundColor="OE_Background" font="FHD; 30" position="8,55" size="230,45" transparent="1" valign="center" zPosition="0" />
-    <ePixmap alphatest="blend" borderColor="transparent" borderWidth="0" pixmap="OctagonEightFHD/my_icons/unhandled_key.png" position="290,42" size="75,75" transparent="1" zPosition="-1" />
+    <ePixmap alphatest="blend" borderColor="transparent" borderWidth="0" pixmap="OctagonEightFHD/my_icons/unhandled_key.png" position="3,3" size="75,75" transparent="1" zPosition="-1" />
   </screen>
-  <screen name="Volume" title="Volume" backgroundColor="transparent" flags="wfNoBorder" position="center,0" size="800,120" transparent="0" zPosition="10">
+  <screen name="Volume" title="Volume" backgroundColor="transparent" flags="wfNoBorder" position="center,20" size="451,61" transparent="0" zPosition="10">
     <!-- Background -->
-    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="85,50" size="570,60" zPosition="-45" />
-    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="0,55" size="185,50" zPosition="-12" />
-    <eLabel backgroundColor="white" position="80,45" size="580,70" zPosition="-50" />
-    <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="2,57" size="181,46" zPosition="-11" valign="center" />
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="3,3" size="445,55" zPosition="-45" />
+    <eLabel backgroundColor="white" position="0,0" size="451,61" zPosition="-50" />
     <!-- Page Title / Widget -->
-    <eLabel text="Volume" backgroundColor="OE_Background" font="FHD; 30" position="8,55" size="170,45" transparent="1" valign="center" zPosition="0" />
-    <ePixmap alphatest="blend" borderColor="transparent" borderWidth="0" pixmap="OctagonEightFHD/my_icons/volume1.png" position="185,53" size="50,55" transparent="1" zPosition="-1" />
-    <widget name="Volume" pixmap="OctagonEightFHD/colors/00A4C400.png" position="230,76" size="300,7" transparent="1" zPosition="3" />
-    <widget backgroundColor="OE_Background" font="FHD;40" foregroundColor="OE_Foreground" halign="center" position="542,50" render="OE_Volume" size="100,55" source="global.CurrentTime" transparent="1" valign="center" zPosition="20" />
-    <eLabel backgroundColor="OE_Foreground" position="230,78" size="300,3" />
+    <ePixmap alphatest="blend" borderColor="transparent" borderWidth="0" pixmap="OctagonEightFHD/my_icons/volume1.png" position="3,3" size="50,55" transparent="1" zPosition="-1" />
+    <widget name="Volume" pixmap="OctagonEightFHD/my_icons/volume_2.png" position="48,26" size="300,7" transparent="1" zPosition="3" />
+    <widget backgroundColor="OE_Background" font="FHD;40" foregroundColor="OE_Foreground" halign="center" position="348,0" render="OE_Volume" size="100,55" source="global.CurrentTime" transparent="1" valign="center" zPosition="20" />
+    <eLabel backgroundColor="OE_Foreground" position="49,28" size="298,3" />
   </screen>
-  <screen name="Mute" title="Mute" backgroundColor="transparent" flags="wfNoBorder" position="center,0" size="800,120" transparent="0" zPosition="10">
+  <screen name="Mute" title="Mute" backgroundColor="transparent" flags="wfNoBorder" position="center,20" size="85,61" transparent="0" zPosition="10">
     <!-- Background -->
-    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="85,50" size="320,60" zPosition="-45" />
-    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="0,55" size="245,50" zPosition="-12" />
-    <eLabel backgroundColor="white" position="80,45" size="330,70" zPosition="-50" />
-    <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="2,57" size="241,46" zPosition="-11" valign="center" />
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="3,3" size="79,55" zPosition="-45" />
+    <eLabel backgroundColor="white" position="0,0" size="85,61" zPosition="-50" />
     <!-- Page Title / Widget -->
-    <eLabel text="Stummschaltung" backgroundColor="OE_Background" font="FHD; 30" position="8,55" size="230,45" transparent="1" valign="center" zPosition="0" />
-    <ePixmap alphatest="blend" borderColor="transparent" borderWidth="0" pixmap="OctagonEightFHD/my_icons/mute2.png" position="290,53" size="79,55" transparent="1" zPosition="-1" />
+    <ePixmap alphatest="blend" borderColor="transparent" borderWidth="0" pixmap="OctagonEightFHD/my_icons/mute2.png" position="3,3" size="79,55" transparent="1" zPosition="-1" />
   </screen>
   <screen name="VideoEnhancementPreview" title="" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
     <!-- Background -->
