@@ -114,7 +114,7 @@
     <alias name="PlayList" font="FHD" size="30" height="50"/>
     <alias name="fstabMenuList" font="FHD" size="30" height="50"/>
     <alias name="PiconManagerList" font="FHD" size="30" height="50"/>
-    <alias name="RSList" font="FHD" size="30" height="50"/>
+    <alias name="RSList" font="FHD" size="30" height="50"/>	
   </fonts>
   <subtitles>
     <sub font="Regular;30" name="Subtitle_TTX" shadowColor="#40101010" shadowOffset="3,3" />
@@ -225,10 +225,6 @@
     <eLabel backgroundColor="white" position="1605,995" size="305,1" transparent="0" zPosition="20" />
     <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="0,804" size="550,50" zPosition="-15" />
     <eLabel backgroundColor="dark" position="2,806" size="546,46" transparent="0" zPosition="-10" />
-    <widget source="session.CurrentService" render="Label" position="291,1004" size="80,35" font="Regular;28" halign="left" valign="top" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" zPosition="2">
-      <convert type="OE_CpuUsage">
-      </convert>
-    </widget>
     <!-- Widget -->
     <widget source="session.CurrentService" render="ChannelNumber" backgroundColor="dark" foregroundColor="OE_Foreground" font="Regular; 30" halign="center" position="32,804" size="95,45" transparent="1" valign="center" zPosition="1" />
     <widget source="session.CurrentService" render="Label" position="127,805" size="420,45" font="Regular; 30" noWrap="1" backgroundColor="dark" transparent="1" halign="left" valign="center">
