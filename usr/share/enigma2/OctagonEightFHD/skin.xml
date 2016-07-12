@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <skin>
-  <!-- OctagonEightFHD Skin v2.2b for Octagon image, by SkinMania -->
+  <!-- OctagonEightFHD Skin v2.5 for Octagon image, by SkinMania -->
   <!-- OctagonEightFHD Skin is only for www.octagon-forum.eu -->
   <!-- Recommended to use with XPicons (220x132) -->
   <!-- You are NOT allowed to modify and redistribute OctagonEightFHD Skin and all graphics -->
@@ -114,7 +114,7 @@
     <alias name="PlayList" font="FHD" size="30" height="50"/>
     <alias name="fstabMenuList" font="FHD" size="30" height="50"/>
     <alias name="PiconManagerList" font="FHD" size="30" height="50"/>
-    <alias name="RSList" font="FHD" size="30" height="50"/>	
+    <alias name="RSList" font="FHD" size="30" height="50"/>
   </fonts>
   <subtitles>
     <sub font="Regular;30" name="Subtitle_TTX" shadowColor="#40101010" shadowOffset="3,3" />
@@ -249,7 +249,7 @@
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
-    <widget pixmap="OctagonEightFHD/colors/00A4C400.png" position="286,935" render="Progress" size="1283,6" source="session.Event_Now" transparent="1" zPosition="7">
+    <widget pixmap="OctagonEightFHD/colors/000F6EB2.png" position="286,935" render="Progress" size="1283,6" source="session.Event_Now" transparent="1" zPosition="7">
       <convert type="EventTime">Progress</convert>
     </widget>
     <widget backgroundColor="OE_Background" font="Regular; 32" halign="right" noWrap="1" position="271,946" render="Label" size="95,46" source="session.Event_Next" transparent="1" valign="top">
@@ -314,25 +314,25 @@
     </widget>
     <eLabel text="D" position="1795,876" zPosition="1" size="15,15" font="Regular; 30" halign="center" backgroundColor="OE_Foreground" transparent="0" valign="center" />
     <!-- TunerInfo -->
-    <widget source="session.TunerInfo" render="FixedLabel" text="A" position="1700,871" zPosition="2" size="25,25" font="Regular; 30" halign="center" backgroundColor="green_light" transparent="0" valign="center" foregroundColor="green_light">
+    <widget source="session.TunerInfo" render="FixedLabel" text="A" position="1700,871" zPosition="2" size="25,25" font="Regular; 30" halign="center" backgroundColor="blue" transparent="0" valign="center" foregroundColor="blue">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">1</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <eLabel text="A" position="1705,876" zPosition="1" size="15,15" font="Regular; 30" halign="center" backgroundColor="OE_Foreground" transparent="0" valign="center" />
-    <widget source="session.TunerInfo" render="FixedLabel" position="1730,871" zPosition="2" size="25,25" font="Regular; 30" halign="center" backgroundColor="green_light" transparent="0" valign="center" text="B" foregroundColor="green_light">
+    <widget source="session.TunerInfo" render="FixedLabel" position="1730,871" zPosition="2" size="25,25" font="Regular; 30" halign="center" backgroundColor="blue" transparent="0" valign="center" text="B" foregroundColor="blue">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">2</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <eLabel text="B" position="1735,876" zPosition="1" size="15,15" font="Regular; 30" halign="center" backgroundColor="OE_Foreground" transparent="0" valign="center" />
-    <widget source="session.TunerInfo" render="FixedLabel" text="C" position="1760,871" zPosition="2" size="25,25" font="Regular; 30" halign="center" backgroundColor="green_light" transparent="0" valign="center" foregroundColor="green_light">
+    <widget source="session.TunerInfo" render="FixedLabel" text="C" position="1760,871" zPosition="2" size="25,25" font="Regular; 30" halign="center" backgroundColor="blue" transparent="0" valign="center" foregroundColor="blue">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">4</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <eLabel text="C" position="1765,876" zPosition="1" size="15,15" font="Regular; 30" halign="center" backgroundColor="OE_Foreground" transparent="0" valign="center" />
-    <widget source="session.TunerInfo" render="FixedLabel" text="D" position="1790,871" zPosition="2" size="25,25" font="Regular; 30" halign="center" backgroundColor="green_light" transparent="0" valign="center" foregroundColor="green_light">
+    <widget source="session.TunerInfo" render="FixedLabel" text="D" position="1790,871" zPosition="2" size="25,25" font="Regular; 30" halign="center" backgroundColor="blue" transparent="0" valign="center" foregroundColor="blue">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">8</convert>
       <convert type="ConditionalShowHide" />
@@ -415,7 +415,7 @@
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
-    <widget pixmap="OctagonEightFHD/colors/00A4C400.png" position="286,935" render="Progress" size="1283,6" source="session.Event_Now" transparent="1" zPosition="7">
+    <widget pixmap="OctagonEightFHD/colors/000F6EB2.png" position="286,935" render="Progress" size="1283,6" source="session.Event_Now" transparent="1" zPosition="7">
       <convert type="EventTime">Progress</convert>
     </widget>
     <widget backgroundColor="OE_Background" font="Regular; 32" halign="right" noWrap="1" position="271,946" render="Label" size="95,46" source="session.Event_Next" transparent="1" valign="top">
@@ -480,25 +480,25 @@
     </widget>
     <eLabel text="D" position="1795,876" zPosition="1" size="15,15" font="Regular; 30" halign="center" backgroundColor="OE_Foreground" transparent="0" valign="center" />
     <!-- TunerInfo -->
-    <widget source="session.TunerInfo" render="FixedLabel" text="A" position="1700,871" zPosition="2" size="25,25" font="Regular; 30" halign="center" backgroundColor="green_light" transparent="0" valign="center" foregroundColor="green_light">
+    <widget source="session.TunerInfo" render="FixedLabel" text="A" position="1700,871" zPosition="2" size="25,25" font="Regular; 30" halign="center" backgroundColor="blue" transparent="0" valign="center" foregroundColor="blue">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">1</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <eLabel text="A" position="1705,876" zPosition="1" size="15,15" font="Regular; 30" halign="center" backgroundColor="OE_Foreground" transparent="0" valign="center" />
-    <widget source="session.TunerInfo" render="FixedLabel" position="1730,871" zPosition="2" size="25,25" font="Regular; 30" halign="center" backgroundColor="green_light" transparent="0" valign="center" text="B" foregroundColor="green_light">
+    <widget source="session.TunerInfo" render="FixedLabel" position="1730,871" zPosition="2" size="25,25" font="Regular; 30" halign="center" backgroundColor="blue" transparent="0" valign="center" text="B" foregroundColor="blue">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">2</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <eLabel text="B" position="1735,876" zPosition="1" size="15,15" font="Regular; 30" halign="center" backgroundColor="OE_Foreground" transparent="0" valign="center" />
-    <widget source="session.TunerInfo" render="FixedLabel" text="C" position="1760,871" zPosition="2" size="25,25" font="Regular; 30" halign="center" backgroundColor="green_light" transparent="0" valign="center" foregroundColor="green_light">
+    <widget source="session.TunerInfo" render="FixedLabel" text="C" position="1760,871" zPosition="2" size="25,25" font="Regular; 30" halign="center" backgroundColor="blue" transparent="0" valign="center" foregroundColor="blue">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">4</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <eLabel text="C" position="1765,876" zPosition="1" size="15,15" font="Regular; 30" halign="center" backgroundColor="OE_Foreground" transparent="0" valign="center" />
-    <widget source="session.TunerInfo" render="FixedLabel" text="D" position="1790,871" zPosition="2" size="25,25" font="Regular; 30" halign="center" backgroundColor="green_light" transparent="0" valign="center" foregroundColor="green_light">
+    <widget source="session.TunerInfo" render="FixedLabel" text="D" position="1790,871" zPosition="2" size="25,25" font="Regular; 30" halign="center" backgroundColor="gblue" transparent="0" valign="center" foregroundColor="blue">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">8</convert>
       <convert type="ConditionalShowHide" />
@@ -779,10 +779,10 @@
     <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="1245,150" size="675,50" zPosition="-12" />
     <eLabel backgroundColor="OE_Background" name="" position="1247,152" size="671,46" zPosition="-11" />
     <eLabel backgroundColor="white" name="" position="70,973" size="1130,2" zPosition="-9" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/open_8.png" position="1505,300" size="240,45" transparent="1" zPosition="10" />
     <!-- Page Title / Widget -->
     <eLabel text="About..." position="55,61" size="345,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
     <widget name="AboutScrollLabel" itemHeight="50" font="FHD; 30" position="70,135" size="1130,800" scrollbarMode="showOnDemand" halign="left" backgroundColor="OE_Background" transparent="1" />
-    <!-- Page Title / Widget -->
     <eLabel backgroundColor="OE_Background" font="EL_Standard; 26" foregroundColor="OE_Foreground" halign="left" position="1255,154" size="300,40" text="Support for Openeight" transparent="1" valign="center" zPosition="1" />
     <eLabel backgroundColor="OE_Background" font="EL_Standard; 27" foregroundColor="OE_Foreground" halign="right" position="1575,154" size="300,40" text="octagon-forum.eu" transparent="1" valign="center" zPosition="1" />
     <ePixmap alphatest="blend" pixmap="OctagonEightFHD/prev.png" position="1432,810" size="280,210" transparent="1" zPosition="10" />
@@ -1556,12 +1556,56 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+  <screen name="CommitInfo" title="" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
+    <!-- Background -->
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="55,center" size="1160,990" zPosition="-15" />
+    <eLabel backgroundColor="white" foregroundColor="OE_Background" name="" position="1230,140" size="660,900" zPosition="-20" />
+    <eLabel backgroundColor="white" position="50,center" size="1170,1000" zPosition="-20" />
+    <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="2,57" size="1196,56" zPosition="-11" valign="center" />
+    <!-- Background 2 -->
+    <eLabel backgroundColor="OE_Background" position="1235,147" size="650,890" zPosition="-15" />
+    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="0,55" size="1200,60" zPosition="-12" />
+    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="1245,150" size="675,50" zPosition="-12" />
+    <eLabel backgroundColor="OE_Background" name="" position="1247,152" size="671,46" zPosition="-11" />
+    <eLabel backgroundColor="white" name="" position="70,973" size="1130,2" zPosition="-9" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/open_8.png" position="1505,300" size="240,45" transparent="1" zPosition="10" />
+    <!-- Page Title / Widget -->
+    <eLabel text="Commit Info" position="55,61" size="345,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
+    <widget name="AboutScrollLabel" itemHeight="50" font="FHD; 30" position="70,135" size="1130,800" scrollbarMode="showOnDemand" halign="left" backgroundColor="OE_Background" transparent="1" />
+    <!-- Page Title / Widget -->
+    <eLabel backgroundColor="OE_Background" font="EL_Standard; 26" foregroundColor="OE_Foreground" halign="left" position="1255,154" size="300,40" text="Support for Openeight" transparent="1" valign="center" zPosition="1" />
+    <eLabel backgroundColor="OE_Background" font="EL_Standard; 27" foregroundColor="OE_Foreground" halign="right" position="1575,154" size="300,40" text="octagon-forum.eu" transparent="1" valign="center" zPosition="1" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/prev.png" position="1432,810" size="280,210" transparent="1" zPosition="10" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/openeight.png" position="1362,205" size="400,89" transparent="1" zPosition="10" />
+    <widget source="session.CurrentService" render="Label" position="1410,505" size="320,38" font="EL_Standard; 28" halign="center" valign="center" foregroundColor="OE_Foreground" backgroundColor="OE_Background3" noWrap="1" transparent="1" zPosition="5">
+      <convert type="OE_LayoutInfo">FleshInfo,Short</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="1410,548" size="320,38" font="EL_Standard; 28" halign="center" valign="center" foregroundColor="OE_Foreground" backgroundColor="OE_Background3" noWrap="1" transparent="1" zPosition="5">
+      <convert type="OE_LayoutInfo">MemTotal,Short</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="1410,591" size="320,38" font="EL_Standard; 28" halign="center" valign="center" foregroundColor="OE_Foreground" backgroundColor="OE_Background3" noWrap="1" transparent="1" zPosition="5">
+      <convert type="OE_LayoutInfo">HddInfo,Short</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="1410,634" size="320,38" font="EL_Standard; 28" halign="center" valign="center" foregroundColor="OE_Foreground" backgroundColor="OE_Background3" noWrap="1" transparent="1" zPosition="5">
+      <convert type="OE_LayoutInfo">UsbInfo,Short</convert>
+    </widget>
+    <eLabel backgroundColor="OE_Background" font="FHD; 30" foregroundColor="OE_Foreground" halign="center" position="1275,885" size="150,80" text="Style by SkinMania" transparent="1" valign="center" zPosition="1" />
+    <!-- Button -->
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_red.png" position="65,987" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/left.png" position="908,67" size="36,36" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/right.png" position="1164,67" size="36,36" />
+    <widget backgroundColor="OE_Background" font="Regular; 28" halign="left" position="110,987" size="240,40" name="key_red" transparent="1" zPosition="1" />
+    <eLabel text="Skin Commits" backgroundColor="dark" font="Regular; 32" halign="center" position="944,62" size="220,50" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <panel name="Clock1" />
+  </screen>
   <screen name="CommitInfoSetup" title="OpenEight Commit Info Setup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <!-- Background -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
     <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="600,60" zPosition="-12" />
     <eLabel backgroundColor="white" position="200,center" size="1300,1000" zPosition="-20" />
     <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="52,57" size="596,56" zPosition="-11" valign="center" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/open_8.png" position="1230,63" size="240,45" transparent="1" zPosition="10" />
     <!-- Page Title / Widget -->
     <widget source="Title" render="Label" position="95,61" size="550,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
     <widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="220,135" size="1250,800" transparent="1" />
@@ -2275,7 +2319,7 @@
     <widget position="75,978" render="PositionGauge" size="1345,8" source="session.CurrentService" transparent="1" zPosition="1">
       <convert type="ServicePosition">Gauge</convert>
     </widget>
-    <widget pixmap="OctagonEightFHD/colors/00A4C400.png" position="75,978" render="Progress" size="1345,8" source="session.CurrentService" transparent="1" zPosition="2">
+    <widget pixmap="OctagonEightFHD/colors/000F6EB2.png" position="75,978" render="Progress" size="1345,8" source="session.CurrentService" transparent="1" zPosition="2">
       <convert type="ServicePosition">Position</convert>
     </widget>
     <widget backgroundColor="OE_Background" font="Regular; 30" foregroundColor="OE_Foreground" halign="left" position="75,924" render="Label" shadowColor="OE_Background" shadowOffset="-1,-1" size="125,42" source="session.CurrentService" transparent="1" valign="center">
@@ -4400,6 +4444,7 @@
     <widget name="lmemtext" position="180,140" backgroundColor="OE_Background" foregroundColor="OE_Foreground" size="270,805" zPosition="7" font="FHD; 30" itemHeight="50" halign="right" transparent="0" />
     <widget name="lmemvalue" position="465,140" backgroundColor="OE_Background" foregroundColor="OE_Foreground" size="220,805" zPosition="8" font="FHD; 30" itemHeight="50" halign="left" transparent="0" />
     <ePixmap alphatest="blend" pixmap="OctagonEightFHD/picon_default.png" position="center,750" size="220,132" transparent="1" zPosition="10" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/open_8.png" position="852,865" size="240,45" transparent="1" zPosition="10" />
     <!-- Button - Bar -->
     <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_red.png" position="120,987" size="40,40" />
     <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_green.png" position="410,987" size="40,40" />
@@ -4418,13 +4463,14 @@
     <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="600,60" zPosition="-12" />
     <eLabel backgroundColor="white" position="200,center" size="900,1000" zPosition="-20" />
     <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="52,57" size="596,56" zPosition="-11" valign="center" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/open_8.png" position="center,63" size="240,45" transparent="1" zPosition="10" />
     <!-- Page Title / Widget -->
     <eLabel text="Eight Panel" backgroundColor="dark" font="EL_Standard; 32" position="155,59" size="475,50" transparent="1" valign="center" zPosition="3" halign="left" />
     <widget source="list" render="Listbox" enableWrapAround="1" position="220,125" scrollbarMode="showNever" size="860,900" transparent="1" zPosition="3">
       <convert type="TemplatedMultiContent">
                   {"template": [
                               MultiContentEntryText(pos = (20, 0), size = (930, 45), font=0, text=0, color = 0x00ffffff, color_sel = 0x00ffffff), # text 1 is the menu_entry,
-                              MultiContentEntryText(pos = (20, 50), size = (930, 38), font=1, text=2, color = 0x00a4c400, color_sel = 0x00ffffff),# text 2 is the menu_enty_description
+                              MultiContentEntryText(pos = (20, 50), size = (930, 38), font=1, text=2, color = 0x006AA6D4, color_sel = 0x00ffffff),# text 2 is the menu_enty_description
                                ],
                              "fonts": [gFont("FHD", 34), gFont("Regular", 27)],
                              "itemHeight": 90
@@ -4440,6 +4486,7 @@
     <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="600,60" zPosition="-12" />
     <eLabel backgroundColor="white" position="200,center" size="1300,1000" zPosition="-20" />
     <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="52,57" size="596,56" zPosition="-11" valign="center" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/open_8.png" position="1230,63" size="240,45" transparent="1" zPosition="10" />
     <!-- Page Title / Widget -->
     <eLabel text="Softcam Configuration" position="95,61" size="550,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
     <widget name="cam" font="FHD; 30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="220,130" size="620,45" transparent="1" />
@@ -4467,6 +4514,7 @@
     <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="350,260" size="450,60" zPosition="-12" />
     <eLabel backgroundColor="white" position="center,center" size="980,600" zPosition="-20" />
     <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="352,262" size="446,56" zPosition="-11" valign="center" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/open_8.png" position="1190,269" size="240,45" transparent="1" zPosition="10" />
     <!-- Page Title / Widget -->
     <eLabel text="Softcam Menu" font="EL_Standard; 32" backgroundColor="dark" position="375,266" size="405,50" transparent="1" valign="center" zPosition="3" />
     <widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="center,330" size="940,450" transparent="1" halign="center" valign="center" />
@@ -4485,6 +4533,7 @@
     <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="600,60" zPosition="-12" />
     <eLabel backgroundColor="white" position="200,center" size="1300,1000" zPosition="-20" />
     <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="52,57" size="596,56" zPosition="-11" valign="center" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/open_8.png" position="1230,63" size="240,45" transparent="1" zPosition="10" />
     <!-- Page Title / Widget -->
     <eLabel text="Auto-Camd List Setup" position="95,61" size="550,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
     <widget source="list" render="Listbox" position="220,135" size="1250,765" enableWrapAround="1" scrollbarMode="showOnDemand" alphatest="blend" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" zPosition="5">
@@ -4518,6 +4567,7 @@
     <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="600,60" zPosition="-12" />
     <eLabel backgroundColor="white" position="200,center" size="1300,1000" zPosition="-20" />
     <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="52,57" size="596,56" zPosition="-11" valign="center" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/open_8.png" position="1230,63" size="240,45" transparent="1" zPosition="10" />
     <!-- Page Title / Widget -->
     <eLabel text="Channel Selection" position="95,61" size="550,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
     <widget name="list" itemHeight="50" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="220,135" size="1250,800" transparent="1" />
@@ -4540,6 +4590,7 @@
     <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="600,60" zPosition="-12" />
     <eLabel backgroundColor="white" position="200,center" size="1300,1000" zPosition="-20" />
     <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="52,57" size="596,56" zPosition="-11" valign="center" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/open_8.png" position="1230,63" size="240,45" transparent="1" zPosition="10" />
     <!-- Page Title / Widget -->
     <eLabel text="ImageBackup" position="95,61" size="550,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
     <widget name="info-hdd" font="FHD; 30" backgroundColor="OE_Background" position="220,145" size="1250,350" transparent="1" valign="top" />
@@ -4564,6 +4615,7 @@
     <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="600,60" zPosition="-12" />
     <eLabel backgroundColor="white" position="200,center" size="1300,1000" zPosition="-20" />
     <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="52,57" size="596,56" zPosition="-11" valign="center" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/open_8.png" position="1230,63" size="240,45" transparent="1" zPosition="10" />
     <!-- Page Title / Widget -->
     <eLabel text="Flash Image Online - Local" position="95,61" size="550,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
     <widget name="info-online" font="FHD; 30" backgroundColor="OE_Background" position="220,145" size="1250,350" transparent="1" valign="top" />
@@ -4588,6 +4640,7 @@
     <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="1000,60" zPosition="-12" />
     <eLabel backgroundColor="white" position="200,center" size="1300,1000" zPosition="-20" />
     <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="52,57" size="996,56" zPosition="-11" valign="center" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/open_8.png" position="1230,63" size="240,45" transparent="1" zPosition="10" />
     <!-- Page Title / Widget -->
     <widget source="Title" render="Label" position="65,61" size="980,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
     <widget name="imageList" font="FHD; 30" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="220,145" size="1250,800" transparent="1" valign="center" />
@@ -4633,6 +4686,7 @@
     <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="52,57" size="796,56" zPosition="-11" valign="center" />
     <eLabel backgroundColor="OE_Background" position="1425,445" size="440,290" zPosition="-15" />
     <eLabel backgroundColor="white" foregroundColor="OE_Background" name="" position="1420,440" size="450,300" zPosition="-20" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/open_8.png" position="880,63" size="240,45" transparent="1" zPosition="10" />
     <!-- Page Title / Widget -->
     <widget source="Title" render="Label" backgroundColor="dark_2" font="EL_Standard; 32" position="75,61" size="750,50" transparent="1" valign="center" zPosition="3" halign="left" />
     <widget source="list" render="Listbox" font="FHD; 30" position="140,145" scrollbarMode="showOnDemand" size="1210,765" transparent="1">
@@ -4663,11 +4717,9 @@
     <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_red.png" position="120,987" size="40,40" />
     <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_green.png" position="435,987" size="40,40" />
     <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_yellow.png" position="750,987" size="40,40" />
-    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_blue.png" position="1065,987" size="40,40" />
     <widget name="key_red" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="165,987" size="260,40" transparent="1" zPosition="1" />
     <widget name="key_green" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="480,987" size="260,40" transparent="1" zPosition="1" />
-    <widget name="key_yellow" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="795,987" size="260,40" transparent="1" zPosition="1" />
-    <widget name="key_blue" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="1110,987" size="260,40" transparent="1" zPosition="1" />
+    <eLabel text="Latest Commits" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="795,987" size="260,40" transparent="1" zPosition="1" />
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
@@ -4677,6 +4729,7 @@
     <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="600,60" zPosition="-12" />
     <eLabel backgroundColor="white" position="200,center" size="1300,1000" zPosition="-20" />
     <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="52,57" size="596,56" zPosition="-11" valign="center" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/open_8.png" position="1230,63" size="240,45" transparent="1" zPosition="10" />
     <!-- Page Title / Widget -->
     <widget source="Title" render="Label" position="95,61" size="550,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
     <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_menu.png" position="685,66" size="64,43" />
@@ -4714,6 +4767,7 @@
     <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="600,60" zPosition="-12" />
     <eLabel backgroundColor="white" position="200,center" size="1300,1000" zPosition="-20" />
     <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="52,57" size="596,56" zPosition="-11" valign="center" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/open_8.png" position="1230,63" size="240,45" transparent="1" zPosition="10" />
     <!-- Page Title / Widget -->
     <widget source="Title" render="Label" position="95,61" size="550,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
     <widget name="config" font="FHD; 30" itemHeight="50" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="220,135" size="1250,400" transparent="1" valign="center" />
@@ -4737,12 +4791,13 @@
     <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="600,60" zPosition="-12" />
     <eLabel backgroundColor="white" position="200,center" size="1300,1000" zPosition="-20" />
     <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="52,57" size="596,56" zPosition="-11" valign="center" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/open_8.png" position="1230,63" size="240,45" transparent="1" zPosition="10" />
     <!-- Page Title / Widget -->
     <widget source="Title" render="Label" position="95,61" size="550,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
     <widget name="entryinfo" font="FHD; 30" backgroundColor="OE_Background" position="220,145" size="1250,50" transparent="1" valign="center" halign="left" />
     <widget name="menulist" font="FHD; 30" itemHeight="300" scrollbarMode="showNever" backgroundColor="OE_Background" position="220,208" size="1250,300" transparent="1" valign="top" />
     <eLabel backgroundColor="white" name="" position="220,600" size="1250,2" zPosition="-9" />
-    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/extraspanel/fstabEditor.png" position="1320,55" size="150,60" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/extraspanel/fstabEditor.png" position="820,55" size="150,60" />
     <!-- /*Buttons-->
     <eLabel backgroundColor="white" name="" position="220,973" size="1250,2" zPosition="-9" />
     <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_ok.png" position="220,672" size="64,43" />
@@ -4764,11 +4819,12 @@
     <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="600,60" zPosition="-12" />
     <eLabel backgroundColor="white" position="200,center" size="1300,1000" zPosition="-20" />
     <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="52,57" size="596,56" zPosition="-11" valign="center" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/open_8.png" position="1230,63" size="240,45" transparent="1" zPosition="10" />
     <!-- Page Title / Widget -->
     <widget source="Title" render="Label" position="95,61" size="550,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
     <widget name="config" font="FHD; 30" itemHeight="50" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="220,145" size="1250,400" transparent="1" valign="center" halign="left" />
     <eLabel backgroundColor="white" name="" position="220,600" size="1250,2" zPosition="-9" />
-    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/extraspanel/fstabEditor.png" position="1320,55" size="150,60" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/extraspanel/fstabEditor.png" position="820,55" size="150,60" />
     <widget source="VKeyIcon" render="Pixmap" pixmap="OctagonEightFHD/buttons/key_text.png" position="1405,612" zPosition="10" size="64,43" transparent="1" alphatest="blend">
       <convert type="ConditionalShowHide" />
     </widget>
@@ -4791,11 +4847,12 @@
     <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="600,60" zPosition="-12" />
     <eLabel backgroundColor="white" position="200,center" size="1300,1000" zPosition="-20" />
     <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="52,57" size="596,56" zPosition="-11" valign="center" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/open_8.png" position="1230,63" size="240,45" transparent="1" zPosition="10" />
     <!-- Page Title / Widget -->
     <widget source="Title" render="Label" position="95,61" size="550,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
     <widget name="filelist" font="FHD; 28" itemHeight="50" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="220,145" size="1250,400" transparent="1" valign="center" halign="left" />
     <eLabel backgroundColor="white" name="" position="220,600" size="1250,2" zPosition="-9" />
-    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/extraspanel/fstabEditor.png" position="1320,55" size="150,60" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/extraspanel/fstabEditor.png" position="820,55" size="150,60" />
     <!-- /*Buttons-->
     <eLabel backgroundColor="white" name="" position="220,973" size="1250,2" zPosition="-9" />
     <widget name="ButtonOK" alphatest="blend" pixmap="OctagonEightFHD/buttons/key_ok.png" position="220,672" size="64,43" />
@@ -4813,6 +4870,7 @@
     <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="1200,60" zPosition="-12" />
     <eLabel backgroundColor="white" position="200,center" size="1300,1000" zPosition="-20" />
     <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="52,57" size="1196,56" zPosition="-11" valign="center" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/open_8.png" position="1230,983" size="240,45" transparent="1" zPosition="10" />
     <!-- Page Title / Widget -->
     <widget source="Title" render="Label" position="75,61" size="1170,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
     <widget name="filelist" font="FHD; 30" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="220,143" size="1250,800" transparent="1" valign="center" />
@@ -4831,6 +4889,7 @@
     <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="600,60" zPosition="-12" />
     <eLabel backgroundColor="white" position="200,center" size="1300,1000" zPosition="-20" />
     <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="52,57" size="596,56" zPosition="-11" valign="center" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/open_8.png" position="1230,63" size="240,45" transparent="1" zPosition="10" />
     <!-- Page Title / Widget -->
     <eLabel text="IPK - Uninstaller" position="95,61" size="550,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
     <widget name="list" font="FHD; 30" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="220,143" size="1250,850" transparent="1" valign="center" />
@@ -4843,6 +4902,7 @@
     <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="800,60" zPosition="-12" />
     <eLabel backgroundColor="white" position="200,center" size="1300,1000" zPosition="-20" />
     <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="52,57" size="796,56" zPosition="-11" valign="center" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/open_8.png" position="1230,983" size="240,45" transparent="1" zPosition="10" />
     <!-- Page Title / Widget -->
     <widget source="Title" render="Label" position="75,61" size="770,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
     <widget name="config" font="FHD; 30" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="220,143" size="1250,700" transparent="1" valign="center" />
@@ -4886,6 +4946,7 @@
     <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="52,57" size="596,56" zPosition="-11" valign="center" />
     <eLabel backgroundColor="OE_Background" position="1515,445" size="240,590" zPosition="-15" />
     <eLabel backgroundColor="white" foregroundColor="OE_Background" name="" position="1510,440" size="250,600" zPosition="-20" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/open_8.png" position="1230,63" size="240,45" transparent="1" zPosition="10" />
     <!-- Page Title / Widget -->
     <eLabel text="Remote Control Type" position="95,61" size="550,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
     <widget source="Title" render="Label" font="FHD; 30" backgroundColor="OE_Background" position="220,145" size="1250,50" transparent="1" valign="center" halign="left" />
@@ -4907,6 +4968,7 @@
     <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="600,60" zPosition="-12" />
     <eLabel backgroundColor="white" position="200,center" size="1300,1000" zPosition="-20" />
     <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="52,57" size="596,56" zPosition="-11" valign="center" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/open_8.png" position="1230,63" size="240,45" transparent="1" zPosition="10" />
     <!-- Page Title / Widget -->
     <eLabel text="DVB NTP Time" position="95,61" size="550,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
     <widget source="menu" render="Listbox" scrollbarMode="showNever" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="218,132" size="500,300" transparent="1">
@@ -4946,6 +5008,7 @@
     <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="600,60" zPosition="-12" />
     <eLabel backgroundColor="white" position="200,center" size="1300,1000" zPosition="-20" />
     <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="52,57" size="596,56" zPosition="-11" valign="center" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/open_8.png" position="1230,63" size="240,45" transparent="1" zPosition="10" />
     <!-- Page Title / Widget -->
     <widget source="Title" render="Label" position="95,61" size="550,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
     <widget name="config" font="FHD; 30" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="220,145" size="1250,500" transparent="1" valign="top" />
@@ -4973,6 +5036,7 @@
     <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="600,60" zPosition="-12" />
     <eLabel backgroundColor="white" position="200,center" size="1300,1000" zPosition="-20" />
     <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="52,57" size="596,56" zPosition="-11" valign="center" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/open_8.png" position="1230,63" size="240,45" transparent="1" zPosition="10" />
     <!-- Page Title / Widget -->
     <widget source="Title" render="Label" position="65,61" size="580,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
     <widget name="lab1" font="FHD; 30" position="220,150" size="320,50" valign="center" transparent="1" halign="right" foregroundColor="OE_Foreground" backgroundColor="OE_Background" />
@@ -5004,6 +5068,7 @@
     <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="600,60" zPosition="-12" />
     <eLabel backgroundColor="white" position="200,center" size="1300,1000" zPosition="-20" />
     <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="52,57" size="596,56" zPosition="-11" valign="center" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/open_8.png" position="1230,63" size="240,45" transparent="1" zPosition="10" />
     <!-- Page Title / Widget -->
     <widget source="Title" render="Label" position="95,61" size="550,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
     <widget name="config" itemHeight="50" font="FHD; 30" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="220,135" size="1250,800" transparent="1" />
@@ -5022,6 +5087,7 @@
     <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="600,60" zPosition="-12" />
     <eLabel backgroundColor="white" position="200,center" size="1300,1000" zPosition="-20" />
     <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="52,57" size="596,56" zPosition="-11" valign="center" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/open_8.png" position="1230,63" size="240,45" transparent="1" zPosition="10" />
     <!-- Page Title / Widget -->
     <widget source="Title" render="Label" position="95,61" size="550,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
     <widget name="lab1" font="FHD; 30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="220,135" size="1250,50" transparent="1" />
@@ -5044,6 +5110,7 @@
     <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="600,60" zPosition="-12" />
     <eLabel backgroundColor="white" position="200,center" size="1300,1000" zPosition="-20" />
     <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="52,57" size="596,56" zPosition="-11" valign="center" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/open_8.png" position="1230,63" size="240,45" transparent="1" zPosition="10" />
     <!-- Page Title / Widget -->
     <widget source="Title" render="Label" position="65,61" size="580,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
     <widget name="autostart_off" pixmap="OctagonEightFHD/extensions/lock_off.png" alphatest="blend" position="220,157" size="35,35" transparent="1" zPosition="10" />
@@ -5076,6 +5143,7 @@
     <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="630,60" zPosition="-12" />
     <eLabel backgroundColor="white" position="200,center" size="1000,1000" zPosition="-20" />
     <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="52,57" size="625,56" zPosition="-11" valign="center" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/open_8.png" position="940,63" size="240,45" transparent="1" zPosition="10" />
     <!-- Page Title / Widget -->
     <widget name="label2" backgroundColor="dark_2" font="EL_Standard; 32" position="60,61" size="605,50" transparent="1" valign="center" zPosition="3" halign="left" />
     <widget name="label1" font="FHD; 30" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="OE_Foreground" backgroundColor="OE_Background" position="220,125" size="960,900" transparent="1" zPosition="3" />
@@ -5242,44 +5310,5 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
-  <!-- Plugins screens -->
-  <screen name="EtPortalScreen" title="EtPortalScreen" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
-    <!-- Template -->
-    <eLabel backgroundColor="OE_Background" name="InfoBar" position="center,910" size="1410,150" zPosition="-15" />
-    <eLabel backgroundColor="white" name="" position="center,905" size="1420,160" zPosition="-20" />
-    <eLabel backgroundColor="white" foregroundColor="OE_Background" name="" position="380,795" size="1164,204" zPosition="-13" />
-    <eLabel backgroundColor="dark" position="382,797" size="1160,200" zPosition="-12" />
-    <!-- /* Widgets -->
-    <widget source="label" render="Label" position="center,1003" size="785,55" font="FHD; 34" backgroundColor="OE_Background" transparent="1" halign="center" />
-    <widget name="thumb0" position="407,859" size="128,128" zPosition="5" alphatest="blend" backgroundColor="dark" transparent="1" />
-    <widget name="thumb1" position="570,839" size="128,128" zPosition="5" alphatest="blend" backgroundColor="dark" transparent="1" />
-    <widget name="thumb2" position="733,820" size="128,128" zPosition="5" alphatest="blend" backgroundColor="dark" transparent="1" />
-    <widget name="thumb3" position="center,807" size="128,128" zPosition="8" alphatest="blend" backgroundColor="dark" transparent="1" />
-    <widget name="thumb4" position="1059,820" size="128,128" zPosition="5" alphatest="blend" backgroundColor="dark" transparent="1" />
-    <widget name="thumb5" position="1224,839" size="128,128" zPosition="5" alphatest="blend" backgroundColor="dark" transparent="1" />
-    <widget name="thumb6" position="1389,859" size="128,128" zPosition="5" alphatest="blend" backgroundColor="dark" transparent="1" />
-    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/EtPortal/pics/sel.png" position="center,806" size="150,150" zPosition="9" transparent="1" alphatest="on" />
-    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_menu.png" position="1601,1017" size="64,43" />
-    <!-- Clock -->
-    <panel name="Clock1" />
-  </screen>
-  <screen name="EtPortalSetupScreen" title="EtPortal Setup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-    <!-- Background -->
-    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
-    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="600,60" zPosition="-12" />
-    <eLabel backgroundColor="white" position="200,center" size="1300,1000" zPosition="-20" />
-    <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="52,57" size="596,56" zPosition="-11" valign="center" />
-    <!-- Page Title / Widget -->
-    <widget render="Label" source="Title" position="105,61" size="300,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
-    <widget name="config" itemHeight="50" font="FHD; 30" backgroundColor="OE_Background" enableWrapAround="1" position="220,135" scrollbarMode="showOnDemand" size="1250,800" transparent="1" />
-    <!-- Page Title / Widget -->
-    <!-- /*Buttons-->
-    <eLabel backgroundColor="white" name="" position="220,973" size="1250,2" zPosition="-9" />
-    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_red.png" position="220,987" size="40,40" />
-    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_green.png" position="510,987" size="40,40" />
-    <widget backgroundColor="OE_Background" font="Regular; 28" position="265,987" render="Label" size="240,40" source="key_red" transparent="1" zPosition="1" />
-    <widget backgroundColor="OE_Background" font="Regular; 28" position="555,987" render="Label" size="240,40" source="key_green" transparent="1" zPosition="1" />
-    <!-- Clock -->
-    <panel name="Clock1" />
-  </screen>
+  <!-- ##### PLUGINS ##### -->
 </skin>
