@@ -467,7 +467,19 @@
     <panel name="Clock1" />
   </screen>
   
-  <!-- CCcam Info Main -->  
+  <!-- CCcam Info Main -->
+  <screen name="EcmInfoConfigMenu" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <!-- Background -->
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
+    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="600,60" zPosition="-12" />
+    <eLabel backgroundColor="white" position="200,center" size="1300,1000" zPosition="-20" />
+    <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="52,57" size="596,56" zPosition="-11" valign="center" />
+    <!-- Page Title / Widget -->
+    <eLabel text="Setup" position="95,61" size="550,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
+    <widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="220,135" size="1250,850" transparent="1" />
+    <!-- Clock -->
+    <panel name="Clock1" />
+  </screen>
     <screen name="CCcamInfoMain" title="CCcamInfoMain" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
     <!-- Background -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="880,990" zPosition="-15" />
@@ -646,6 +658,25 @@
     <widget source="key_blue" render="Label" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="1210,987" size="260,40" transparent="1" zPosition="1" />
     <!-- Clock -->
     <panel name="Clock1" />
+  </screen>
+  <screen name="EcmInfoScreen" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,30" size="744,114">
+    <!-- Background -->
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="2,2" size="740,110" zPosition="-15" />
+    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="10,6" size="180,55" zPosition="-12" />
+    <eLabel backgroundColor="white" position="0,0" size="744,114" zPosition="-20" />
+    <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="12,8" size="176,51" zPosition="-11" valign="center" />
+    <!-- Page Title / Widget -->
+    <eLabel text="Ecm Info" position="20,12" size="170,45" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
+    <widget name="ecmInfo" font="FHD; 26" backgroundColor="OE_Background" position="15,66" size="720,40" transparent="1" />
+    <widget name="irdeto" text="I" font="Regular; 32" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="200,15" size="40,40" valign="center" halign="center" zPosition="3" transparent="1" />
+    <widget name="irdeto" text="S" font="Regular; 32" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="250,15" size="40,40" valign="center" halign="center" zPosition="3" transparent="1" />
+    <widget name="irdeto" text="N" font="Regular; 32" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="300,15" size="40,40" valign="center" halign="center" zPosition="3" transparent="1" />
+    <widget name="irdeto" text="V" font="Regular; 32" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="350,15" size="40,40" valign="center" halign="center" zPosition="3" transparent="1" />
+    <widget name="irdeto" text="CO" font="Regular; 32" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="400,15" size="55,40" valign="center" halign="center" zPosition="3" transparent="1" />
+    <widget name="irdeto" text="BC" font="Regular; 32" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="465,15" size="55,40" valign="center" halign="center" zPosition="3" transparent="1" />
+    <widget name="irdeto" text="CW" font="Regular; 32" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="530,15" size="60,40" valign="center" halign="center" zPosition="3" transparent="1" />
+    <widget name="irdeto" text="DC" font="Regular; 32" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="600,15" size="55,40" valign="center" halign="center" zPosition="3" transparent="1" />
+    <widget name="irdeto" text="ND" font="Regular; 32" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="665,15" size="60,40" valign="center" halign="center" zPosition="3" transparent="1" />
   </screen>
   
   <!-- TURKvod -->
@@ -996,7 +1027,7 @@
     <eLabel text="seyirTURK" font="Regular; 32" backgroundColor="OE_Background3" position="55,75" size="455,50" transparent="1" />
     <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_menu.png" position="575,80" size="64,43" />
     <eLabel text="Ayarlar" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="644,79" size="260,40" transparent="1" zPosition="1" />
-    <widget name="feedlist" font="Regular; 28" itemHeight="42" backgroundColor="OE_Background" position="65,160" size="890,600" transparent="1" valign="center" />
+    <widget name="feedlist" font="Regular; 28" itemHeight="42" backgroundColor="OE_Background" position="65,160" size="890,630" transparent="1" valign="center" />
     <widget name="description" font="Regular; 28" foregroundColor="green_light" backgroundColor="OE_Background" position="65,810" size="890,100" halign="left" transparent="1" valign="top" />
     <widget name="version" font="Regular;28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" position="65,925" zPosition="4" size="890,45" halign="left" transparent="1" />
     <widget name="poster" position="1010,508" size="448,350" pixmap="OctagonEightFHD/plugins/setup.png" zPosition="4" transparent="2" alphatest="blend" />

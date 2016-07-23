@@ -25,7 +25,8 @@
 	
 	<!-- BACKGROUND TEMPLATES -->
 	<screen name="Background1">
-
+      <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
+    <eLabel backgroundColor="white" position="200,center" size="1300,1000" zPosition="-20" />	  
 	</screen>
 	
 	<screen name="Background2">
