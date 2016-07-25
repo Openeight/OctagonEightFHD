@@ -76,6 +76,16 @@
       <convert type="EMCMovieInfo">RecordServiceName</convert>
     </widget>
     <widget backgroundColor="OE_Background" font="Regular;32" foregroundColor="OE_Foreground" halign="center" name="wait" position="center,580" size="1920,50" valign="center" zPosition="1" />
+    <!-- Button -->
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_red.png" position="50,1007" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_green.png" position="315,1007" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_yellow.png" position="590,1007" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_blue.png" position="870,1008" size="40,40" />
+    <widget backgroundColor="OE_Background" font="Regular; 28" halign="left" position="100,1007" size="210,40" name="key_red" transparent="1" zPosition="1" />
+    <widget backgroundColor="OE_Background" font="Regular; 28" halign="left" position="365,1007" size="220,40" name="key_green" transparent="1" zPosition="1" />
+    <widget backgroundColor="OE_Background" font="Regular; 28" halign="left" position="640,1007" size="220,40" name="key_yellow" transparent="1" zPosition="1" />
+    <widget backgroundColor="OE_Background" font="Regular; 28" halign="left" position="915,1008" size="220,40" name="key_blue" transparent="1" zPosition="1" />
+    <ePixmap name="new ePixmap" pixmap="OctagonEightFHD/buttons/key_menu.png" position="1185,1006" size="64,43" alphatest="blend" />
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>

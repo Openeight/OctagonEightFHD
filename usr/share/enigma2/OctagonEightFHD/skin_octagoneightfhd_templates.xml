@@ -29,8 +29,9 @@
     <eLabel backgroundColor="white" position="200,center" size="1300,1000" zPosition="-20" />	  
 	</screen>
 	
-	<screen name="Background2">
-
+	<screen name="Back_blueTitel">
+    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="600,60" zPosition="-12" />
+    <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="52,57" size="596,56" zPosition="-11" valign="center" />
 	</screen>	
 		
 </skin>
