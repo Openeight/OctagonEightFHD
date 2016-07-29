@@ -2907,6 +2907,8 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+
+
   <!-- FilesearchFS -->
   <screen name="filesearchFS" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <!-- Background -->
@@ -2999,6 +3001,8 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+
+
   <!-- Flash Expander -->
   <screen name="FlashExpander" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <!-- Background -->
@@ -3106,6 +3110,111 @@
     <widget backgroundColor="OE_Background" font="Regular; 26" halign="right" position="1052,46" render="Label" size="225,35" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%A, %e. %b</convert>
     </widget>
+  </screen>
+
+
+  <!-- Foreca -->
+  <screen name="ForecaPreview" title="Foreca Weather Forecast" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <!-- Background -->
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
+    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="1000,60" zPosition="-12" />
+    <eLabel backgroundColor="white" position="200,center" size="1300,1000" zPosition="-20" />
+    <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="52,57" size="996,56" zPosition="-11" valign="center" />
+    <!-- Page Title / Widget -->
+    <widget source="Titel" render="Label" position="70,61" size="970,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
+    <widget name="MainList" itemHeight="100" foregroundColorSelected="OE_Foreground" backgroundColorSelected="OE_Selection" font0="Regular;26" font1="Regular;24" font2="Regular;26" font3="Regular;26" setTime="0,34,80,32" setPict="80,15,70,70" setPictScale="0" setTemp="155,14,90,32" setTempUnits="155,55,90,32" setWindPict="245,35,35,35" setWindPictScale="1" setWind="275,14,95,32" setWindUnits="275,54,120,32" text1Pos="400,4,500,32" text2Pos="400,35,500,32" text3Pos="400,66,500,32" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="220,135" size="1250,800" transparent="1" />
+    <!-- /*Buttons-->
+    <eLabel backgroundColor="white" name="" position="220,972" size="1250,2" zPosition="-9" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_ok.png" position="1153,68" size="64,43" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_menu.png" position="1237,68" size="64,43" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_info.png" position="1321,68" size="64,43" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_help.png" position="1405,68" size="64,43" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_red.png" position="220,987" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_green.png" position="535,987" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_yellow.png" position="850,987" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_blue.png" position="1165,987" size="40,40" />
+    <widget source="key_red" render="Label" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="265,987" size="260,40" transparent="1" zPosition="1" />
+    <widget source="key_green" render="Label" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="580,987" size="260,40" transparent="1" zPosition="1" />
+    <widget source="key_yellow" render="Label" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="895,987" size="260,40" transparent="1" zPosition="1" />
+    <widget source="key_blue" render="Label" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="1210,987" size="260,40" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <panel name="Clock1" />
+  </screen>
+  <screen name="CityPanel" title="Select a city" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <!-- Background -->
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
+    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="1000,60" zPosition="-12" />
+    <eLabel backgroundColor="white" position="200,center" size="1300,1000" zPosition="-20" />
+    <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="52,57" size="996,56" zPosition="-11" valign="center" />
+    <!-- Page Title / Widget -->
+    <eLabel text="Select a city" position="70,61" size="970,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
+    <widget name="Mlist" itemHeight="50" font="FHD; 30" foregroundColorSelected="OE_Foreground" backgroundColorSelected="OE_Selection" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="220,135" size="1250,800" transparent="1" />
+    <!-- /*Buttons-->
+    <eLabel backgroundColor="white" name="" position="220,972" size="1250,2" zPosition="-9" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_ok.png" position="1321,70" size="64,43" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_help.png" position="1405,70" size="64,43" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_red.png" position="220,987" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_green.png" position="535,987" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_yellow.png" position="850,987" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_blue.png" position="1165,987" size="40,40" />
+    <widget source="key_red" render="Label" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="265,987" size="260,40" transparent="1" zPosition="1" />
+    <widget source="key_green" render="Label" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="580,987" size="260,40" transparent="1" zPosition="1" />
+    <widget source="key_yellow" render="Label" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="895,987" size="260,40" transparent="1" zPosition="1" />
+    <widget source="key_blue" render="Label" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="1210,987" size="260,40" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <panel name="Clock1" />
+  </screen>
+  <screen name="SatPanel" title="Satellite photos" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <!-- Background -->
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
+    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="1000,60" zPosition="-12" />
+    <eLabel backgroundColor="white" position="200,center" size="1300,1000" zPosition="-20" />
+    <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="52,57" size="996,56" zPosition="-11" valign="center" />
+    <!-- Page Title / Widget -->
+    <eLabel text="Satellite photos" position="70,61" size="970,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
+    <widget name="Mlist" font="Regular;35" setPictScale="1" itemHeight="145" foregroundColorSelected="OE_Foreground" backgroundColorSelected="OE_Selection" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="220,175" size="1250,725" transparent="1" />
+    <!-- /*Buttons-->
+    <eLabel backgroundColor="white" name="" position="220,972" size="1250,2" zPosition="-9" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_red.png" position="220,987" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_green.png" position="535,987" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_yellow.png" position="850,987" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_blue.png" position="1165,987" size="40,40" />
+    <widget source="key_red" render="Label" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="265,987" size="260,40" transparent="1" zPosition="1" />
+    <widget source="key_green" render="Label" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="580,987" size="260,40" transparent="1" zPosition="1" />
+    <widget source="key_yellow" render="Label" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="895,987" size="260,40" transparent="1" zPosition="1" />
+    <widget source="key_blue" render="Label" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="1210,987" size="260,40" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <panel name="Clock1" />
+  </screen>
+  <screen name="SatPanelb" title="Satellite photos" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <!-- Background -->
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
+    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="1000,60" zPosition="-12" />
+    <eLabel backgroundColor="white" position="200,center" size="1300,1000" zPosition="-20" />
+    <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="52,57" size="996,56" zPosition="-11" valign="center" />
+    <!-- Page Title / Widget -->
+    <eLabel text="Satellite photos" position="70,61" size="970,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
+    <widget name="Mlist" font="Regular;35" itemHeight="145" foregroundColorSelected="OE_Foreground" backgroundColorSelected="OE_Selection" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="220,135" size="1250,870" transparent="1" />
+    <!-- Clock -->
+    <panel name="Clock1" />
+  </screen>
+  <screen name="PicSetup" title="SlideShow Settings" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <!-- Background -->
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
+    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="1000,60" zPosition="-12" />
+    <eLabel backgroundColor="white" position="200,center" size="1300,1000" zPosition="-20" />
+    <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="52,57" size="996,56" zPosition="-11" valign="center" />
+    <!-- Page Title / Widget -->
+    <eLabel text="SlideShow Settings" position="70,61" size="970,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
+    <widget name="Mlist" itemHeight="50" font="Regular;28" secondfont="Regular;28" backgroundColorSelected="OE_Selection" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="220,135" size="1250,800" transparent="1" />
+    <!-- /*Buttons-->
+    <eLabel backgroundColor="white" name="" position="220,972" size="1250,2" zPosition="-9" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_red.png" position="220,987" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_green.png" position="535,987" size="40,40" />
+    <widget source="key_red" render="Label" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="265,987" size="260,40" transparent="1" zPosition="1" />
+    <widget source="key_green" render="Label" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="580,987" size="260,40" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <panel name="Clock1" />
   </screen>
 
 
@@ -3299,6 +3408,126 @@
     <widget source="key_green" render="Label" backgroundColor="OE_Background" font="Regular; 28" halign="left" position="555,987" size="240,40" transparent="1" zPosition="1" />
     <!-- Clock -->
     <panel name="Clock1" />
+  </screen>
+
+
+  <!-- MSN Weather -->
+  <screen name="ConfigWeatherMSN" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <!-- Background -->
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
+    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="600,60" zPosition="-12" />
+    <eLabel backgroundColor="white" position="200,center" size="1300,1000" zPosition="-20" />
+    <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="52,57" size="596,56" zPosition="-11" valign="center" />
+    <!-- Page Title / Widget -->
+    <eLabel text="Setup Weather MSN" position="95,61" size="550,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
+    <widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="220,135" size="1250,800" transparent="1" />
+    <widget name="HelpWindow" position="70,750" zPosition="1" size="1,1" backgroundColor="OE_Background" transparent="1" alphatest="blend" />
+    <!-- /*Buttons-->
+    <eLabel backgroundColor="white" name="" position="220,972" size="1250,2" zPosition="-9" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_red.png" position="220,987" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_green.png" position="535,987" size="40,40" />
+    <widget source="key_red" render="Label" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="265,987" size="260,40" transparent="1" zPosition="1" />
+    <widget source="key_green" render="Label" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="580,987" size="260,40" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <panel name="Clock1" />
+  </screen>
+  <screen name="WeatherMSN" position="0,0" size="1920,1080" backgroundColor="transparent" title="" flags="wfNoBorder">
+    <!-- Backgrounds -->
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="center,center" size="1780,1030" zPosition="-15" />
+    <eLabel backgroundColor="white" position="center,center" size="1790,1040" zPosition="-20" />
+    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="0,50" size="1050,60" zPosition="-12" />
+    <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="2,52" size="1046,56" zPosition="-11" valign="center" />
+    <eLabel backgroundColor="white" foregroundColor="OE_Background" name="" position="center,125" size="2,850" zPosition="-10" />
+    <eLabel backgroundColor="white" name="" position="center,990" size="1750,2" zPosition="-9" />
+    <eLabel backgroundColor="dark" position="105,760" size="790,2" zPosition="-9" foregroundColor="dark" />
+    <eLabel backgroundColor="dark" position="105,552" size="790,2" zPosition="-9" foregroundColor="dark" />
+    <eLabel backgroundColor="dark" position="975,552" size="830,2" zPosition="-9" foregroundColor="dark" />
+    <eLabel backgroundColor="dark" position="975,760" size="830,2" zPosition="-9" foregroundColor="dark" />
+    <eLabel backgroundColor="dark" position="975,344" size="830,2" zPosition="-9" foregroundColor="dark" />
+    <!-- Widgets -->
+    <widget source="Title" render="Label" position="55,59" size="400,50" font="Regular; 32" backgroundColor="dark" transparent="1" halign="left" />
+    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/WeatherMSN/logo.png" position="200,160" size="550,125" alphatest="blend" />
+    <widget source="locationtxt" render="Label" position="105,349" size="300,40" font="Regular; 28" foregroundColor="EL_Foreground" backgroundColor="OE_Background" halign="left" transparent="1" />
+    <widget source="timezonetxt" render="Label" position="105,469" size="300,40" font="Regular; 28" foregroundColor="EL_Foreground" backgroundColor="OE_Background" halign="left" transparent="1" />
+    <widget source="latitudetxt" render="Label" position="105,389" size="300,40" font="Regular; 28" foregroundColor="EL_Foreground" backgroundColor="OE_Background" halign="left" transparent="1" />
+    <widget source="longitudetxt" render="Label" position="105,429" size="300,40" font="Regular; 28" foregroundColor="EL_Foreground" backgroundColor="OE_Background" halign="left" transparent="1" />
+    <widget source="temperaturetxt" render="Label" position="325,557" size="420,40" font="Regular; 28" foregroundColor="EL_Foreground" backgroundColor="OE_Background" halign="left" transparent="1" />
+    <widget source="feelsliketxt" render="Label" position="325,597" size="420,40" font="Regular; 28" foregroundColor="EL_Foreground" backgroundColor="OE_Background" transparent="1" />
+    <widget source="humiditytxt" render="Label" position="325,637" size="420,40" font="Regular; 28" foregroundColor="EL_Foreground" backgroundColor="OE_Background" halign="left" transparent="1" />
+    <widget source="windtxt" render="Label" position="325,677" size="420,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="left" transparent="1" />
+    <widget source="pointtxt" render="Label" position="105,509" size="300,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="left" transparent="1" />
+    <widget source="location" render="Label" position="365,349" size="530,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="right" transparent="1" />
+    <widget source="timezone" render="Label" position="365,469" size="530,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="right" transparent="1" />
+    <widget source="latitude" render="Label" position="365,389" size="530,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="right" transparent="1" />
+    <widget source="longitude" render="Label" position="365,429" size="530,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="right" transparent="1" />
+    <widget source="observationtime" render="Label" position="105,1000" size="150,50" font="FHD; 34" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="left" transparent="1" />
+    <widget source="observationpoint" render="Label" position="365,509" size="530,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="right" transparent="1" />
+    <widget source="attribution" render="Label" position="255,1007" size="600,45" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="left" transparent="1" />
+    <widget source="temperature" render="Label" position="675,557" size="220,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="right" transparent="1" />
+    <widget source="feelslike" render="Label" position="675,597" size="220,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="right" transparent="1" />
+    <widget source="skytext" render="Label" position="325,717" size="570,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="right" transparent="1" />
+    <widget source="humidity" render="Label" position="675,637" size="220,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="right" transparent="1" />
+    <widget source="wind" render="Label" position="595,677" size="300,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="right" transparent="1" />
+    <widget name="pic" position="130,594" size="128,128" zPosition="2" alphatest="blend" />
+    <widget source="temperaturetxt" render="Label" position="325,845" size="420,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="left" transparent="1" />
+    <widget source="preciptxt" render="Label" position="325,885" size="420,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="left" transparent="1" />
+    <widget source="daytxt" render="Label" position="325,765" size="420,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="left" transparent="1" />
+    <widget source="datetxt" render="Label" position="325,805" size="420,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="left" transparent="1" />
+    <widget source="temperature0" render="Label" position="675,845" size="220,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="right" transparent="1" />
+    <widget source="skytext0" render="Label" position="325,925" size="570,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="right" transparent="1" />
+    <widget source="precip0" render="Label" position="595,885" size="300,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="right" transparent="1" />
+    <widget source="date0" render="Label" position="675,805" size="220,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="right" transparent="1" />
+    <widget source="day0" render="Label" position="675,765" size="220,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="right" transparent="1" />
+    <widget name="pic0" position="130,802" size="128,128" zPosition="2" alphatest="blend" />
+    <widget source="temperaturetxt" render="Label" position="1235,221" size="420,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="left" transparent="1" />
+    <widget source="preciptxt" render="Label" position="1235,261" size="420,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="left" transparent="1" />
+    <widget source="daytxt" render="Label" position="1235,141" size="420,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="left" transparent="1" />
+    <widget source="datetxt" render="Label" position="1235,181" size="420,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="left" transparent="1" />
+    <widget source="temperature1" render="Label" position="1585,221" size="220,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="right" transparent="1" />
+    <widget source="skytext1" render="Label" position="1235,301" size="570,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="right" transparent="1" />
+    <widget source="precip1" render="Label" position="1505,261" size="300,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="right" transparent="1" />
+    <widget source="date1" render="Label" position="1585,181" size="220,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="right" transparent="1" />
+    <widget source="day1" render="Label" position="1585,141" size="220,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="right" transparent="1" />
+    <widget name="pic1" position="1040,178" size="128,128" zPosition="2" alphatest="blend" />
+    <widget source="temperaturetxt" render="Label" position="1235,429" size="420,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="left" transparent="1" />
+    <widget source="preciptxt" render="Label" position="1235,469" size="420,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" />
+    <widget source="daytxt" render="Label" position="1235,349" size="420,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="left" transparent="1" />
+    <widget source="datetxt" render="Label" position="1235,389" size="420,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="left" transparent="1" />
+    <widget source="temperature2" render="Label" position="1585,429" size="220,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="right" transparent="1" />
+    <widget source="skytext2" render="Label" position="1235,509" size="570,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="right" transparent="1" />
+    <widget source="precip2" render="Label" position="1505,469" size="300,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="right" transparent="1" />
+    <widget source="date2" render="Label" position="1585,389" size="220,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="right" transparent="1" />
+    <widget source="day2" render="Label" position="1585,349" size="220,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="right" transparent="1" />
+    <widget name="pic2" position="1040,386" size="128,128" zPosition="2" alphatest="blend" />
+    <widget source="temperaturetxt" render="Label" position="1235,637" size="420,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="left" transparent="1" />
+    <widget source="preciptxt" render="Label" position="1235,677" size="420,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="left" transparent="1" />
+    <widget source="daytxt" render="Label" position="1235,557" size="420,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="left" transparent="1" />
+    <widget source="datetxt" render="Label" position="1235,597" size="420,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="left" transparent="1" />
+    <widget source="temperature3" render="Label" position="1585,637" size="220,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="right" transparent="1" />
+    <widget source="skytext3" render="Label" position="1235,717" size="570,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="right" transparent="1" />
+    <widget source="precip3" render="Label" position="1505,677" size="300,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="right" transparent="1" />
+    <widget source="date3" render="Label" position="1585,597" size="220,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="right" transparent="1" />
+    <widget source="day3" render="Label" position="1585,557" size="220,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="right" transparent="1" />
+    <widget name="pic3" position="1040,594" size="128,128" zPosition="2" alphatest="blend" />
+    <widget source="temperaturetxt" render="Label" position="1235,845" size="420,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="left" transparent="1" />
+    <widget source="preciptxt" render="Label" position="1235,885" size="420,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="left" transparent="1" />
+    <widget source="daytxt" render="Label" position="1235,765" size="420,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="left" transparent="1" />
+    <widget source="datetxt" render="Label" position="1235,805" size="420,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="left" transparent="1" />
+    <widget source="temperature4" render="Label" position="1585,845" size="220,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="right" transparent="1" />
+    <widget source="skytext4" render="Label" position="1235,925" size="570,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="right" transparent="1" />
+    <widget source="precip4" render="Label" position="1505,885" size="300,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="right" transparent="1" />
+    <widget source="date4" render="Label" position="1585,805" size="220,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="right" transparent="1" />
+    <widget source="day4" render="Label" position="1585,765" size="220,40" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="right" transparent="1" />
+    <widget name="pic4" position="1040,802" size="128,128" zPosition="2" alphatest="blend" />
+    <!-- Button */-->
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_menu.png" position="1744,1002" size="64,43" />
+    <!-- Clock -->
+    <widget backgroundColor="OE_Background" font="EL_Standard; 48" halign="left" position="892,45" render="Label" size="150,60" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="OE_Background" font="Regular; 26" halign="right" position="652,61" render="Label" size="225,35" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A, %e. %b</convert>
+    </widget>
   </screen>
 
 
