@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <skin>
-  <!-- OctagonEightFHD Skin v3.65a for Octagon image, by SkinMania -->
+  <!-- OctagonEightFHD Skin v3.65b for Octagon image, by SkinMania -->
   <!-- OctagonEightFHD Skin is only for www.octagon-forum.eu -->
   <!-- Recommended to use with XPicons (220x132) -->
   <!-- You are NOT allowed to modify and redistribute OctagonEightFHD Skin and all graphics -->
@@ -558,7 +558,7 @@
       <convert type="OE_ServiceName">%F %p %Y %f</convert>
     </widget>
     <eLabel backgroundColor="OE_Background" name="InfoBar" position="65,45" size="890,690" zPosition="-18" />
-    <widget source="session.Event_Now" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" render="OE_RunningText" position="75,140" size="870,577" font="Regular; 30" zPosition="1" backgroundColor="OE_Background" transparent="1" halign="left">
+    <widget source="session.Event_Now" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" render="OE_RunningText" position="75,120" size="870,577" font="Regular; 30" zPosition="1" backgroundColor="OE_Background" transparent="1" halign="left">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <eLabel backgroundColor="OE_Background" name="InfoBar" position="985,145" size="890,630" zPosition="-15" />
@@ -584,7 +584,7 @@
     <widget backgroundColor="OE_Background" font="Regular; 32" halign="left" noWrap="1" position="45,58" render="Label" size="790,50" source="session.Event_Now" transparent="1">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget pixmap="OctagonEightFHD/colors/000F6EB2.png" borderColor="grey" borderWidth="1" position="75,119" render="Progress" size="870,10" source="session.Event_Now" transparent="1" zPosition="7">
+    <widget pixmap="OctagonEightFHD/colors/000F6EB2.png" borderColor="grey" borderWidth="1" position="75,710" render="Progress" size="870,15" source="session.Event_Now" transparent="1" zPosition="7">
       <convert type="EventTime">Progress</convert>
     </widget>
     <!-- SYSTEM INFO 2 */ -->
