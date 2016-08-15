@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <skin>
-  <!-- OctagonEightFHD Skin v3.65b for Octagon image, by SkinMania -->
+  <!-- OctagonEightFHD Skin v3.66b for Octagon image, by SkinMania -->
   <!-- OctagonEightFHD Skin is only for www.octagon-forum.eu -->
   <!-- Recommended to use with XPicons (220x132) -->
   <!-- You are NOT allowed to modify and redistribute OctagonEightFHD Skin and all graphics -->
@@ -2474,7 +2474,9 @@
     <eLabel text="MovieMenu" position="95,61" size="550,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
     <widget render="Label" source="Title" position="220,125" size="1070,48" font="FHD; 30" backgroundColor="OE_Background" transparent="1" />
     <eLabel backgroundColor="white" name="" position="220,180" size="1070,2" zPosition="-9" />
-    <widget name="menu" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="220,190" size="1070,800" transparent="1" />
+    <widget source="menu" render="Listbox" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="220,190" size="1070,800" transparent="1">
+      <convert type="StringList" />
+    </widget>
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
@@ -2548,9 +2550,9 @@
     <panel name="Back_blueTitel" />
     <!-- Page Title / Widget -->
     <widget source="Title" render="Label" position="95,61" size="445,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
-    <widget source="IF" render="Label" font="FHD; 30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="795,65" size="240,45" transparent="1" />
-    <widget source="Statustext" render="Label" font="FHD; 30" foregroundColor="OE_Foreground" backgroundColor="OE_Background" position="600,65" size="195,45" transparent="1" halign="left" />
-    <widget name="statuspic" alphatest="blend" pixmaps="OctagonEightFHD/skin_default/lock_on.png,OctagonEightFHD/skin_default/lock_off.png" position="1045,70" size="35,35" transparent="1" />
+    <widget source="IF" render="Label" font="FHD; 30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="875,65" size="240,45" transparent="1" />
+    <widget source="Statustext" render="Label" font="FHD; 30" foregroundColor="OE_Foreground" backgroundColor="OE_Background" position="680,65" size="195,45" transparent="1" halign="left" />
+    <widget name="statuspic" alphatest="blend" pixmaps="OctagonEightFHD/skin_default/lock_on.png,OctagonEightFHD/skin_default/lock_off.png" position="1125,70" size="35,35" transparent="1" />
     <widget name="menulist" itemHeight="50" font="FHD; 30" backgroundColor="OE_Background" enableWrapAround="1" scrollbarMode="showOnDemand" position="220,130" size="1250,650" transparent="1" />
     <eLabel backgroundColor="white" name="" position="220,837" size="1250,2" zPosition="-9" />
     <widget source="description" render="Label" backgroundColor="OE_Background" font="EL_Standard; 28" foregroundColor="OE_Foreground" halign="left" position="220,855" size="1250,120" transparent="1" valign="top" />
