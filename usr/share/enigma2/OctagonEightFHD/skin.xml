@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <skin>
-  <!-- OctagonEightFHD Skin v3.80 for Octagon image, by SkinMania -->
+  <!-- OctagonEightFHD Skin v3.85b for Octagon image, by SkinMania -->
   <!-- OctagonEightFHD Skin is only for www.octagon-forum.eu -->
   <!-- Recommended to use with XPicons (220x132) -->
   <!-- You are NOT allowed to modify and redistribute OctagonEightFHD Skin and all graphics -->
@@ -3741,7 +3741,7 @@
     <eLabel backgroundColor="white" name="" position="220,180" size="1250,2" zPosition="-9" />
     <widget render="Label" source="Title" position="220,120" size="1250,55" font="FHD; 33" backgroundColor="OE_Background" transparent="1" />
     <widget name="config" itemHeight="50" font="FHD; 30" backgroundColor="OE_Background" enableWrapAround="1" position="220,195" scrollbarMode="showOnDemand" size="1250,750" transparent="1" />
-    <widget name="HelpWindow" position="150,712" size="1,1" zPosition="10" />
+    <widget name="HelpWindow" position="400,712" size="1,1" zPosition="10" />
     <!-- /*Buttons-->
     <eLabel backgroundColor="white" name="" position="220,973" size="1250,2" zPosition="-9" />
     <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_red.png" position="220,987" size="40,40" />
