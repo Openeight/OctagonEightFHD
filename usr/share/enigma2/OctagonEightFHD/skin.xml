@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <skin>
-  <!-- OctagonEightFHD Skin v3.85b for Octagon image, by SkinMania -->
+  <!-- OctagonEightFHD Skin v3.86 for Octagon image, by SkinMania -->
   <!-- OctagonEightFHD Skin is only for www.octagon-forum.eu -->
   <!-- Recommended to use with XPicons (220x132) -->
   <!-- You are NOT allowed to modify and redistribute OctagonEightFHD Skin and all graphics -->
@@ -1248,9 +1248,13 @@
       <convert type="ClockToText">
       </convert>
     </widget>
-    <widget backgroundColor="OE_Background2" font="Regular; 28" halign="right" position="1805,247" render="Label" size="80,35" source="ServiceEvent" transparent="1">
+    <widget backgroundColor="OE_Background" font="Regular; 28" halign="right" position="1355,247" render="Label" size="95,35" source="ServiceEvent" transparent="1">
       <convert type="EventTime">EndTime</convert>
-      <convert type="ClockToText">Format:%H:%M</convert>
+      <convert type="ClockToText">Format:- %H:%M</convert>
+    </widget>
+    <widget source="Event" render="Label" backgroundColor="OE_Background" font="Regular; 28" halign="right" position="1728,247" size="157,35" transparent="1">
+      <convert type="EventTime">Remaining</convert>
+      <convert type="RemainingToText">InMinutes</convert>
     </widget>
     <eLabel backgroundColor="OE_Accent1" foregroundColor="OE_Accent1" position="1285,292" size="600,1" />
     <widget backgroundColor="OE_PreBlack2" borderWidth="0" pixmap="OctagonEightFHD/colors/00A4C400.png" position="1285,290" render="Progress" size="600,5" source="ServiceEvent" transparent="1" zPosition="1">
@@ -1744,29 +1748,29 @@
       <convert type="OE_RefString">CurrentRef</convert>
     </widget>
     <widget backgroundColor="OE_Background" itemHeight="50" font="FHD; 30" name="epg_description" position="70,145" size="1130,800" transparent="1" />
-    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/my_icons/dolby_off.png" position="1535,320" size="63,32" zPosition="1" />
-    <widget alphatest="blend" pixmap="OctagonEightFHD/my_icons/dolby_on.png" position="1535,320" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="2">
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/my_icons/dolby_off.png" position="1575,320" size="63,32" zPosition="1" />
+    <widget alphatest="blend" pixmap="OctagonEightFHD/my_icons/dolby_on.png" position="1575,320" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="2">
       <convert type="ServiceInfo">IsMultichannel</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/my_icons/format_off.png" position="1622,320" size="63,32" zPosition="1" />
-    <widget alphatest="blend" pixmap="OctagonEightFHD/my_icons/format_on.png" position="1622,320" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="2">
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/my_icons/format_off.png" position="1662,320" size="63,32" zPosition="1" />
+    <widget alphatest="blend" pixmap="OctagonEightFHD/my_icons/format_on.png" position="1662,320" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="2">
       <convert type="ServiceInfo">IsWidescreen</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/my_icons/txt_off.png" position="1445,320" size="63,32" zPosition="1" />
-    <widget alphatest="blend" pixmap="OctagonEightFHD/my_icons/txt_on.png" position="1445,320" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="2">
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/my_icons/txt_off.png" position="1485,320" size="63,32" zPosition="1" />
+    <widget alphatest="blend" pixmap="OctagonEightFHD/my_icons/txt_on.png" position="1485,320" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="2">
       <convert type="ServiceInfo">HasTelext</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/my_icons/hd_off.png" position="1712,320" size="63,32" zPosition="1" />
-    <widget alphatest="blend" pixmap="OctagonEightFHD/my_icons/hd_on.png" position="1712,320" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="2">
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/my_icons/hd_off.png" position="1752,320" size="63,32" zPosition="1" />
+    <widget alphatest="blend" pixmap="OctagonEightFHD/my_icons/hd_on.png" position="1752,320" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="2">
       <convert type="ServiceInfo">VideoWidth</convert>
       <convert type="ValueRange">721,1980</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/my_icons/crypt_off.png" position="1355,320" size="63,32" zPosition="1" />
-    <widget alphatest="blend" pixmap="OctagonEightFHD/my_icons/crypt_on.png" position="1355,320" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="2">
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/my_icons/crypt_off.png" position="1395,320" size="63,32" zPosition="1" />
+    <widget alphatest="blend" pixmap="OctagonEightFHD/my_icons/crypt_on.png" position="1395,320" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="2">
       <convert type="ServiceInfo">IsCrypted</convert>
       <convert type="ConditionalShowHide" />
     </widget>
@@ -1774,6 +1778,10 @@
       <convert type="ServiceInfo">IsStream</convert>
       <convert type="ConditionalShowHide">
       </convert>
+    </widget>
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/my_icons/rec_off.png" position="1305,320" size="63,32" zPosition="1" />
+    <widget alphatest="blend" pixmap="OctagonEightFHD/my_icons/rec_on.png" position="1305,320" render="Pixmap" size="63,32" source="session.RecordState" zPosition="2">
+      <convert type="ConditionalShowHide">Blink</convert>
     </widget>
     <eLabel backgroundColor="OE_Accent1" foregroundColor="OE_Accent1" position="1260,221" size="600,2" />
     <widget backgroundColor="OE_Background2" borderWidth="0" pixmap="OctagonEightFHD/colors/00A4C400.png" position="1260,220" render="Progress" size="600,5" source="session.Event_Now" transparent="1" zPosition="1">
@@ -4175,6 +4183,24 @@
     <eLabel backgroundColor="OE_Background" position="300,225" size="1090,60" zPosition="2" font="Regular; 24" />
     <widget backgroundColor="OE_Background" font="FHD; 32" foregroundColor="OE_Foreground" halign="right" name="text" noWrap="1" position="305,227" size="1070,55" zPosition="3" />
     <widget name="list" selectionDisabled="1" position="375,320" size="950,620" transparent="1" />
+    <!-- Clock -->
+    <panel name="Clock1" />
+  </screen>
+  <screen name="VFD_INISetup" title="LED Display Setup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <!-- Background -->
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
+    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="600,60" zPosition="-12" />
+    <eLabel backgroundColor="white" position="200,center" size="1300,1000" zPosition="-20" />
+    <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="52,57" size="596,56" zPosition="-11" valign="center" />
+    <!-- Page Title / Widget -->
+    <widget render="Label" source="Title" position="95,61" size="550,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
+    <widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="220,135" size="1250,800" transparent="1" />
+    <!-- /*Buttons-->
+    <eLabel backgroundColor="white" name="" position="220,973" size="1250,2" zPosition="-9" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_red.png" position="220,987" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_green.png" position="535,987" size="40,40" />
+    <widget name="key_red" backgroundColor="OE_Background" font="Regular; 28" position="265,987" size="260,40" transparent="1" zPosition="1" />
+    <widget name="key_green" backgroundColor="OE_Background" font="Regular; 28" position="580,987" size="260,40" transparent="1" zPosition="1" />
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
