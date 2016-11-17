@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <skin>
-  <!-- OctagonEightFHD Skin v4.00 for Octagon image, by SkinMania -->
+  <!-- OctagonEightFHD Skin v4.10 for Octagon image, by SkinMania -->
   <!-- OctagonEightFHD Skin is only for www.octagon-forum.eu -->
   <!-- Recommended to use with XPicons (220x132) -->
   <!-- You are NOT allowed to modify and redistribute OctagonEightFHD Skin and all graphics -->
@@ -602,8 +602,8 @@
       <convert type="EventTime">Progress</convert>
     </widget>
     <widget backgroundColor="OE_Background" font="Regular; 28" halign="left" position="1172,152" render="OE_RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" size="700,40" source="session.Event_Next" transparent="1" valign="top">
-  <convert type="EventName">Name</convert>
-</widget>
+      <convert type="EventName">Name</convert>
+    </widget>
     <!-- SYSTEM INFO 2 */ -->
     <widget source="session.CurrentService" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" render="OE_RunningText" position="1042,786" size="350,45" halign="right" font="Regular; 29" zPosition="4" transparent="1" backgroundColor="background" noWrap="1" valign="center" foregroundColor="foreground">
       <convert type="OE_ServiceName">Satellite</convert>
@@ -3261,7 +3261,13 @@
     <panel name="Back_blueTitel" />
     <!-- Page Title / Widget -->
     <eLabel text="Parental control setup" position="75,61" size="550,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
-    <widget name="config" font="FHD; 30" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="220,145" size="1250,850" transparent="1" />
+    <widget name="config" font="FHD; 30" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="220,145" size="1250,820" transparent="1" />
+    <!-- /*Buttons-->
+    <eLabel backgroundColor="white" name="" position="220,980" size="1250,2" zPosition="-9" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_red.png" position="220,987" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_green.png" position="535,987" size="40,40" />
+    <widget source="key_red" render="Label" backgroundColor="OE_Background" font="Regular; 28" position="265,987" size="260,40" transparent="1" zPosition="1" />
+    <widget source="key_green" render="Label" backgroundColor="OE_Background" font="Regular; 28" position="580,987" size="260,40" transparent="1" zPosition="1" />
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
