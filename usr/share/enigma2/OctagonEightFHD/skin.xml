@@ -2117,7 +2117,7 @@
     <widget name="list" itemHeight="50" font="EL_Standard; 28" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="220,125" size="1100,900" transparent="1" zPosition="3" />
     <widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="1420,500" size="125,500" zPosition="10" />
     <widget alphatest="on" name="arrowdown" pixmap="OctagonEightFHD/skin_default/arrowdown.png" position="-150,-150" size="55,105" zPosition="11" />
-    <widget alphatest="on" name="arrowdown2" pixmap="OctagonEightFHDskin_default/arrowdown.png" position="-150,-150" size="55,105" zPosition="11" />
+    <widget alphatest="on" name="arrowdown2" pixmap="OctagonEightFHD/skin_default/arrowdown.png" position="-150,-150" size="55,105" zPosition="11" />
     <widget alphatest="on" name="arrowup" pixmap="OctagonEightFHD/skin_default/arrowup.png" position="-150,-150" size="55,105" zPosition="11" />
     <widget alphatest="on" name="arrowup2" pixmap="OctagonEightFHD/skin_default/arrowup.png" position="-150,-150" size="55,105" zPosition="11" />
     <!-- Clock -->
@@ -4508,8 +4508,16 @@
     <ePixmap alphatest="blend" pixmap="OctagonEightFHD/picon_default.png" position="1345,155" size="220,132" transparent="1" zPosition="10" />
     <!-- /*Buttons-->
     <eLabel backgroundColor="white" name="" position="345,830" size="1220,2" zPosition="-9" />
-    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_red.png" position="345,850" size="40,40" />
+    <widget source="cancelable" render="Pixmap" alphatest="blend" pixmap="OctagonEightFHD/buttons/key_red.png" position="345,850" size="40,40">
+      <convert type="ConditionalShowHide" />
+    </widget>
     <widget source="cancelable" render="FixedLabel" text="Cancel" backgroundColor="OE_Background" font="Regular; 28" halign="left" position="395,850" size="320,40" transparent="1" zPosition="1">
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="cancelable" render="Pixmap" alphatest="blend" pixmap="OctagonEightFHD/buttons/key_green.png" position="730,850" size="40,40">
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="finished" render="FixedLabel" text="OK" backgroundColor="OE_Background" font="Regular; 28" halign="left" position="780,850" size="320,40" transparent="1" zPosition="1">
       <convert type="ConditionalShowHide" />
     </widget>
     <!-- Clock -->
@@ -5005,15 +5013,12 @@
     <!-- Background -->
     <panel name="Background1" />
     <panel name="Back_blueTitel" />
-    <eLabel backgroundColor="OE_Background" position="1515,445" size="240,590" zPosition="-15" />
-    <eLabel backgroundColor="white" foregroundColor="OE_Background" name="" position="1510,440" size="250,600" zPosition="-20" />
     <ePixmap alphatest="blend" pixmap="OctagonEightFHD/open_8.png" position="1230,63" size="240,45" transparent="1" zPosition="10" />
     <!-- Page Title / Widget -->
     <eLabel text="Remote Control Type" position="95,61" size="550,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
     <widget source="Title" render="Label" font="FHD; 30" backgroundColor="OE_Background" position="220,145" size="1250,50" transparent="1" valign="center" halign="left" />
     <eLabel backgroundColor="white" name="" position="220,202" size="1250,2" zPosition="-9" />
     <widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="220,210" size="1250,750" transparent="1" />
-    <widget name="remote" alphatest="blend" backgroundColor="transparent" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="1570,500" size="125,500" zPosition="10" />
     <!-- /*Buttons-->
     <eLabel backgroundColor="white" name="" position="220,973" size="1250,2" zPosition="-9" />
     <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_red.png" position="220,987" size="40,40" />
