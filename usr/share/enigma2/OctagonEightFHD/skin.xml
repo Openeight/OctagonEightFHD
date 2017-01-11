@@ -4538,12 +4538,12 @@
     <widget name="slide" position="709,64" render="Progress" borderWidth="2" foregroundColor="dark" zPosition="4" size="680,44" backgroundColor="OE_Background" transparent="1" />
     <widget name="pused" shadowColor="black" shadowOffset="2,1" position="719,65" zPosition="5" size="200,40" font="EL_Standard; 28" backgroundColor="OE_Background" transparent="1" halign="left" />
     <widget name="pfree" shadowColor="black" shadowOffset="2,1" position="1179,65" zPosition="5" size="200,40" font="Regular; 28" backgroundColor="OE_Background" halign="right" transparent="1" />
-    <widget name="rmemvalue" position="990,140" backgroundColor="OE_Background" foregroundColor="OE_Foreground" size="220,575" zPosition="7" font="FHD; 30" itemHeight="50" halign="left" transparent="0" />
-    <widget name="rmemtext" position="705,140" backgroundColor="OE_Background" foregroundColor="OE_Foreground" size="270,575" zPosition="7" font="FHD; 30" itemHeight="50" halign="right" transparent="0" />
+    <widget name="rmemvalue" position="990,140" backgroundColor="OE_Background" foregroundColor="OE_Foreground" size="220,675" zPosition="7" font="FHD; 30" itemHeight="50" halign="left" transparent="0" />
+    <widget name="rmemtext" position="705,140" backgroundColor="OE_Background" foregroundColor="OE_Foreground" size="270,675" zPosition="7" font="FHD; 30" itemHeight="50" halign="right" transparent="0" />
     <widget name="lmemtext" position="180,140" backgroundColor="OE_Background" foregroundColor="OE_Foreground" size="270,805" zPosition="7" font="FHD; 30" itemHeight="50" halign="right" transparent="0" />
     <widget name="lmemvalue" position="465,140" backgroundColor="OE_Background" foregroundColor="OE_Foreground" size="220,805" zPosition="8" font="FHD; 30" itemHeight="50" halign="left" transparent="0" />
-    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/picon_default.png" position="center,750" size="220,132" transparent="1" zPosition="10" />
-    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/open_8.png" position="852,865" size="240,45" transparent="1" zPosition="10" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/picon_default.png" position="center,800" size="220,132" transparent="1" zPosition="10" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/open_8.png" position="852,915" size="240,45" transparent="1" zPosition="10" />
     <!-- Button - Bar -->
     <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_red.png" position="120,987" size="40,40" />
     <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_green.png" position="410,987" size="40,40" />
