@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <skin>
-  <!-- OctagonEightFHD Skin v4.20 for Octagon image, by SkinMania -->
+  <!-- OctagonEightFHD Skin v4.25 for Octagon image, by SkinMania -->
   <!-- OctagonEightFHD Skin is only for www.octagon-forum.eu -->
   <!-- Recommended to use with XPicons (220x132) -->
   <!-- You are NOT allowed to modify and redistribute OctagonEightFHD Skin and all graphics -->
@@ -353,17 +353,17 @@
       <convert type="OE_ServiceName">%s</convert>
     </widget>
     <eLabel text="SNR :" position="1605,917" size="75,32" font="EL_Standard; 23" backgroundColor="OE_Background" transparent="1" halign="left" />
-    <widget source="session.FrontendStatus" render="Label" position="1835,917" size="75,32" backgroundColor="OE_Background" transparent="1" halign="right" font="RegularBold; 25" valign="top" zPosition="3" foregroundColor="un56c856">
+    <widget source="session.FrontendStatus" render="Label" position="1815,917" size="95,32" backgroundColor="OE_Background" transparent="1" halign="right" font="RegularBold; 25" valign="top" zPosition="3" foregroundColor="un56c856">
       <convert type="FrontendInfo">SNR</convert>
     </widget>
-    <widget source="session.FrontendStatus" render="Progress" position="1690,932" size="130,8" zPosition="20" pixmap="OctagonEightFHD/my_icons/snr1.png" transparent="1" borderWidth="1" borderColor="grey">
+    <widget source="session.FrontendStatus" render="Progress" position="1690,932" size="120,8" zPosition="20" pixmap="OctagonEightFHD/my_icons/snr1.png" transparent="1" borderWidth="1" borderColor="grey">
       <convert type="FrontendInfo">SNR</convert>
     </widget>
     <eLabel text="AGC :" position="1605,949" size="75,32" font="EL_Standard; 23" backgroundColor="OE_Background" transparent="1" halign="left" />
-    <widget source="session.FrontendStatus" render="Label" position="1835,949" size="75,32" backgroundColor="OE_Background" transparent="1" halign="right" font="RegularBold; 25" valign="top" zPosition="3" foregroundColor="blue_light">
+    <widget source="session.FrontendStatus" render="Label" position="1815,949" size="95,32" backgroundColor="OE_Background" transparent="1" halign="right" font="RegularBold; 25" valign="top" zPosition="3" foregroundColor="blue_light">
       <convert type="FrontendInfo">AGC</convert>
     </widget>
-    <widget source="session.FrontendStatus" render="Progress" position="1690,964" size="130,8" zPosition="20" pixmap="OctagonEightFHD/my_icons/agc1.png" transparent="1" borderWidth="1" borderColor="grey">
+    <widget source="session.FrontendStatus" render="Progress" position="1690,964" size="120,8" zPosition="20" pixmap="OctagonEightFHD/my_icons/agc1.png" transparent="1" borderWidth="1" borderColor="grey">
       <convert type="FrontendInfo">AGC</convert>
     </widget>
     <widget backgroundColor="OE_Background" font="Regular; 28" foregroundColor="OE_Foreground" halign="right" position="668,1002" render="Label" size="72,35" source="session.CurrentService" transparent="1" valign="top" zPosition="1">
@@ -523,17 +523,17 @@
       <convert type="OE_ServiceName">%s</convert>
     </widget>
     <eLabel text="SNR :" position="1605,917" size="75,32" font="EL_Standard; 23" backgroundColor="OE_Background" transparent="1" halign="left" />
-    <widget source="session.FrontendStatus" render="Label" position="1835,917" size="75,32" backgroundColor="OE_Background" transparent="1" halign="right" font="RegularBold; 25" valign="top" zPosition="3" foregroundColor="un56c856">
+    <widget source="session.FrontendStatus" render="Label" position="1815,917" size="95,32" backgroundColor="OE_Background" transparent="1" halign="right" font="RegularBold; 25" valign="top" zPosition="3" foregroundColor="un56c856">
       <convert type="FrontendInfo">SNR</convert>
     </widget>
-    <widget source="session.FrontendStatus" render="Progress" position="1690,932" size="130,8" zPosition="20" pixmap="OctagonEightFHD/my_icons/snr1.png" transparent="1" borderWidth="1" borderColor="grey">
+    <widget source="session.FrontendStatus" render="Progress" position="1690,932" size="120,8" zPosition="20" pixmap="OctagonEightFHD/my_icons/snr1.png" transparent="1" borderWidth="1" borderColor="grey">
       <convert type="FrontendInfo">SNR</convert>
     </widget>
     <eLabel text="AGC :" position="1605,949" size="75,32" font="EL_Standard; 23" backgroundColor="OE_Background" transparent="1" halign="left" />
-    <widget source="session.FrontendStatus" render="Label" position="1835,949" size="75,32" backgroundColor="OE_Background" transparent="1" halign="right" font="RegularBold; 25" valign="top" zPosition="3" foregroundColor="blue_light">
+    <widget source="session.FrontendStatus" render="Label" position="1815,949" size="95,32" backgroundColor="OE_Background" transparent="1" halign="right" font="RegularBold; 25" valign="top" zPosition="3" foregroundColor="blue_light">
       <convert type="FrontendInfo">AGC</convert>
     </widget>
-    <widget source="session.FrontendStatus" render="Progress" position="1690,964" size="130,8" zPosition="20" pixmap="OctagonEightFHD/my_icons/agc1.png" transparent="1" borderWidth="1" borderColor="grey">
+    <widget source="session.FrontendStatus" render="Progress" position="1690,964" size="120,8" zPosition="20" pixmap="OctagonEightFHD/my_icons/agc1.png" transparent="1" borderWidth="1" borderColor="grey">
       <convert type="FrontendInfo">AGC</convert>
     </widget>
     <widget backgroundColor="OE_Background" font="Regular; 28" foregroundColor="OE_Foreground" halign="right" position="668,1002" render="Label" size="72,35" source="session.CurrentService" transparent="1" valign="top" zPosition="1">
