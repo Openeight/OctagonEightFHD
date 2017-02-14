@@ -2193,4 +2193,122 @@
     <panel name="Clock1" />
   </screen>
 
+  <!-- Greek Net Radio -->
+
+  <screen name="GreekMenuscrn" title="Greek NetRadio" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <!-- Background -->
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="990,990" zPosition="-15" />
+    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="630,60" zPosition="-12" />
+    <eLabel backgroundColor="white" position="200,center" size="1000,1000" zPosition="-20" />
+    <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="52,57" size="625,56" zPosition="-11" valign="center" />
+    <!-- Page Title / Widget -->
+    <ePixmap alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GreekNetRadio/icons/musique.png" position="215,145" size="40,40" zPosition="-1" />
+    <ePixmap alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GreekNetRadio/icons/musique.png" position="215,195" size="40,40" zPosition="-1" />
+    <ePixmap alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GreekNetRadio/icons/musique.png" position="215,245" size="40,40" zPosition="-1" />
+    <ePixmap alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GreekNetRadio/icons/musique.png" position="215,295" size="40,40" zPosition="-1" />
+    <ePixmap alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GreekNetRadio/icons/downloads.png" position="215,345" size="40,40" zPosition="-1" />
+    <ePixmap alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GreekNetRadio/icons/about.png" position="215,395" size="40,40" zPosition="-1" />
+    <eLabel text="Greek NetRadio" position="95,61" size="550,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
+    <widget name="menu" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="270,135" size="900,800" transparent="1" />
+    <ePixmap alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GreekNetRadio/icons/radio.png" position="560,700" size="256,256" zPosition="-1" />
+    <!-- Clock -->
+    <panel name="Clock1" />
+  </screen>
+  <screen name="Favscreen" title="Greek NetRadio" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <!-- Background -->
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="990,990" zPosition="-15" />
+    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="630,60" zPosition="-12" />
+    <eLabel backgroundColor="white" position="200,center" size="1000,1000" zPosition="-20" />
+    <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="52,57" size="625,56" zPosition="-11" valign="center" />
+    <!-- Page Title / Widget -->
+    <eLabel text="Greek NetRadio" position="95,61" size="550,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
+    <widget name="stationmenu" itemHeight="50" font="FHD; 32" scrollbarMode="showNever" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="220,135" size="950,800" transparent="1" />
+    <!-- /*Buttons-->
+    <eLabel backgroundColor="white" name="" position="220,973" size="960,2" zPosition="-9" />
+    <widget name="ButtonGeen" alphatest="blend" pixmap="OctagonEightFHD/buttons/key_green.png" position="220,987" size="40,40" />
+    <widget name="ButtonGeentext" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="265,987" size="920,40" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <panel name="Clock1" />
+  </screen>
+  <screen name="Playscreen" title="Greek NetRadio" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+  <!-- Background -->
+  <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="990,990" zPosition="-15" />
+  <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="630,60" zPosition="-12" />
+  <eLabel backgroundColor="white" position="200,center" size="1000,1000" zPosition="-20" />
+  <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="52,57" size="625,56" zPosition="-11" valign="center" />
+  <!-- Page Title / Widget -->
+  <eLabel text="Greek NetRadio" position="95,61" size="550,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
+  <widget name="station" position="220,135" zPosition="1" size="950,50" font="RegularBold; 32" transparent="1" backgroundColor="OE_Background" />
+  <widget name="titel" position="220,265" zPosition="1" size="950,150" font="RegularBold; 30" transparent="1" backgroundColor="OE_Background" />
+  <ePixmap position="220,207" zPosition="4" size="40,40" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GreekNetRadio/icons/arrows.png" transparent="1" alphatest="blend" />
+  <widget name="leagueNumberWidget" position="270,200" size="200,50" transparent="1" zPosition="4" halign="left" font="RegularBold; 34" backgroundColor="OE_Background" />
+  <ePixmap alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GreekNetRadio/icons/radio.png" position="560,700" size="256,256" zPosition="-1" />
+  <!-- /*Buttons-->
+  <eLabel backgroundColor="white" name="" position="220,973" size="960,2" zPosition="-9" />
+  <widget name="ButtonGeen" alphatest="blend" pixmap="OctagonEightFHD/buttons/key_green.png" position="220,987" size="40,40" />
+  <widget name="ButtonGeentext" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="265,987" size="920,40" transparent="1" zPosition="1" />
+  <!-- Clock -->
+  <panel name="Clock1" />
+</screen>
+  <screen name="GreekStationsScreen" title="Greek NetRadio" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <!-- Background -->
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="990,990" zPosition="-15" />
+    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="630,60" zPosition="-12" />
+    <eLabel backgroundColor="white" position="200,center" size="1000,1000" zPosition="-20" />
+    <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="52,57" size="625,56" zPosition="-11" valign="center" />
+    <!-- Page Title / Widget -->
+    <eLabel text="Greek NetRadio" position="95,61" size="550,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
+    <widget name="stationmenu" itemHeight="50" font="FHD; 32" scrollbarMode="showNever" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="220,135" size="950,800" transparent="1" />
+    <!-- /*Buttons-->
+    <eLabel backgroundColor="white" name="" position="220,973" size="960,2" zPosition="-9" />
+    <widget name="ButtonYellow" alphatest="blend" pixmap="OctagonEightFHD/buttons/key_yellow.png" position="220,987" size="40,40" />
+    <widget name="ButtonYellowtext" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="265,987" size="920,40" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <panel name="Clock1" />
+  </screen>
+  <screen name="WebStationsScreen" title="Greek NetRadio" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <!-- Background -->
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="990,990" zPosition="-15" />
+    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="630,60" zPosition="-12" />
+    <eLabel backgroundColor="white" position="200,center" size="1000,1000" zPosition="-20" />
+    <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="52,57" size="625,56" zPosition="-11" valign="center" />
+    <!-- Page Title / Widget -->
+    <eLabel text="Greek NetRadio" position="95,61" size="550,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
+    <widget name="stationmenu" itemHeight="50" font="FHD; 32" scrollbarMode="showNever" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="220,135" size="950,800" transparent="1" />
+    <!-- /*Buttons-->
+    <eLabel backgroundColor="white" name="" position="220,973" size="960,2" zPosition="-9" />
+    <widget name="ButtonYellow" alphatest="blend" pixmap="OctagonEightFHD/buttons/key_yellow.png" position="220,987" size="40,40" />
+    <widget name="ButtonYellowtext" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="265,987" size="920,40" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <panel name="Clock1" />
+  </screen>
+  <screen name="InterStationsScreen" title="Greek NetRadio" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <!-- Background -->
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="990,990" zPosition="-15" />
+    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="630,60" zPosition="-12" />
+    <eLabel backgroundColor="white" position="200,center" size="1000,1000" zPosition="-20" />
+    <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="52,57" size="625,56" zPosition="-11" valign="center" />
+    <!-- Page Title / Widget -->
+    <eLabel text="Greek NetRadio" position="95,61" size="550,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
+    <widget name="stationmenu" itemHeight="50" font="FHD; 32" scrollbarMode="showNever" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="220,135" size="950,800" transparent="1" />
+    <!-- /*Buttons-->
+    <eLabel backgroundColor="white" name="" position="220,973" size="960,2" zPosition="-9" />
+    <widget name="ButtonYellow" alphatest="blend" pixmap="OctagonEightFHD/buttons/key_yellow.png" position="220,987" size="40,40" />
+    <widget name="ButtonYellowtext" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="265,987" size="920,40" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <panel name="Clock1" />
+  </screen>
+  <screen name="classicAboutScreen" title="Greek NetRadio" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <!-- Background -->
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="990,990" zPosition="-15" />
+    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="630,60" zPosition="-12" />
+    <eLabel backgroundColor="white" position="200,center" size="1000,1000" zPosition="-20" />
+    <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="52,57" size="625,56" zPosition="-11" valign="center" />
+    <!-- Page Title / Widget -->
+    <eLabel text="Greek NetRadio" position="95,61" size="550,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
+    <widget name="text" font="FHD; 32" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="220,135" size="950,850" transparent="1" />
+    <!-- Clock -->
+    <panel name="Clock1" />
+  </screen>
+
 </skin>
