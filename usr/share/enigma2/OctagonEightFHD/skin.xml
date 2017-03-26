@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <skin>
-  <!-- OctagonEightFHD Skin v5.00 for Octagon image, by SkinMania -->
+  <!-- OctagonEightFHD Skin v5.1a for Octagon image, by SkinMania -->
   <!-- OctagonEightFHD Skin is only for www.octagon-forum.eu -->
   <!-- Recommended to use with XPicons (220x132) -->
   <!-- You are NOT allowed to modify and redistribute OctagonEightFHD Skin and all graphics -->
@@ -1078,14 +1078,43 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
-  <screen name="AutoVideoModeLabel" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+  <screen name="AutoResSetupMenu" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <!-- Background -->
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
+    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="600,60" zPosition="-12" />
+    <eLabel backgroundColor="white" position="200,center" size="1300,1000" zPosition="-20" />
+    <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="52,57" size="596,56" zPosition="-11" valign="center" />
+    <!-- Page Title / Widget -->
+    <widget source="Title" render="Label" position="95,61" size="550,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
+    <widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="220,135" size="1250,800" transparent="1" />
+    <!-- /*Buttons-->
+    <eLabel backgroundColor="white" name="" position="220,980" size="1250,2" zPosition="-9" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_red.png" position="220,987" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_green.png" position="535,987" size="40,40" />
+    <widget source="key_red" render="Label" backgroundColor="OE_Background" font="Regular; 28" position="265,987" size="260,40" transparent="1" zPosition="1" />
+    <widget source="key_green" render="Label" backgroundColor="OE_Background" font="Regular; 28" position="580,987" size="260,40" transparent="1" zPosition="1" />
+    <widget name="key_red" backgroundColor="OE_Background" font="Regular; 28" position="265,987" size="260,40" transparent="1" zPosition="1" />
+    <widget name="key_green" backgroundColor="OE_Background" font="Regular; 28" position="580,987" size="260,40" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <panel name="Clock1" />
+  </screen>
+  <screen name="AutoVideoModeLabel" title="" backgroundColor="transparent" flags="wfNoBorder" position="50,50" size="504,96" zPosition="8">
     <!-- Back -->
-    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="center,42" size="590,95" zPosition="-15" />
-    <eLabel backgroundColor="white" position="center,40" size="594,99" zPosition="-20" />
-    <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="center,42" size="590,45" zPosition="-11" valign="center" />
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="2,49" size="500,45" zPosition="-15" />
+    <eLabel backgroundColor="white" position="0,0" size="504,96" zPosition="-20" />
+    <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="2,2" size="500,45" zPosition="-11" valign="center" />
     <!-- Widget -->
-    <widget name="content" position="center,42" size="590,45" font="RegularBold; 28" backgroundColor="dark" transparent="1" valign="center" halign="center" />
-    <widget name="restxt" position="center,90" size="590,45" font="RegularBold; 28" backgroundColor="OE_Background" transparent="1" valign="center" halign="center" />
+    <widget name="content" position="2,2" size="500,45" font="RegularBold; 28" backgroundColor="dark" transparent="1" valign="center" halign="center" />
+    <widget name="restxt" position="2,49" size="500,45" font="RegularBold; 28" backgroundColor="OE_Background" transparent="1" valign="center" halign="center" />
+  </screen>
+  <screen name="ResolutionLabel" title="" backgroundColor="transparent" flags="wfNoBorder" position="50,50" size="504,96" zPosition="8">
+    <!-- Back -->
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="2,49" size="500,45" zPosition="-15" />
+    <eLabel backgroundColor="white" position="0,0" size="504,96" zPosition="-20" />
+    <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="2,2" size="500,45" zPosition="-11" valign="center" />
+    <!-- Widget -->
+    <widget name="content" position="2,2" size="500,45" font="RegularBold; 28" backgroundColor="dark" transparent="1" valign="center" halign="center" />
+    <widget name="restxt" position="2,49" size="500,45" font="RegularBold; 28" backgroundColor="OE_Background" transparent="1" valign="center" halign="center" />
   </screen>
   <screen name="BackupScreen" title="Backup is running" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <!-- Background -->
@@ -3485,11 +3514,11 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
-  <screen name="PVRState" backgroundColor="transparent" flags="wfNoBorder" zPosition="20" position="center,center" size="1920,1080">
-    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="100,105" size="200,70" zPosition="-12" />
-    <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="102,107" size="196,66" zPosition="-11" valign="center" />
+  <screen name="PVRState" backgroundColor="transparent" flags="wfNoBorder" position="100,105" size="200,50" zPosition="8">
+    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="0,0" size="200,50" zPosition="-12" />
+    <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="2,2" size="196,46" zPosition="-11" valign="center" />
     <!-- Widget -->
-    <widget name="state" position="102,111" size="196,60" font="RegularBold; 32" backgroundColor="dark" transparent="1" valign="center" halign="center" text="&gt;&gt; 256" />
+    <widget name="state" position="0,0" size="200,50" font="RegularBold; 34" backgroundColor="dark" transparent="1" valign="center" halign="center" text="&gt;&gt; 256" />
   </screen>
   <screen name="QuickSubtitlesConfigMenu" title="Subtitle settings" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <!-- Back -->
@@ -4051,11 +4080,11 @@
     </widget>
     <eLabel backgroundColor="OE_Accent1" foregroundColor="OE_Accent1" name="new eLabel" position="center,150" size="780,2" zPosition="-1" />
   </screen>
-  <screen name="TimeshiftLive" backgroundColor="transparent" flags="wfNoBorder" zPosition="20" position="center,center" size="1920,1080">
-    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="100,105" size="300,60" zPosition="-12" />
-    <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="102,107" size="296,56" zPosition="-11" valign="center" />
+  <screen name="TimeshiftLive" backgroundColor="transparent" flags="wfNoBorder" position="50,50" size="300,60" zPosition="8">
+    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="0,0" size="300,60" zPosition="-12" />
+    <eLabel backgroundColor="un800000" foregroundColor="OE_Background" name="" position="2,2" size="296,56" zPosition="-11" valign="center" />
     <!-- Widget -->
-    <eLabel text="Timeshift Live" position="110,111" size="280,50" font="RegularBold; 32" backgroundColor="dark" transparent="1" valign="center" halign="center" />
+    <eLabel text="Timeshift Live" position="10,5" size="280,50" font="RegularBold; 32" backgroundColor="un800000" transparent="1" valign="center" halign="center" />
   </screen>
   <screen name="TranslationInfo" title="" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
     <!-- Background -->
@@ -4292,14 +4321,14 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
-  <screen name="VideoMode" title="VideoMode" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-    <!-- Background -->
-    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="52,42" size="590,95" zPosition="-15" />
-    <eLabel backgroundColor="white" position="50,40" size="594,99" zPosition="-20" />
-    <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="52,42" size="590,45" zPosition="-11" valign="center" />
-    <!-- Page Title / Widget -->
-    <eLabel text="VideoMode" position="52,42" size="590,45" font="RegularBold; 28" backgroundColor="dark" transparent="1" valign="center" halign="center" />
-    <widget name="videomode" position="52,90" size="590,45" font="RegularBold; 28" backgroundColor="OE_Background" transparent="1" valign="center" halign="center" />
+  <screen name="VideoMode" title="VideoMode" backgroundColor="transparent" flags="wfNoBorder" position="50,50" size="504,96" zPosition="8">
+    <!-- Back -->
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="2,49" size="500,45" zPosition="-15" />
+    <eLabel backgroundColor="white" position="0,0" size="504,96" zPosition="-20" />
+    <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="2,2" size="500,45" zPosition="-11" valign="center" />
+    <!-- Widget -->
+    <eLabel text="VideoMode" position="2,2" size="500,45" font="RegularBold; 28" backgroundColor="dark" transparent="1" valign="center" halign="center" />
+    <widget name="videomode" position="2,49" size="500,45" font="RegularBold; 28" backgroundColor="OE_Background" transparent="1" valign="center" halign="center" />
   </screen>
   <screen name="CleanupWizard" title="Cleanup Wizard" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
     <!-- Background -->
