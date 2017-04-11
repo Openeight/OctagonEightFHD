@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <skin>
-  <!-- OctagonEightFHD Skin v5.1a for Octagon image, by SkinMania -->
+  <!-- OctagonEightFHD Skin v5.20 for Octagon image, by SkinMania -->
   <!-- OctagonEightFHD Skin is only for www.octagon-forum.eu -->
   <!-- Recommended to use with XPicons (220x132) -->
   <!-- You are NOT allowed to modify and redistribute OctagonEightFHD Skin and all graphics -->
@@ -637,6 +637,9 @@
                    }
 		</convert>
     </widget>
+    <!-- Button -->
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_blue.png" position="710,85" size="40,40" />
+    <eLabel text="MenuSort" backgroundColor="OE_Background" font="Regular; 28" halign="left" position="760,85" size="140,40" name="key_blue" transparent="1" zPosition="1" />
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
@@ -656,6 +659,9 @@
                    }
 		</convert>
     </widget>
+    <!-- Button -->
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_blue.png" position="710,85" size="40,40" />
+    <eLabel text="MenuSort" backgroundColor="OE_Background" font="Regular; 28" halign="left" position="760,85" size="140,40" name="key_blue" transparent="1" zPosition="1" />
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
@@ -675,6 +681,9 @@
                    }
 		</convert>
     </widget>
+    <!-- Button -->
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_blue.png" position="710,85" size="40,40" />
+    <eLabel text="MenuSort" backgroundColor="OE_Background" font="Regular; 28" halign="left" position="760,85" size="140,40" name="key_blue" transparent="1" zPosition="1" />
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
@@ -694,6 +703,9 @@
                    }
 		</convert>
     </widget>
+    <!-- Button -->
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_blue.png" position="710,85" size="40,40" />
+    <eLabel text="MenuSort" backgroundColor="OE_Background" font="Regular; 28" halign="left" position="760,85" size="140,40" name="key_blue" transparent="1" zPosition="1" />
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
@@ -713,6 +725,9 @@
                    }
 		</convert>
     </widget>
+    <!-- Button -->
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_blue.png" position="710,85" size="40,40" />
+    <eLabel text="MenuSort" backgroundColor="OE_Background" font="Regular; 28" halign="left" position="760,85" size="140,40" name="key_blue" transparent="1" zPosition="1" />
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
@@ -732,6 +747,9 @@
                    }
 		</convert>
     </widget>
+    <!-- Button -->
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_blue.png" position="710,85" size="40,40" />
+    <eLabel text="MenuSort" backgroundColor="OE_Background" font="Regular; 28" halign="left" position="760,85" size="140,40" name="key_blue" transparent="1" zPosition="1" />
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
@@ -751,6 +769,9 @@
                    }
 		</convert>
     </widget>
+    <!-- Button -->
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_blue.png" position="710,85" size="40,40" />
+    <eLabel text="MenuSort" backgroundColor="OE_Background" font="Regular; 28" halign="left" position="760,85" size="140,40" name="key_blue" transparent="1" zPosition="1" />
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
@@ -770,6 +791,9 @@
                    }
 		</convert>
     </widget>
+    <!-- Button -->
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_blue.png" position="710,85" size="40,40" />
+    <eLabel text="MenuSort" backgroundColor="OE_Background" font="Regular; 28" halign="left" position="760,85" size="140,40" name="key_blue" transparent="1" zPosition="1" />
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
@@ -789,6 +813,9 @@
                    }
 		</convert>
     </widget>
+    <!-- Button -->
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_blue.png" position="710,85" size="40,40" />
+    <eLabel text="MenuSort" backgroundColor="OE_Background" font="Regular; 28" halign="left" position="760,85" size="140,40" name="key_blue" transparent="1" zPosition="1" />
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
@@ -1164,13 +1191,13 @@
   </screen>
   <screen name="SelectBouquet" title="SelectBouquet" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <!-- Background -->
-    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
-    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="1200,60" zPosition="-12" />
-    <eLabel backgroundColor="white" position="200,center" size="1300,1000" zPosition="-20" />
-    <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="52,57" size="1196,56" zPosition="-11" valign="center" />
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="990,990" zPosition="-15" />
+    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="900,60" zPosition="-12" />
+    <eLabel backgroundColor="white" position="200,center" size="1000,1000" zPosition="-20" />
+    <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="52,57" size="896,56" zPosition="-11" valign="center" />
     <!-- Page Title / Widget -->
-    <widget render="Label" source="Title" position="95,61" size="1150,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
-    <widget name="menu" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="220,135" size="1250,850" transparent="1" />
+    <widget render="Label" source="Title" position="95,61" size="850,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
+    <widget name="menu" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="220,125" size="950,900" transparent="1" />
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
@@ -2292,8 +2319,13 @@
     <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="52,57" size="896,56" zPosition="-11" valign="center" />
     <!-- Page Title / Widget -->
     <widget render="Label" source="Title" position="95,61" size="850,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
-    <widget source="menu" render="Listbox" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="220,135" size="1250,800" transparent="1">
-      <convert type="StringList" />
+    <widget source="menu" render="Listbox" scrollbarMode="showNever" enableWrapAround="1" position="235,150" size="716,792" transparent="1">
+      <convert type="TemplatedMultiContent">
+                   {"template": [ MultiContentEntryText(pos = (15, 5), size = (716, 60), flags = RT_HALIGN_LEFT, text = 0) ], 
+                   "fonts": [gFont("FHD", 42)], 
+                   "itemHeight": 72
+                   }
+		</convert>
     </widget>
     <eLabel text="Move" position="1193,66" size="240,50" font="Arial; 36" backgroundColor="OE_Background" transparent="1" halign="center" />
     <ePixmap alphatest="blend" pixmap="OctagonEightFHD/left.png" position="1157,68" size="36,36" transparent="1" zPosition="10" />
