@@ -6,148 +6,7 @@
   
   
   
-  <!-- EnhancedMovieCenter -->
-  <screen backgroundColor="transparent" flags="wfNoBorder" name="EnhancedMovieCenterMenu" title="EnhancedMovieCenterMenu" position="center,center" size="1920,1080">
-    <!-- Background -->
-    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1140,990" zPosition="-15" />
-    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="900,60" zPosition="-12" />
-    <eLabel backgroundColor="white" position="200,center" size="1150,1000" zPosition="-20" />
-    <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="52,57" size="896,56" zPosition="-11" valign="center" />
-    <!-- Widget -->
-    <widget render="Label" source="Title" position="65,61" size="875,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
-    <widget name="config" itemHeight="50" font="EL_Standard; 28" backgroundColor="OE_Background" enableWrapAround="1" position="220,130" scrollbarMode="showOnDemand" size="1100,650" transparent="1" />
-    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="new eLabel" position="220,795" size="1100,2" zPosition="-1" />
-    <widget render="Label" source="help" font="EL_Standard; 28" backgroundColor="OE_Background" halign="left" position="220,810" size="1100,150" transparent="1" />
-    <!-- /*Buttons-->
-    <eLabel backgroundColor="white" name="" position="220,975" size="1100,2" zPosition="-9" />
-    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_red.png" position="220,987" size="40,40" />
-    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_green.png" position="490,987" size="40,40" />
-    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_blue.png" position="760,987" size="40,40" />
-    <widget backgroundColor="OE_Background" font="Regular; 28" halign="left" position="265,987" size="220,40" name="key_red" transparent="1" zPosition="1" />
-    <widget backgroundColor="OE_Background" font="Regular; 28" halign="left" position="535,987" size="220,40" name="key_green" transparent="1" zPosition="1" />
-    <widget backgroundColor="OE_Background" font="Regular; 28" halign="left" position="805,987" size="220,40" name="key_blue" transparent="1" zPosition="1" />
-    <!-- Clock -->
-    <panel name="Clock1" />
-  </screen>
-  
-  <screen name="EMCSelection" title="Enhanced Movie Center" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
-    <!-- Background -->
-    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="center,center" size="1890,1050" zPosition="-50" />
-    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="0,51" size="1250,60" zPosition="-12" />
-    <eLabel backgroundColor="white" position="10,center" size="1900,1060" zPosition="-60" />
-    <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="2,53" size="1246,56" zPosition="-11" valign="center" />
-    <eLabel backgroundColor="white" name="" position="50,990" size="1200,2" zPosition="-9" />
-    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="1270,140" size="620,50" zPosition="-12" />
-    <eLabel backgroundColor="OE_Background" name="" position="1272,142" size="616,46" zPosition="-11" />
-    <eLabel backgroundColor="white" foregroundColor="OE_Background" name="" position="1270,195" size="620,850" zPosition="-20" />
-    <eLabel backgroundColor="OE_Background" position="1272,197" size="616,846" zPosition="-15" />
-    <!-- Seitentitel -->
-    <widget backgroundColor="OE_Background3" font="Regular; 32" position="10,57" render="Label" size="1230,50" source="Title" transparent="1" />
-    <!-- Content -->
-    <widget name="list" itemHeight="45" BackColorSel="OE_Selection" CoolBarHPos="10" CoolBarPos="850" CoolBarSize="55,10" CoolBarSizeSa="110,16" CoolDateColor="0" CoolDateFont="Regular;28" CoolDatePos="1020" CoolDateWidth="150" CoolFolderSize="1200" CoolFont="Regular;28" CoolHighlightColor="0" CoolMoviePos="35" CoolMovieSize="1245" CoolProgressPos="550" CoolSelectFont="Regular;28" CoolTitleColor="0" DefaultColor="OE_Foreground" FinishedColor="OE_Accent1" RecordingColor="OE_Red" UnwatchedColor="OE_Foreground" WatchingColor="OE_Green" backgroundColor="OE_Background" foregroundColorSelected="OE_Foreground" position="50,135" scrollbarMode="showNever" size="1200,850" transparent="1" />
-    <widget alphatest="on" name="Cover" position="1279,731" size="355,305" zPosition="4" />
-    <widget source="Service" render="OE_RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" backgroundColor="OE_Background" font="Regular; 28" foregroundColor="OE_Foreground" halign="left" position="1280,145" size="600,40" transparent="1" valign="center">
-      <convert type="EMCEventName">Name</convert>
-    </widget>
-    <widget backgroundColor="OE_Background" font="FHD; 30" foregroundColor="OE_Foreground" halign="left" position="1280,205" render="Label" size="90,45" source="Service" transparent="1" text="20:00">
-      <convert type="EMCServiceTime">StartTime</convert>
-      <convert type="EMCClockToText">Format:%H:%M </convert>
-    </widget>
-    <widget backgroundColor="OE_Background" font="FHD; 30" foregroundColor="OE_Foreground" halign="right" position="1370,205" render="Label" size="90,45" source="Service" transparent="1" text="22:59">
-      <convert type="EMCServiceTime">EndTime</convert>
-      <convert type="EMCClockToText">Format:%H:%M </convert>
-    </widget>
-    <widget backgroundColor="OE_Background" font="FHD; 30" foregroundColor="OE_Foreground" halign="right" position="1460,205" render="Label" size="150,45" source="Service" transparent="1" text="180 min.">
-      <convert type="EMCServiceTime">Duration</convert>
-      <convert type="EMCClockToText">InMinutes</convert>
-    </widget>
-    <widget backgroundColor="OE_Background" font="FHD; 30" foregroundColor="OE_Foreground" halign="right" position="1630,205" render="Label" size="250,45" source="Service" transparent="1" text="10000 MB">
-      <convert type="EMCMovieInfo">FileSize</convert>
-    </widget>
-    <widget backgroundColor="OE_Background" font="Regular; 28" foregroundColor="OE_Foreground" halign="center" position="1280,345" render="Label" size="600,380" source="Service" transparent="1" valign="top">
-      <convert type="EMCEventName">ExtendedDescription</convert>
-    </widget>
-    <ePixmap name="new ePixmap" alphatest="blend" pixmap="OctagonEightFHD/mmp/media_player.png" position="1640,790" size="200,200" transparent="1" />
-    <widget backgroundColor="OE_Background" font="FHD; 30" foregroundColor="OE_Foreground" halign="center" position="1280,255" render="Label" size="600,45" source="Service" transparent="1">
-      <convert type="EMCServiceTime">StartTime</convert>
-      <convert type="EMCClockToText">Date</convert>
-    </widget>
-    <widget backgroundColor="OE_Background" font="FHD; 30" foregroundColor="OE_Foreground" halign="center" position="1280,300" render="Label" size="630,45" source="Service" transparent="1">
-      <convert type="EMCMovieInfo">RecordServiceName</convert>
-    </widget>
-    <widget backgroundColor="OE_Background" font="Regular;32" foregroundColor="OE_Foreground" halign="center" name="wait" position="center,580" size="1920,50" valign="center" zPosition="1" />
-    <!-- Button -->
-    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_red.png" position="50,1007" size="40,40" />
-    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_green.png" position="315,1007" size="40,40" />
-    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_yellow.png" position="590,1007" size="40,40" />
-    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_blue.png" position="870,1008" size="40,40" />
-    <widget backgroundColor="OE_Background" font="Regular; 28" halign="left" position="100,1007" size="210,40" name="key_red" transparent="1" zPosition="1" />
-    <widget backgroundColor="OE_Background" font="Regular; 28" halign="left" position="365,1007" size="220,40" name="key_green" transparent="1" zPosition="1" />
-    <widget backgroundColor="OE_Background" font="Regular; 28" halign="left" position="640,1007" size="220,40" name="key_yellow" transparent="1" zPosition="1" />
-    <widget backgroundColor="OE_Background" font="Regular; 28" halign="left" position="915,1008" size="220,40" name="key_blue" transparent="1" zPosition="1" />
-    <ePixmap name="new ePixmap" pixmap="OctagonEightFHD/buttons/key_menu.png" position="1185,1006" size="64,43" alphatest="blend" />
-    <!-- Clock -->
-    <panel name="Clock1" />
-  </screen>
-  
-  <screen backgroundColor="transparent" flags="wfNoBorder" name="EMCMediaCenter" position="0,0" size="1920,1080" title="InfoBar">
-    <!-- Template -->
-    <eLabel backgroundColor="white" name="" position="0,905" size="1620,140" zPosition="-20" />
-    <eLabel backgroundColor="OE_Background" name="InfoBar" position="5,910" size="1610,130" zPosition="-11" />
-    <eLabel backgroundColor="white" name="" position="1625,905" size="295,140" zPosition="-20" />
-    <eLabel backgroundColor="OE_Background" name="InfoBar" position="1630,910" size="285,130" zPosition="-11" />
-    <!-- Widget -->
-    <widget alphatest="blend" pixmap="OctagonEightFHD/my_icons/hd_on.png" position="1669,967" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="2">
-      <convert type="ServiceInfo">VideoWidth</convert>
-      <convert type="ValueRange">721,1980</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/my_icons/hd_off.png" position="1669,967" size="63,32" zPosition="1" />
-    <widget alphatest="blend" pixmap="OctagonEightFHD/my_icons/format_on.png" position="1741,967" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="2">
-      <convert type="ServiceInfo">IsWidescreen</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/my_icons/format_off.png" position="1741,967" size="63,32" zPosition="1" />
-    <widget alphatest="blend" pixmap="OctagonEightFHD/my_icons/dolby_on.png" position="1813,967" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="2">
-      <convert type="ServiceInfo">IsMultichannel</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/my_icons/dolby_off.png" position="1813,967" size="63,32" zPosition="1" />
-    <widget alphatest="blend" pixmap="OctagonEightFHD/my_icons/rec_on.png" position="1548,914" render="Pixmap" size="63,32" source="session.RecordState" zPosition="2">
-      <convert type="ConditionalShowHide">Blink</convert>
-    </widget>
-    <widget backgroundColor="OE_Background" font="Regular; 28" foregroundColor="OE_Foreground" halign="right" position="1684,925" render="Label" size="75,32" source="session.CurrentService" transparent="1" valign="center">
-      <convert type="ServiceInfo">VideoWidth</convert>
-    </widget>
-    <eLabel backgroundColor="OE_Background" font="Regular; 26" foregroundColor="OE_Foreground" halign="center" position="1759,925" size="26,32" text="x" transparent="1" valign="center" />
-    <widget backgroundColor="OE_Background" font="Regular; 28" foregroundColor="OE_Foreground" halign="left" position="1785,925" render="Label" size="75,32" source="session.CurrentService" transparent="1" valign="center">
-      <convert type="ServiceInfo">VideoHeight</convert>
-    </widget>
-    <!-- Icons -->
-    <widget backgroundColor="OE_Background" font="FHD; 38" foregroundColor="OE_Foreground" halign="center" position="1455,947" render="Label" size="160,65" source="Service" transparent="1" valign="center" text="02:59:00">
-      <convert type="EMCServicePosition">Length</convert>
-    </widget>
-    <widget backgroundColor="OE_Background" font="FHD; 36" foregroundColor="OE_Foreground" noWrap="1" position="170,913" render="Label" size="1125,60" source="session.CurrentService" transparent="1" valign="center" halign="center">
-      <convert type="ServiceName">Name</convert>
-    </widget>
-    <widget backgroundColor="OE_Background" font="Regular; 30" foregroundColor="OE_Foreground" halign="left" position="45,924" render="Label" shadowColor="OE_Background" shadowOffset="-1,-1" size="125,42" source="Service" transparent="1" valign="center">
-      <convert type="EMCServicePosition">Position</convert>
-    </widget>
-    <widget backgroundColor="OE_Background" font="Regular; 30" foregroundColor="OE_Foreground" halign="right" position="1295,924" render="Label" size="125,42" source="Service" transparent="1" valign="center">
-      <convert type="EMCServicePosition">Remaining,Negate</convert>
-    </widget>
-    <eLabel backgroundColor="OE_Accent1" foregroundColor="OE_Accent1" name="new eLabel" position="45,980" size="1375,2" zPosition="-1" />
-    <widget pixmap="OctagonEightFHD/colors/000F6EB2.png" position="45,978" render="EMCPositionGauge" size="1375,8" source="Service" transparent="1" zPosition="6">
-      <convert type="EMCServicePosition">Gauge</convert>
-    </widget>
-    <widget pointer="OctagonEightFHD/extensions/CoolPointer.png:1600,0" position="45,979" render="EMCPositionGauge" size="1375,6" source="Service" transparent="1" zPosition="5">
-      <convert type="EMCServicePosition">Position</convert>
-    </widget>
-    <widget backgroundColor="OE_Background" font="Regular;32" foregroundColor="OE_Accent2" halign="right" name="chapterLabel" position="170,992" size="555,42" transparent="1" />
-    <widget backgroundColor="OE_Background" font="Regular;32" foregroundColor="OE_Accent2" halign="left" name="audioLabel" position="740,992" size="555,42" transparent="1" zPosition="3" />
-    <!-- Clock -->
-    <panel name="Clock1" />
-  </screen>
+
 
   <!-- AutoBouquetsMaker -->
 
@@ -171,6 +30,7 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+
   <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoBouquetsMaker_ProvidersSetup" position="center,center" size="1920,1080" title="">
     <!-- Background -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
@@ -191,6 +51,7 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+
   <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoBouquetsMaker_Menu" position="center,center" size="1920,1080" title="">
     <!-- Background -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
@@ -212,6 +73,7 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+
   <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoBouquetsMaker_Ordering" position="center,center" size="1920,1080" title="">
     <!-- Background -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
@@ -234,6 +96,7 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+
   <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoBouquetsMaker_Log" position="center,center" size="1920,1080" title="">
     <!-- Background -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
@@ -246,6 +109,7 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+
   <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoBouquetsMaker_About" position="center,center" size="1920,1080" title="">
     <!-- Background -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
@@ -262,6 +126,7 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+
   <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoBouquetsMaker_HideSections" position="center,center" size="1920,1080" title="">
     <!-- Background -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
@@ -335,6 +200,7 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+
   <screen name="PiconManagerFolderScreen" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <!-- Background -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
@@ -355,6 +221,7 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+
   <screen name="pm_conf" title="Select Color" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <!-- Background -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
@@ -398,6 +265,7 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+
   <screen name="CrossEPG_Setup" title="CrossEPG - Configuration" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <!-- Background -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
@@ -417,6 +285,7 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+
   <screen name="CrossEPG_Providers" title="CrossEPG - Providers" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <!-- Background -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
@@ -445,6 +314,7 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+
   <screen name="CrossEPG_Ordering" title="CrossEPG - Providers" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <!-- Background -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
@@ -473,6 +343,7 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+
   <screen name="CrossEPG_Info" title="CrossEPG - Info" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <!-- Background -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
@@ -499,6 +370,7 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+
   <screen name="CrossEPG_About" title="CrossEPG - About" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <!-- Background -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
@@ -515,6 +387,7 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+
   <screen name="CrossEPG_Converter" title="CrossEPG" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
     <!-- Background -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="480,center" size="970,390" zPosition="-15" />
@@ -545,6 +418,7 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+
   <screen name="CrossEPG_Downloader" title="CrossEPG" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
     <!-- Background -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="480,center" size="970,390" zPosition="-15" />
@@ -560,6 +434,7 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+
   <screen name="CrossEPG_Importer" title="CrossEPG" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
     <!-- Background -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="480,center" size="970,390" zPosition="-15" />
@@ -575,6 +450,7 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+
   <screen name="CrossEPG_Loader" title="CrossEPG" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
     <!-- Background -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="480,center" size="970,390" zPosition="-15" />
@@ -590,6 +466,7 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+
   <screen name="CrossEPG_Rytec_Update" title="CrossEPG" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
     <!-- Background -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="480,center" size="970,390" zPosition="-15" />
@@ -605,6 +482,7 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+
   <screen name="CrossEPG_Xepgdb_Update" title="CrossEPG" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
     <!-- Background -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="480,center" size="970,390" zPosition="-15" />
@@ -634,6 +512,7 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+
     <screen name="CCcamInfoMain" title="CCcamInfoMain" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
     <!-- Background -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="880,990" zPosition="-15" />
@@ -646,6 +525,7 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+
   <screen name="CCcamInfoEcmInfoSelection" title="CCcamInfoEcmInfoSelection" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
     <!-- Background -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="880,990" zPosition="-15" />
@@ -658,6 +538,7 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+
   <screen name="CCcamInfoInfoScreen" title="CCcamInfoInfoScreen" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
     <!-- Background -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="880,990" zPosition="-15" />
@@ -670,6 +551,7 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+
   <screen name="CCcamShareViewMenu" title="CCcamShareViewMenu" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
     <!-- Background -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="880,990" zPosition="-15" />
@@ -687,6 +569,7 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+
   <screen name="CCcamInfoSubMenu" title="CCcamInfoSubMenu" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
     <!-- Background -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="880,990" zPosition="-15" />
@@ -700,6 +583,7 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+
   <screen name="CCcamInfoServerMenu" title="CCcamInfoServerMenu" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
     <!-- Background -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="880,990" zPosition="-15" />
@@ -713,6 +597,7 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+
   <screen name="CCcamInfoConfigMenu" title="CCcamInfoConfigMenu" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
     <!-- Background -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="880,990" zPosition="-15" />
@@ -725,6 +610,7 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+
   <screen name="CCcamInfoRemoteBoxMenu" title="CCcamInfoRemoteBoxMenu" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <!-- Background -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
@@ -747,6 +633,7 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+
   <screen name="CCcamInfoShareInfo" title="CCcamInfoShareInfo" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <!-- Background -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
@@ -769,6 +656,7 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+
   <screen name="CCcamInfoConfigSwitcher" title="CCcamInfoConfigSwitcher" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <!-- Background -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
@@ -791,6 +679,7 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+
   <screen name="CCcamInfoMenuConfig" title="CCcamInfoMenuConfig" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <!-- Background -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
@@ -813,6 +702,7 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+
   <screen name="EcmInfoScreen" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,30" size="744,114">
     <!-- Background -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="2,2" size="740,110" zPosition="-15" />
@@ -880,6 +770,7 @@
       <convert type="ClockToText">Format:%A, %e. %b</convert>
     </widget>
   </screen>
+
   <screen name="TURKvodVideoPlayer" title="Videothek" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
     <!-- Template -->
     <eLabel backgroundColor="OE_Background" name="InfoBar" position="5,890" size="1550,155" zPosition="-15" />
@@ -945,6 +836,7 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+
   <screen name="turkQuality" title="Episode selector" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <!-- Background -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
@@ -960,6 +852,7 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+
   <screen name="In_form" title="" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
     <!-- Backgrounds -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="22,center" size="1236,1056" zPosition="-15" />
@@ -984,6 +877,7 @@
       <convert type="ClockToText">Format:%A, %e. %b</convert>
     </widget>
   </screen>
+
   <screen name="plugin_kt" title="Playlist" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <!-- Background -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
@@ -1007,6 +901,7 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+
   <screen name="vodeScreen" title="TURKvod Video Download Listesi" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <!-- Background -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
@@ -1032,6 +927,7 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+
   <screen name="font" title="Playlist" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <!-- Background -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
@@ -1045,6 +941,7 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+
   <screen name="plugin_pay" title="Playlist" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <!-- Background -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
@@ -1068,6 +965,7 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+
   <screen name="plugin_ka" title="Playlist" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <!-- Background -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
@@ -1087,6 +985,7 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+
   <screen name="RenAy" title="Playlist" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <!-- Background -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
@@ -1104,6 +1003,7 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+
   <screen name="KeyBoard" title="Virtual KeyBoard" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <!-- Background -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
@@ -1121,6 +1021,7 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+
   <screen name="TurkvodSearch" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <!-- Background -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
@@ -1138,6 +1039,7 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+
   <screen name="plugin_gun" title="" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
     <!-- Backgrounds -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="22,center" size="1236,1056" zPosition="-15" />
@@ -1194,6 +1096,7 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+
   <screen name="seyirTURKSetup" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <!-- Background -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
@@ -1215,6 +1118,7 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+
   <screen name="guncelle" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <!-- Background -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
@@ -1234,6 +1138,7 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+
   <screen name="sVODplayer" title="" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
     <!-- Template -->
     <eLabel backgroundColor="OE_Background" name="InfoBar" position="center,900" size="1810,145" zPosition="-11" />
@@ -1299,6 +1204,7 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+
   <screen name="sIPTVplayer" title="" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
     <!-- Template -->
     <eLabel backgroundColor="OE_Background" name="InfoBar" position="center,900" size="1810,145" zPosition="-11" />
@@ -1353,6 +1259,7 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+
   <screen name="sSelectQuality" title="Kalite:" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
     <!-- Background -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
@@ -1366,6 +1273,7 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+
   <screen name="seyirTURKTasksScreen" title="Dosya Yöneticisi" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
     <!-- Background -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
@@ -1419,6 +1327,7 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+
   <screen name="FritzDisplayCalls" title="Fritz Display Calls" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <!-- Background -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
@@ -1457,6 +1366,7 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+
   <screen name="FritzDisplayPhonebook" title="Fritz Display Phonebook" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <!-- Background -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
@@ -1490,6 +1400,7 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+
   <screen name="AddScreen" title="Add Screen" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <!-- Background -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
@@ -1508,6 +1419,7 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+
   <screen name="FritzMenu" title="Fritz Menu" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <!-- Background -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
@@ -1549,6 +1461,7 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+
   <screen name="FritzAbout" title="About Fritz Call" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <!-- Background -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1290,990" zPosition="-15" />
@@ -1914,9 +1827,6 @@
     <!-- Page Title / Widget -->
     <eLabel text="Cool Tiny Guide" backgroundColor="dark" font="Regular; 32" position="25,42" size="350,50" transparent="1" />
     <widget source="Title" render="Label" backgroundColor="dark" font="Regular; 32" position="374,41" size="900,50" transparent="1" halign="left" />
-
-
-
     <widget source="Service" render="Label" position="275,105" size="900,50" zPosition="3" font="Regular; 32" backgroundColor="OE_Background" transparent="1">
       <convert type="ServiceName">Name</convert>
     </widget>
@@ -2515,5 +2425,188 @@
     <panel name="Clock1" />
   </screen>
 
+  <!-- Yahoo Weather -->
+
+  <screen name="YahooWeatherList" title="Yahoo Weather list" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <!-- Background -->
+    <panel name="Background1" />
+    <panel name="Back_blueTitel" />
+    <!-- Page Title / Widget -->
+    <widget name="titleheader" position="95,61" size="550,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/plugins/yh.png" position="1385,48" size="85,85" transparent="1" zPosition="10" />
+    <widget name="myMenu" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="220,135" size="1250,800" transparent="1" />
+    <!-- /*Buttons-->
+    <eLabel backgroundColor="white" name="" position="220,973" size="1250,2" zPosition="-9" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_red.png" position="220,987" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_green.png" position="535,987" size="40,40" />
+    <widget name="Key_Red" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="265,987" size="260,40" transparent="1" zPosition="1" />
+    <widget name="Key_Green" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="580,987" size="260,40" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <panel name="Clock1" />
+  </screen>
+
+  <screen name="YahooWeather" title="" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
+    <!-- Backgrounds -->
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="85,center" size="1170,990" zPosition="-15" />
+    <eLabel backgroundColor="white" foregroundColor="OE_Background" name="" position="770,160" size="730,758" zPosition="-13" />
+    <eLabel backgroundColor="white" name="" position="95,973" size="1150,2" zPosition="-9" />
+    <eLabel backgroundColor="white" position="80,center" size="1180,1000" zPosition="-20" />
+    <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="2,72" size="536,56" zPosition="-11" valign="center" />
+    <!-- Background 2 -->
+    <eLabel backgroundColor="OE_Background" position="775,165" size="720,748" zPosition="-12" />
+    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="0,70" size="540,60" zPosition="-12" />
+    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="885,175" size="685,60" zPosition="-11" />
+    <eLabel backgroundColor="dark" name="" position="887,177" size="681,56" zPosition="-10" />
+    <!-- Page Title / Widget -->
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/plugins/yh.png" position="1155,60" size="85,85" transparent="1" zPosition="10" />
+    <widget name="lab1b" font="Regular; 32" backgroundColor="dark" position="55,79" size="455,50" transparent="1" />
+    <!-- UpDate Meteo -->
+    <widget name="lab3" font="FHD; 30" foregroundColor="OE_Foreground" backgroundColor="OE_Background" position="550,79" size="600,45" zPosition="3" transparent="1" />
+    <!-- BigIcon Weather -->
+    <widget name="lab5" position="100,145" size="215,200" zPosition="1" alphatest="blend" transparent="1" />
+    <!-- City -->
+    <widget name="lab2" font="FHD; 32" foregroundColor="OE_Foreground" backgroundColor="OE_Background" position="330,175" size="430,50" zPosition="1" transparent="1" />
+    <!-- Temperature -->
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/plugins/temp.png" position="330,240" size="26,75" transparent="1" zPosition="10" />
+    <widget name="lab4" font="Regular; 48" foregroundColor="OE_Foreground" backgroundColor="OE_Background" position="355,240" halign="right" size="75,65" zPosition="1" transparent="1" text="24" />
+    <widget name="lab4b" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" position="430,244" halign="left" size="50,45" zPosition="1" transparent="1" text="°C" />
+    <!-- Description Time -->
+    <widget name="lab6" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" position="100,350" halign="left" size="500,45" zPosition="1" transparent="1" text="sonnig" />
+    <!-- Wind -->
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/plugins/wind.png" position="100,400" size="56,75" transparent="1" zPosition="10" />
+    <widget name="lab12b" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" position="160,415" halign="left" size="440,45" zPosition="1" transparent="1" />
+    <!-- Humidity -->
+    <widget name="lab7" position="100,500" halign="left" size="220,45" zPosition="1" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" />
+    <widget name="lab7b" position="325,500" halign="left" size="300,45" zPosition="1" font="Regular; 28" foregroundColor="green_light" backgroundColor="OE_Background" valign="top" transparent="1" />
+    <!-- Pressure -->
+    <widget name="lab8" position="100,550" halign="left" size="220,45" zPosition="1" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" />
+    <widget name="lab8b" position="325,550" halign="left" size="300,45" zPosition="1" font="Regular; 28" foregroundColor="green_light" backgroundColor="OE_Background" transparent="1" />
+    <!-- Visibility -->
+    <widget name="lab9" position="100,600" halign="left" size="220,45" zPosition="1" font="Regular; 28" valign="top" backgroundColor="OE_Background" transparent="1" />
+    <widget name="lab9b" position="325,600" halign="left" size="300,45" zPosition="1" font="Regular; 28" foregroundColor="green_light" backgroundColor="OE_Background" transparent="1" />
+    <!-- Sunrise -->
+    <widget name="lab10" position="100,650" halign="left" size="220,45" zPosition="1" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" />
+    <widget name="lab10b" position="325,650" halign="left" size="300,45" zPosition="1" font="Regular; 28" foregroundColor="green_light" backgroundColor="OE_Background" transparent="1" />
+    <!-- Sunset -->
+    <widget name="lab11" position="100,700" halign="left" size="220,45" zPosition="1" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" />
+    <widget name="lab11b" position="325,700" halign="left" size="300,45" zPosition="1" font="Regular; 28" foregroundColor="green_light" backgroundColor="OE_Background" transparent="1" />
+    <!-- Data Forecast-->
+    <widget name="5day" position="900,180" size="550,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
+    <!-- ForeCast 1Day Pic -->
+    <widget name="lab17" position="790,265" size="80,80" zPosition="1" alphatest="blend" transparent="1" />
+    <!-- ForeCast 1Day Day -->
+    <widget name="lab13" position="890,250" halign="left" size="400,40" zPosition="1" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" />
+    <!-- ForeCast 1Day Description -->
+    <widget name="lab16" position="890,290" halign="left" size="460,35" zPosition="1" font="Regular; 25" foregroundColor="yellow" backgroundColor="OE_Background" transparent="1" />
+    <!-- ForeCast 1Day Temp Heigh -->
+    <widget name="lab14" position="890,325" halign="left" size="80,40" zPosition="1" font="Regular; 28" foregroundColor="darkgrey" backgroundColor="OE_Background" transparent="1" />
+    <widget name="lab14b" position="970,325" halign="left" size="80,40" zPosition="1" font="Regular; 28" foregroundColor="green_light" backgroundColor="OE_Background" transparent="1" />
+    <!-- ForeCast 1Day Temp Low -->
+    <widget name="lab15" position="1050,325" halign="left" size="80,40" zPosition="1" font="Regular; 28" foregroundColor="darkgrey" backgroundColor="OE_Background" transparent="1" />
+    <widget name="lab15b" position="1130,325" halign="left" size="80,40" zPosition="1" font="Regular; 28" foregroundColor="blue" backgroundColor="OE_Background" transparent="1" />
+    <!-- ForeCast 1Day Date -->
+    <widget name="daydate0" position="1295,252" valign="center" halign="right" size="180,35" zPosition="1" font="Regular; 25" foregroundColor="darkgrey" backgroundColor="OE_Background" transparent="1" />
+    <eLabel backgroundColor="white" name="" position="790,375" size="685,2" zPosition="-9" />
+    <!-- ForeCast 2Day Pic -->
+    <widget name="lab22" position="790,400" size="80,80" zPosition="1" alphatest="blend" transparent="1" />
+    <!-- ForeCast 2Day Day -->
+    <widget name="lab18" position="890,385" halign="left" size="400,40" zPosition="1" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" />
+    <!-- ForeCast 2Day Description -->
+    <widget name="lab21" position="890,425" halign="left" size="460,35" zPosition="1" font="Regular; 25" foregroundColor="yellow" backgroundColor="OE_Background" transparent="1" />
+    <!-- ForeCast 2Day Temp Heigh -->
+    <widget name="lab19" position="890,460" halign="left" size="80,40" zPosition="1" font="Regular; 28" foregroundColor="darkgrey" backgroundColor="OE_Background" transparent="1" />
+    <widget name="lab19b" position="970,460" halign="left" size="80,40" zPosition="1" font="Regular; 28" foregroundColor="green_light" backgroundColor="OE_Background" transparent="1" />
+    <!-- ForeCast 2Day Temp Low -->
+    <widget name="lab20" position="1050,460" halign="left" size="80,40" zPosition="1" font="Regular; 28" foregroundColor="darkgrey" backgroundColor="OE_Background" transparent="1" />
+    <widget name="lab20b" position="1130,460" halign="left" size="80,40" zPosition="1" font="Regular; 28" foregroundColor="blue" backgroundColor="OE_Background" transparent="1" />
+    <!-- ForeCast 2Day Date -->
+    <widget name="daydate1" position="1295,387" valign="center" halign="right" size="180,35" zPosition="1" font="Regular; 25" foregroundColor="darkgrey" backgroundColor="OE_Background" transparent="1" />
+    <eLabel backgroundColor="white" name="" position="790,510" size="685,2" zPosition="-9" />
+    <!-- ForeCast 3Day Pic -->
+    <widget name="3lab22" position="790,535" size="80,80" zPosition="1" alphatest="blend" transparent="1" />
+    <!-- ForeCast 3Day Day -->
+    <widget name="3lab18" position="890,center" halign="left" size="400,40" zPosition="1" font="Regular; 28" backgroundColor="OE_Background" transparent="1" />
+    <!-- ForeCast 3Day Description -->
+    <widget name="3lab21" position="890,560" halign="left" size="460,35" zPosition="1" font="Regular; 25" foregroundColor="yellow" backgroundColor="OE_Background" transparent="1" />
+    <!-- ForeCast 3Day Temp Heigh -->
+    <widget name="3lab19" position="890,595" halign="left" size="80,40" zPosition="1" font="Regular; 28" foregroundColor="darkgrey" backgroundColor="OE_Background" transparent="1" />
+    <widget name="3lab19b" position="970,595" halign="left" size="80,40" zPosition="1" font="Regular; 28" foregroundColor="green_light" backgroundColor="OE_Background" transparent="1" />
+    <!-- ForeCast 3Day Temp Low -->
+    <widget name="3lab20" position="1050,595" halign="left" size="80,40" zPosition="1" font="Regular; 28" foregroundColor="darkgrey" backgroundColor="OE_Background" transparent="1" />
+    <widget name="3lab20b" position="1130,595" halign="left" size="80,40" zPosition="1" font="Regular; 28" foregroundColor="blue" backgroundColor="OE_Background" transparent="1" />
+    <!-- ForeCast 3Day Date -->
+    <widget name="daydate2" position="1295,523" valign="center" halign="right" size="180,35" zPosition="1" font="Regular; 25" foregroundColor="darkgrey" backgroundColor="OE_Background" transparent="1" />
+    <eLabel backgroundColor="white" name="" position="790,645" size="685,2" zPosition="-9" />
+    <!-- ForeCast 4Day Pic -->
+    <widget name="4lab22" position="790,670" size="80,80" zPosition="1" alphatest="blend" transparent="1" />
+    <!-- ForeCast 4Day Day -->
+    <widget name="4lab18" position="890,655" halign="left" size="400,40" zPosition="1" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" />
+    <!-- ForeCast 4Day Description -->
+    <widget name="4lab21" position="890,695" halign="left" size="460,35" zPosition="1" font="Regular; 25" foregroundColor="yellow" backgroundColor="OE_Background" transparent="1" />
+    <!-- ForeCast 4Day Temp Heigh -->
+    <widget name="4lab19" position="890,730" halign="left" size="80,40" zPosition="1" font="Regular; 28" foregroundColor="darkgrey" backgroundColor="OE_Background" transparent="1" />
+    <widget name="4lab19b" position="970,730" halign="left" size="80,40" zPosition="1" font="Regular; 28" foregroundColor="green_light" backgroundColor="OE_Background" transparent="1" />
+    <!-- ForeCast 4Day Temp Low -->
+    <widget name="4lab20" position="1050,730" halign="left" size="80,40" zPosition="1" font="Regular; 28" foregroundColor="darkgrey" backgroundColor="OE_Background" transparent="1" />
+    <widget name="4lab20b" position="1130,730" halign="left" size="80,40" zPosition="1" font="Regular; 28" foregroundColor="blue" backgroundColor="OE_Background" transparent="1" />
+    <!-- ForeCast 4Day Date -->
+    <widget name="daydate3" position="1295,658" valign="center" halign="right" size="180,35" zPosition="1" font="Regular; 25" foregroundColor="darkgrey" backgroundColor="OE_Background" transparent="1" />
+    <eLabel backgroundColor="white" name="" position="790,780" size="685,2" zPosition="-9" />
+    <!-- ForeCast 5Day Pic -->
+    <widget name="5lab22" position="790,805" size="80,80" zPosition="1" alphatest="blend" transparent="1" />
+    <!-- ForeCast 5Day Day -->
+    <widget name="5lab18" position="890,790" halign="left" size="400,40" zPosition="1" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" />
+    <!-- ForeCast 5Day Description -->
+    <widget name="5lab21" position="890,830" halign="left" size="460,35" zPosition="1" font="Regular; 25" foregroundColor="yellow" backgroundColor="OE_Background" transparent="1" />
+    <!-- ForeCast 5Day Temp Heigh -->
+    <widget name="5lab19" position="890,865" halign="left" size="80,40" zPosition="1" font="Regular; 28" foregroundColor="darkgrey" backgroundColor="OE_Background" transparent="1" />
+    <widget name="5lab19b" position="970,865" halign="left" size="80,40" zPosition="1" font="Regular; 28" foregroundColor="green_light" backgroundColor="OE_Background" transparent="1" />
+    <!-- ForeCast 5Day Temp Low -->
+    <widget name="5lab20" position="1050,865" halign="left" size="80,40" zPosition="1" font="Regular; 28" foregroundColor="darkgrey" backgroundColor="OE_Background" transparent="1" />
+    <widget name="5lab20b" position="1130,865" halign="left" size="80,40" zPosition="1" font="Regular; 28" foregroundColor="blue" backgroundColor="OE_Background" transparent="1" />
+    <!-- ForeCast 5Day Date -->
+    <widget name="daydate4" position="1295,793" valign="center" halign="right" size="180,35" zPosition="1" font="Regular; 25" foregroundColor="darkgrey" backgroundColor="OE_Background" transparent="1" />
+    <!-- Region -->
+    <widget name="lab26" position="100,850" halign="left" size="160,45" zPosition="1" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" />
+    <widget name="lab26b" position="260,850" halign="left" size="500,45" zPosition="1" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" />
+    <!-- Country -->
+    <widget name="lab27" position="100,900" halign="left" size="550,45" zPosition="1" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" />
+    <!-- Latitude -->
+    <widget name="lab24" position="100,800" halign="left" size="150,45" zPosition="1" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" />
+    <widget name="lab24b" position="250,800" halign="left" size="160,45" zPosition="1" font="Regular; 28" foregroundColor="OE_Blue" backgroundColor="OE_Background" transparent="1" />
+    <!-- Longitude -->
+    <widget name="lab25" position="410,800" halign="left" size="150,45" zPosition="1" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" />
+    <widget name="lab25b" position="560,800" halign="left" size="160,45" zPosition="1" font="Regular; 28" foregroundColor="OE_Blue" backgroundColor="OE_Background" transparent="1" />
+    <!-- Button - Bar -->
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_red.png" position="95,987" size="40,40" />
+    <widget name="Key_Red" backgroundColor="OE_Background" font="Regular; 28" halign="left" position="145,987" size="200,40" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <panel name="Clock1" />
+  </screen>
+
+  <!-- WOLSetup -->
+
+  <screen name="WOLSetup" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <!-- Background -->
+    <panel name="Background1" />
+    <panel name="Back_blueTitel" />
+    <!-- Page Title / Widget -->
+    <eLabel text="WOL Setup" position="95,61" size="550,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
+    <widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="220,135" size="1250,750" transparent="1" />
+    <eLabel backgroundColor="white" name="" position="220,905" size="1250,2" zPosition="-9" />
+    <widget name="introduction" font="EL_Standard; 28" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="220,917" size="1250,45" transparent="1" />
+    <!-- /*Buttons-->
+    <eLabel backgroundColor="white" name="" position="220,973" size="1250,2" zPosition="-9" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_red.png" position="220,987" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_green.png" position="535,987" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_yellow.png" position="850,987" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_blue.png" position="1165,987" size="40,40" />
+    <widget source="key_red" render="Label" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="265,987" size="260,40" transparent="1" zPosition="1" />
+    <widget source="key_green" render="Label" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="580,987" size="260,40" transparent="1" zPosition="1" />
+    <widget source="key_yellow" render="Label" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="895,987" size="260,40" transparent="1" zPosition="1" />
+    <widget source="key_blue" render="Label" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="1210,987" size="260,40" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <panel name="Clock1" />
+  </screen>
 
 </skin>
