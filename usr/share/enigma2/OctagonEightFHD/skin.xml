@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <skin>
-  <!-- OctagonEightFHD Skin v6.00 for Octagon image, by SkinMania -->
+  <!-- OctagonEightFHD Skin v6.10 for Octagon image, by SkinMania -->
   <!-- OctagonEightFHD Skin is only for www.octagon-forum.eu -->
   <!-- Recommended to use with XPicons (220x132) -->
   <!-- You are NOT allowed to modify and redistribute OctagonEightFHD Skin and all graphics -->
@@ -3343,15 +3343,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
-  <screen backgroundColor="OE_Selection" name="OSDScreenPosition" position="0,0" size="1920,1080" zPosition="-1">
-    <!-- Widget */-->
-    <widget name="config" font="EL_Standard; 28" itemHeight="50" position="center,center" size="850,450" transparent="1" zPosition="3" backgroundColor="background" />
-    <!-- Buttons */-->
-    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_red.png" position="610,980" size="40,40" />
-    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_green.png" position="950,980" size="40,40" />
-    <widget backgroundColor="OE_Background" font="Regular; 28" halign="left" name="cancel" position="660,980" size="280,40" transparent="1" zPosition="1" />
-    <widget backgroundColor="OE_Background" font="Regular; 28" halign="left" name="ok" position="1000,980" size="280,40" transparent="1" zPosition="1" />
-  </screen>
   <screen name="PacketManager" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <!-- Background -->
     <panel name="Background1" />
@@ -3686,19 +3677,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <!-- Widget -->
     <widget name="state" position="0,0" size="200,50" font="RegularBold; 34" backgroundColor="dark" transparent="1" valign="center" halign="center" text="&gt;&gt; 256" />
   </screen>
-  <screen name="QuickSubtitlesConfigMenu" title="Subtitle settings" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+  <screen name="QuickSubtitlesConfigMenu" title="Subtitle settings" backgroundColor="transparent" flags="wfNoBorder" position="398,225" size="1000,300">
     <!-- Back -->
-    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="205,center" size="1100,990" zPosition="-15" />
-    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="50,55" size="600,60" zPosition="-12" />
-    <eLabel backgroundColor="white" position="200,center" size="1110,1000" zPosition="-20" />
-    <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="52,57" size="596,56" zPosition="-11" valign="center" />
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="2,2" size="996,296" zPosition="-15" />
+    <eLabel backgroundColor="white" position="0,0" size="1000,300" zPosition="-20" />
     <!-- Widget -->
-    <widget render="Label" source="Title" position="75,61" size="570,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
-    <widget name="config" itemHeight="50" font="FHD; 30" backgroundColor="OE_Background" position="220,145" size="1070,800" transparent="1" />
-    <eLabel backgroundColor="white" name="" position="220,965" size="1070,2" zPosition="-9" />
-    <widget name="videofps" position="220,975" size="1070,48" font="RegularBold; 28" backgroundColor="OE_Background" transparent="1" />
-    <!-- Clock -->
-    <panel name="Clock1" />
+    <widget name="config" itemHeight="45" font="RegularBold; 28" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="9,15" size="980,270" transparent="1" />
   </screen>
   <screen name="QuickSubtitlesClearRests" title="Subtitle settings" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <!-- Back -->
@@ -3949,13 +3933,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <panel name="Clock1" />
   </screen>
   <screen name="NimSelection" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-  <!-- Background -->
-  <panel name="Background1" />
-  <panel name="Back_blueTitel" />
-  <!-- Page Title / Widget -->
-  <eLabel text="Choose Tuner" position="75,61" size="570,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
-  <widget source="nimlist" render="Listbox" enableWrapAround="1" position="220,125" size="1250,750" transparent="1" zPosition="3">
-    <convert type="TemplatedMultiContent">
+    <!-- Background -->
+    <panel name="Background1" />
+    <panel name="Back_blueTitel" />
+    <!-- Page Title / Widget -->
+    <eLabel text="Choose Tuner" position="75,61" size="570,50" font="EL_Standard; 32" backgroundColor="dark" transparent="1" />
+    <widget source="nimlist" render="Listbox" enableWrapAround="1" position="220,125" size="1250,750" transparent="1" zPosition="3">
+      <convert type="TemplatedMultiContent">
                         {"template": [
                         MultiContentEntryText(pos = (10,5),size = (1200,50),flags = RT_HALIGN_LEFT,text = 1),# index 1 is the nim name,
                         MultiContentEntryText(pos = (50,45),size = (1200,100),font = 1,flags = RT_HALIGN_LEFT,text = 2),# index 2 is a description of the nim settings,
@@ -3964,14 +3948,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
                         "itemHeight": 150
                         }
         </convert>
-  </widget>
-  <!-- Button -->
-  <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_info.png" position="1238,70" size="64,43" />
-  <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_ok.png" position="1322,70" size="64,43" />
-  <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_exit.png" position="1406,70" size="64,43" />
-  <!-- Clock -->
-  <panel name="Clock1" />
-</screen>
+    </widget>
+    <!-- Button -->
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_info.png" position="1238,70" size="64,43" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_ok.png" position="1322,70" size="64,43" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_exit.png" position="1406,70" size="64,43" />
+    <!-- Clock -->
+    <panel name="Clock1" />
+  </screen>
   <screen name="SatNimSelection" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <!-- Background -->
     <panel name="Background1" />

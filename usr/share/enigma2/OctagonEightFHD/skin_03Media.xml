@@ -42,7 +42,7 @@
     <widget source="Title" render="Label" backgroundColor="dark" font="Regular; 32" position="70,57" size="1320,50" transparent="1" />
     <!-- Content -->
     <widget name="list" itemHeight="50" CoolFont="RegularBold;30" CoolSelectFont="RegularBold;30" CoolDateFont="RegularBold;30" CoolSelNumTxtWidth="50" CoolCSWidth="210" CoolDirInfoWidth="210" CoolIconPos="10" CoolIconHPos="5" CoolIconSize="36,36" CoolMoviePos="50" CoolMovieSize="900" CoolFolderSize="900" CoolTitleColor="0" CoolDatePos="1170" CoolDateWidth="170" CoolDateColor="0" CoolHighlightColor="0" CoolProgressPos="1180" CoolBarPos="950" CoolBarHPos="10" CoolBarSize="55,10" CoolBarSizeSa="150,26" BackColorSel="OE_Selection" DefaultColor="OE_Foreground" FinishedColor="OE_Accent1" RecordingColor="OE_Red" UnwatchedColor="OE_Foreground" WatchingColor="OE_Green" backgroundColor="OE_Background" foregroundColorSelected="OE_Foreground" scrollbarMode="showNever" position="50,130" size="1360,650" transparent="1" />
-    <widget name="Cover" position="1457,195" size="400,550" zPosition="4" transparent="1" alphatest="blend" />
+    <widget name="Cover" position="1457,195" size="400,550" zPosition="4" transparent="0" alphatest="on" />
     <widget source="Service" render="Label" backgroundColor="OE_Background" font="RegularBold; 32" foregroundColor="OE_Foreground" halign="left" position="50,795" size="1360,50" transparent="1" valign="center">
       <convert type="EMCEventName">Name</convert>
     </widget>
