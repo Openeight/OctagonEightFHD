@@ -92,57 +92,57 @@
 
 
   <screen backgroundColor="transparent" flags="wfNoBorder" name="EMCMediaCenter" position="0,0" size="1920,1080" title="InfoBar">
-    <eLabel backgroundColor="OE_Background" name="InfoBar" position="center,910" size="1680,130" zPosition="-11" />
-    <eLabel backgroundColor="OE_NewBg" foregroundColor="OE_NewBg" name="" position="1515,870" size="250,210" zPosition="-10" />
-    <eLabel name="" foregroundColor="white" backgroundColor="green_light" position="1530,981" size="220,2" zPosition="-9" />
+    <eLabel backgroundColor="OE_Background" name="InfoBar" position="180,910" size="1620,130" zPosition="-11" />
+    <eLabel backgroundColor="OE_NewBg" foregroundColor="OE_NewBg" name="" position="1560,870" size="200,210" zPosition="-10" />
+    <eLabel name="" foregroundColor="white" backgroundColor="green_light" position="1570,981" size="180,2" zPosition="-9" />
     <!-- Widgets -->
-    <widget backgroundColor="OE_Background" font="RegularBold; 45" foregroundColor="OE_Foreground" halign="center" position="1530,910" render="Label" size="220,65" source="Service" transparent="1" valign="center" text="02:59:00">
+    <widget backgroundColor="OE_Background" font="RegularBold; 38" foregroundColor="OE_Foreground" halign="center" position="1570,920" render="Label" size="180,56" source="Service" transparent="1" valign="center" text="02:59:00">
       <convert type="EMCServicePosition">Length</convert>
     </widget>
-    <widget backgroundColor="OE_Background" font="RegularBold; 34" foregroundColor="OE_Foreground" noWrap="1" position="275,918" render="Label" size="1060,56" source="session.CurrentService" transparent="1" valign="center" halign="center">
+    <widget backgroundColor="OE_Background" font="RegularBold; 34" foregroundColor="OE_Foreground" noWrap="1" position="335,918" render="Label" size="1060,56" source="session.CurrentService" transparent="1" valign="center" halign="center">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <widget backgroundColor="OE_Background" font="RegularBold; 30" foregroundColor="OE_Foreground" halign="left" position="140,924" render="Label" shadowColor="OE_Background" shadowOffset="-1,-1" size="135,44" source="Service" transparent="1" valign="center">
+    <widget backgroundColor="OE_Background" font="RegularBold; 30" foregroundColor="OE_Foreground" halign="left" position="200,924" render="Label" shadowColor="OE_Background" shadowOffset="-1,-1" size="135,44" source="Service" transparent="1" valign="center">
       <convert type="EMCServicePosition">Position</convert>
     </widget>
-    <widget backgroundColor="OE_Background" font="RegularBold; 30" foregroundColor="OE_Foreground" halign="right" position="1335,924" render="Label" size="135,45" source="Service" transparent="1" valign="center">
+    <widget backgroundColor="OE_Background" font="RegularBold; 30" foregroundColor="OE_Foreground" halign="right" position="1395,924" render="Label" size="135,45" source="Service" transparent="1" valign="center">
       <convert type="EMCServicePosition">Remaining,Negate</convert>
     </widget>
-    <eLabel backgroundColor="OE_Accent1" foregroundColor="OE_Accent1" name="new eLabel" position="140,980" size="1330,2" zPosition="-1" />
-    <widget pixmap="OctagonEightFHD/colors/00A4C400.png" position="140,977" render="EMCPositionGauge" size="1330,8" source="Service" transparent="1" zPosition="6">
+    <eLabel backgroundColor="OE_Accent1" foregroundColor="OE_Accent1" name="new eLabel" position="200,980" size="1330,2" zPosition="-1" />
+    <widget pixmap="OctagonEightFHD/colors/00A4C400.png" position="200,977" render="EMCPositionGauge" size="1330,8" source="Service" transparent="1" zPosition="6">
       <convert type="EMCServicePosition">Gauge</convert>
     </widget>
-    <widget pointer="OctagonEightFHD/extensions/CoolPointer.png:1600,0" position="140,978" render="EMCPositionGauge" size="1330,6" source="Service" transparent="1" zPosition="5">
+    <widget pointer="OctagonEightFHD/extensions/CoolPointer.png:1600,0" position="200,978" render="EMCPositionGauge" size="1330,6" source="Service" transparent="1" zPosition="5">
       <convert type="EMCServicePosition">Position</convert>
     </widget>
-    <widget backgroundColor="OE_Background" font="Regular; 30" foregroundColor="OE_Accent2" halign="left" name="chapterLabel" position="140,990" size="500,42" transparent="1" />
-    <widget backgroundColor="OE_Background" font="Regular;32" foregroundColor="OE_Accent2" halign="left" name="audioLabel" position="650,990" size="490,42" transparent="1" zPosition="3" />
+    <widget backgroundColor="OE_Background" font="Regular; 30" foregroundColor="OE_Accent2" halign="left" name="chapterLabel" position="200,990" size="500,42" transparent="1" />
+    <widget backgroundColor="OE_Background" font="Regular;32" foregroundColor="OE_Accent2" halign="left" name="audioLabel" position="710,990" size="490,42" transparent="1" zPosition="3" />
     <!-- Icons -->
-    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/my_icons/dolby_off.png" position="1241,993" size="63,32" zPosition="1" />
-    <widget alphatest="blend" pixmap="OctagonEightFHD/my_icons/dolby_on.png" position="1241,993" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="2">
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/my_icons/dolby_off.png" position="1301,993" size="63,32" zPosition="1" />
+    <widget alphatest="blend" pixmap="OctagonEightFHD/my_icons/dolby_on.png" position="1301,993" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="2">
       <convert type="ServiceInfo">IsMultichannel</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/my_icons/format_off.png" position="1324,993" size="63,32" zPosition="1" />
-    <widget alphatest="blend" pixmap="OctagonEightFHD/my_icons/format_on.png" position="1324,993" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="2">
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/my_icons/format_off.png" position="1384,993" size="63,32" zPosition="1" />
+    <widget alphatest="blend" pixmap="OctagonEightFHD/my_icons/format_on.png" position="1384,993" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="2">
       <convert type="ServiceInfo">IsWidescreen</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/my_icons/hd_off.png" position="1407,993" size="63,32" zPosition="1" />
-    <widget alphatest="blend" pixmap="OctagonEightFHD/my_icons/hd_on.png" position="1407,993" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="2">
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/my_icons/hd_off.png" position="1467,993" size="63,32" zPosition="1" />
+    <widget alphatest="blend" pixmap="OctagonEightFHD/my_icons/hd_on.png" position="1467,993" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="2">
       <convert type="ServiceInfo">VideoWidth</convert>
       <convert type="ValueRange">721,1980</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget alphatest="blend" pixmap="OctagonEightFHD/my_icons/rec_on.png" position="1158,993" render="Pixmap" size="63,32" source="session.RecordState" zPosition="2">
+    <widget alphatest="blend" pixmap="OctagonEightFHD/my_icons/rec_on.png" position="1218,993" render="Pixmap" size="63,32" source="session.RecordState" zPosition="2">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
-    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/my_icons/rec_off.png" position="1158,993" size="63,32" zPosition="1" />
-    <widget backgroundColor="OE_NewBg2" font="RegularBold; 30" foregroundColor="white" halign="right" position="1535,990" render="Label" size="90,40" source="session.CurrentService" transparent="1" valign="center">
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/my_icons/rec_off.png" position="1218,993" size="63,32" zPosition="1" />
+    <widget backgroundColor="OE_NewBg2" font="RegularBold; 30" foregroundColor="white" halign="right" position="1555,990" render="Label" size="90,40" source="session.CurrentService" transparent="1" valign="center">
       <convert type="ServiceInfo">VideoWidth</convert>
     </widget>
-    <eLabel backgroundColor="OE_NewBg2" font="RegularBold; 30" foregroundColor="white" halign="center" position="1625,990" size="30,40" text="x" transparent="1" valign="center" />
-    <widget backgroundColor="OE_NewBg3" font="RegularBold; 30" foregroundColor="white" halign="left" position="1655,990" render="Label" size="90,40" source="session.CurrentService" transparent="1" valign="center">
+    <eLabel backgroundColor="OE_NewBg2" font="RegularBold; 30" foregroundColor="white" halign="center" position="1645,990" size="30,40" text="x" transparent="1" valign="center" />
+    <widget backgroundColor="OE_NewBg3" font="RegularBold; 30" foregroundColor="white" halign="left" position="1675,990" render="Label" size="90,40" source="session.CurrentService" transparent="1" valign="center">
       <convert type="ServiceInfo">VideoHeight</convert>
     </widget>
     <!-- Clock -->

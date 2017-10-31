@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <skin>
-  <!-- OctagonEightFHD Skin v7.00 for Octagon image, by SkinMania -->
+  <!-- OctagonEightFHD Skin v7.1a for Octagon image, by SkinMania -->
   <!-- OctagonEightFHD Skin is only for www.octagon-forum.eu -->
   <!-- Recommended to use with XPicons (220x132) -->
   <!-- You are NOT allowed to modify and redistribute OctagonEightFHD Skin and all graphics -->
@@ -469,12 +469,6 @@
     <widget backgroundColor="OE_Background" font="RegularBold; 28" foregroundColor="OE_Foreground" halign="left" position="280,230" render="Label" size="85,40" source="session.CurrentService" transparent="1" valign="center" zPosition="3">
       <convert type="ServiceInfo">VideoHeight</convert>
     </widget>
-    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/my_icons/ip_tv_off.png" position="1038,967" size="63,32" zPosition="1" />
-    <widget source="session.CurrentService" render="Pixmap" pixmap="OctagonEightFHD/my_icons/ip_tv.png" alphatest="blend" position="1038,967" zPosition="3" size="63,32" transparent="1">
-      <convert type="ServiceInfo">IsStream</convert>
-      <convert type="ConditionalShowHide">
-      </convert>
-    </widget>
     <widget source="session.CurrentService" render="Pixmap" pixmap="OctagonEightFHD/my_icons/logo_iptv2.png" alphatest="blend" position="65,457" zPosition="20" size="400,200" transparent="1">
       <convert type="ServiceInfo">IsStream</convert>
       <convert type="ConditionalShowHide">
@@ -516,7 +510,7 @@
       <convert type="OE_Crypt">CryptoBar</convert>
     </widget>
     <!-- TEST -->
-    <widget source="session.CurrentService" render="Label" position="475,962" size="550,45" font="RegularBold; 28" backgroundColor="OE_Background" halign="center" transparent="1" foregroundColor="white">
+    <widget source="session.CurrentService" render="Label" position="475,962" size="550,45" font="RegularBold; 28" backgroundColor="OE_Background" halign="left" transparent="1" foregroundColor="white">
       <convert type="OE_Audio">AudioCodec</convert>
     </widget>
     <!-- Clock -->
@@ -1999,15 +1993,15 @@
     <panel name="ClockBg" />
   </screen>
   <screen name="Ipkg" title="Installing Software..." backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
-    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1200,300" zPosition="-15" />
-    <eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="150,380" zPosition="-11" valign="center" />
-    <eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="240,455" size="960,2" zPosition="-9" />
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1200,380" zPosition="-15" />
+    <eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="150,460" zPosition="-11" valign="center" />
+    <eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="240,415" size="960,2" zPosition="-9" />
     <!-- Widget -->
-    <eLabel text="Installing Software..." font="FHD; 34" backgroundColor="OE_Background" position="240,398" size="960,50" transparent="1" valign="center" zPosition="3" foregroundColor="white" />
-    <widget name="status" backgroundColor="OE_Background" font="RegularBold; 30" foregroundColor="OE_Foreground" position="240,590" size="960,45" transparent="1" valign="center" halign="left" />
-    <widget name="activityslider" borderColor="grey" borderWidth="2" backgroundColor="OE_Background" foregroundColor="green_light" position="240,490" size="960,25" transparent="1" />
-    <widget name="slider" borderColor="grey" borderWidth="2" backgroundColor="OE_Background" foregroundColor="green_light" position="240,640" size="960,25" transparent="1" />
-    <widget name="package" backgroundColor="OE_Background" font="RegularBold; 30" foregroundColor="white" position="240,520" size="960,45" transparent="1" valign="center" />
+    <eLabel text="Installing Software..." font="FHD; 34" backgroundColor="OE_Background" position="240,358" size="960,50" transparent="1" valign="center" zPosition="3" foregroundColor="white" />
+    <widget name="status" backgroundColor="OE_Background" font="RegularBold; 30" foregroundColor="OE_Foreground" position="240,615" size="960,95" transparent="1" valign="top" halign="left" />
+    <widget name="activityslider" borderColor="grey" borderWidth="2" backgroundColor="OE_Background" foregroundColor="green_light" position="240,450" size="960,25" transparent="1" />
+    <widget name="slider" borderColor="grey" borderWidth="2" backgroundColor="OE_Background" foregroundColor="green_light" position="240,585" size="960,25" transparent="1" />
+    <widget name="package" backgroundColor="OE_Background" font="RegularBold; 30" foregroundColor="white" position="240,480" size="960,90" transparent="1" valign="top" halign="left" />
     <ePixmap alphatest="blend" pixmap="OctagonEightFHD/colors/o_logo.png" position="107,center" size="78,75" zPosition="4" />
     <!-- Clock -->
     <panel name="ClockBg" />
@@ -3774,10 +3768,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_green.png" position="500,960" size="40,40" />
     <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_yellow.png" position="830,960" size="40,40" />
     <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_blue.png" position="1160,960" size="40,40" />
-    <widget name="red" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="220,960" size="270,40" transparent="1" zPosition="1" />
-    <widget name="green" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="550,960" size="270,40" transparent="1" zPosition="1" />
-    <widget name="yellow" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="880,960" size="270,40" transparent="1" zPosition="1" />
-    <widget name="blue" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="1210,960" size="270,40" transparent="1" zPosition="1" />
+    <widget name="red" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="220,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1" />
+    <widget name="green" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="550,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1" />
+    <widget name="yellow" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="880,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1" />
+    <widget name="blue" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="1210,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1" />
     <!-- Clock -->
     <panel name="ClockBg" />
   </screen>
@@ -4077,15 +4071,15 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_exit.png" position="294,736" size="64,43" />
   </screen>
   <screen name="UpdatePlugin" title="" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
-    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1200,300" zPosition="-15" />
-    <eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="150,380" zPosition="-11" valign="center" />
-    <eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="240,455" size="960,2" zPosition="-9" />
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1200,380" zPosition="-15" />
+    <eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="150,460" zPosition="-11" valign="center" />
+    <eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="240,415" size="960,2" zPosition="-9" />
     <!-- Widget -->
-    <eLabel text="Software Update..." font="FHD; 34" backgroundColor="OE_Background" position="240,398" size="960,50" transparent="1" valign="center" zPosition="3" foregroundColor="white" />
-    <widget source="status" render="Label" backgroundColor="OE_Background" font="RegularBold; 30" foregroundColor="OE_Foreground" position="240,590" size="960,45" transparent="1" halign="left" />
-    <widget name="activityslider" borderColor="grey" borderWidth="2" backgroundColor="OE_Background" foregroundColor="green_light" position="240,490" size="960,25" transparent="1" />
-    <widget source="package" render="Label" backgroundColor="OE_Background" font="RegularBold; 30" foregroundColor="white" position="240,520" size="960,45" transparent="1" />
-    <widget name="slider" borderColor="grey" borderWidth="2" backgroundColor="OE_Background" foregroundColor="green_light" position="240,640" size="960,25" transparent="1" />
+    <eLabel text="Software Update..." font="FHD; 34" backgroundColor="OE_Background" position="240,358" size="960,50" transparent="1" valign="center" zPosition="3" foregroundColor="white" />
+    <widget source="status" render="Label" backgroundColor="OE_Background" font="RegularBold; 30" foregroundColor="OE_Foreground" position="240,615" size="960,95" transparent="1" halign="left" />
+    <widget name="activityslider" borderColor="grey" borderWidth="2" backgroundColor="OE_Background" foregroundColor="green_light" position="240,450" size="960,25" transparent="1" />
+    <widget source="package" render="Label" backgroundColor="OE_Background" font="RegularBold; 30" foregroundColor="white" position="240,480" size="960,90" transparent="1" />
+    <widget name="slider" borderColor="grey" borderWidth="2" backgroundColor="OE_Background" foregroundColor="green_light" position="240,585" size="960,25" transparent="1" />
     <ePixmap alphatest="blend" pixmap="OctagonEightFHD/colors/o_logo.png" position="107,center" size="78,75" zPosition="4" />
     <!-- Clock -->
     <panel name="ClockBg" />
