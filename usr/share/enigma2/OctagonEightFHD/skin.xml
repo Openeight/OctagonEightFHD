@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <skin>
-  <!-- OctagonEightFHD Skin v7.1a for Octagon image, by SkinMania -->
+  <!-- OctagonEightFHD Skin v7.1b for Octagon image, by SkinMania -->
   <!-- OctagonEightFHD Skin is only for www.octagon-forum.eu -->
   <!-- Recommended to use with XPicons (220x132) -->
   <!-- You are NOT allowed to modify and redistribute OctagonEightFHD Skin and all graphics -->
@@ -921,7 +921,7 @@
     <!-- Clock -->
     <panel name="ClockBg" />
   </screen>
-  <screen name="ChannelSelection" position="center,center" size="1920,1080" backgroundColor="transparent" title="Channel Selection" flags="wfNoBorder">
+  <screen name="ChannelSelection" position="0,-1" size="1920,1081" backgroundColor="transparent" title="Channel Selection" flags="wfNoBorder">
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1830,940" zPosition="-15" />
     <eLabel backgroundColor="white" name="" position="680,930" size="1160,2" zPosition="-9" />
     <eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="65,center" size="600,1080" zPosition="-11" valign="center" />
@@ -935,14 +935,14 @@
     <widget alphatest="blend" position="550,77" render="OE_XPicon" size="100,60" source="ServiceEvent" transparent="1" zPosition="2">
       <convert type="OE_RefString">ServicelistRef</convert>
     </widget>
-    <widget source="ServiceEvent" font="RegularBold; 30" render="OE_RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="80,150" size="570,45" transparent="1" valign="center">
+    <widget source="ServiceEvent" font="RegularBold; 30" render="OE_RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" backgroundColor="OE_Background" foregroundColor="green_light" halign="left" position="80,150" size="570,45" transparent="1" valign="center">
       <convert type="EventName">Name</convert>
     </widget>
     <widget backgroundColor="OE_Background" font="RegularBold; 28" halign="left" position="80,200" render="Label" size="85,40" source="ServiceEvent" transparent="1">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Format:%H:%M</convert>
     </widget>
-    <eLabel backgroundColor="OE_Background" font="RegularBold; 32" halign="center" position="156,200" size="30,40" text="-" transparent="1" valign="center" />
+    <eLabel backgroundColor="OE_Background" font="RegularBold; 32" halign="center" position="156,198" size="30,40" text="-" transparent="1" valign="center" />
     <widget backgroundColor="OE_Background" font="RegularBold; 28" halign="right" position="176,200" render="Label" size="85,40" source="ServiceEvent" transparent="1">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Format:%H:%M</convert>
@@ -951,18 +951,22 @@
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
-    <eLabel backgroundColor="OE_Accent1" foregroundColor="OE_Accent1" position="81,247" size="570,1" />
-    <widget backgroundColor="OE_PreBlack2" borderWidth="0" pixmap="OctagonEightFHD/colors/00A4C400.png" position="80,245" render="Progress" size="570,5" source="ServiceEvent" transparent="1" zPosition="1">
+    <eLabel backgroundColor="OE_Accent1" foregroundColor="OE_Accent1" position="81,244" size="570,1" />
+    <widget backgroundColor="OE_PreBlack2" borderWidth="0" pixmap="OctagonEightFHD/colors/00A4C400.png" position="80,242" render="Progress" size="570,5" source="ServiceEvent" transparent="1" zPosition="1">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget backgroundColor="OE_Background" font="Regular; 29" halign="left" position="80,260" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" render="OE_RunningText" size="570,565" source="ServiceEvent" transparent="1" valign="top">
+    <widget backgroundColor="OE_Background" font="Regular; 29" halign="left" position="80,260" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" render="OE_RunningText" size="570,563" source="ServiceEvent" transparent="1" valign="top">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-    <widget source="ServiceEvent" render="OE_NextEvents" position="80,835" size="570,192" noWrap="1" font="Regular;29" backgroundColor="OE_Background" foregroundColor="OE_Foreground" transparent="1" zPosition="5">
+    <widget source="ServiceEvent" render="OE_NextEvents" position="80,835" size="570,110" noWrap="1" font="Regular;29" backgroundColor="OE_Background" foregroundColor="OE_Foreground" transparent="1" zPosition="5">
       <convert type="ServiceName">Reference</convert>
     </widget>
-    <eLabel backgroundColor="blue_light" name="" position="680,142" size="550,2" zPosition="-9" foregroundColor="un5678a4" />
-    <eLabel backgroundColor="white" name="" position="80,830" size="570,2" zPosition="-9" foregroundColor="white" />
+    <eLabel backgroundColor="blue_light" name="" position="680,142" size="700,2" zPosition="-9" foregroundColor="un5678a4" />
+    <eLabel backgroundColor="OE_Accent1" name="" position="80,830" size="570,1" zPosition="-9" foregroundColor="white" />
+    <widget source="ServiceEvent" render="Label" font="RegularBold; 28" backgroundColor="OE_NewBg2" foregroundColor="blue_light" position="80,953" size="570,45" transparent="1" zPosition="1">
+      <convert type="TransponderInfo">
+      </convert>
+    </widget>
     <!-- Button -->
     <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_menu.png" position="1690,950" size="64,43" />
     <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_info.png" position="1776,950" size="64,43" />
@@ -1023,23 +1027,23 @@
     <eLabel backgroundColor="white" name="" position="680,930" size="1160,2" zPosition="-9" />
     <eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="65,center" size="600,1080" zPosition="-11" valign="center" />
     <!-- Widget -->
-    <widget source="ServiceEvent" font="RegularBold; 30" render="OE_RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" backgroundColor="OE_Background" foregroundColor="blue_light" position="80,85" size="450,50" halign="left" valign="center" transparent="1">
+    <widget source="ServiceEvent" font="RegularBold; 30" render="OE_RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" backgroundColor="OE_Background" foregroundColor="white" position="80,85" size="450,50" halign="left" valign="center" transparent="1">
       <convert type="ServiceName">Name</convert>
     </widget>
     <eLabel backgroundColor="blue_light" name="" position="80,142" size="570,2" zPosition="-9" foregroundColor="un5678a4" />
-    <widget backgroundColor="OE_Background3" font="Regular; 32" position="680,85" render="OE_Title" size="830,50" source="Title" transparent="1" />
-    <widget backgroundColor="OE_Background" colorEventProgressbarBorder="OE_Selection" colorEventProgressbarBorderSelected="OE_Foreground" colorServiceDescription="#a4c400" colorServiceDescriptionSelected="OE_Foreground" foregroundColorServiceNotAvail="OE_Accent2" itemHeight="50" name="list" position="680,150" scrollbarMode="showNever" serviceItemHeight="50" serviceNumberFont="FHD;32" serviceNameFont="FHD;32" serviceInfoFont="RegularBold;29" size="1160,750" transparent="1" fieldMargins="15" nonplayableMargins="15" itemsDistances="8" progressBarWidth="70" progressPercentWidth="80" progressbarHeight="12" />
-    <widget alphatest="blend" position="548,77" render="OE_XPicon" size="100,60" source="ServiceEvent" transparent="1" zPosition="2">
+    <widget source="Title" render="OE_Title" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="680,85" size="830,50" transparent="1" />
+    <widget backgroundColor="OE_Background" colorEventProgressbarBorder="OE_Selection" colorEventProgressbarBorderSelected="OE_Foreground" colorServiceDescription="#a4c400" colorServiceDescriptionSelected="OE_Foreground" foregroundColorServiceNotAvail="OE_Accent2" itemHeight="50" name="list" position="680,160" scrollbarMode="showNever" serviceItemHeight="50" serviceNumberFont="FHD;32" serviceNameFont="FHD;32" serviceInfoFont="RegularBold;29" size="1160,750" transparent="1" fieldMargins="15" nonplayableMargins="15" itemsDistances="8" progressBarWidth="70" progressPercentWidth="80" progressbarHeight="12" />
+    <widget alphatest="blend" position="550,77" render="OE_XPicon" size="100,60" source="ServiceEvent" transparent="1" zPosition="2">
       <convert type="OE_RefString">ServicelistRef</convert>
     </widget>
-    <widget source="ServiceEvent" font="RegularBold; 30" render="OE_RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="80,150" size="570,45" transparent="1" valign="center">
+    <widget source="ServiceEvent" font="RegularBold; 30" render="OE_RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" backgroundColor="OE_Background" foregroundColor="green_light" halign="left" position="80,150" size="570,45" transparent="1" valign="center">
       <convert type="EventName">Name</convert>
     </widget>
     <widget backgroundColor="OE_Background" font="RegularBold; 28" halign="left" position="80,200" render="Label" size="85,40" source="ServiceEvent" transparent="1">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Format:%H:%M</convert>
     </widget>
-    <eLabel backgroundColor="OE_Background" font="RegularBold; 32" halign="center" position="156,200" size="30,40" text="-" transparent="1" valign="center" />
+    <eLabel backgroundColor="OE_Background" font="RegularBold; 32" halign="center" position="156,198" size="30,40" text="-" transparent="1" valign="center" />
     <widget backgroundColor="OE_Background" font="RegularBold; 28" halign="right" position="176,200" render="Label" size="85,40" source="ServiceEvent" transparent="1">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Format:%H:%M</convert>
@@ -1048,19 +1052,23 @@
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
-    <eLabel backgroundColor="OE_Accent1" foregroundColor="OE_Accent1" position="81,247" size="570,1" />
-    <widget backgroundColor="OE_PreBlack2" borderWidth="0" pixmap="OctagonEightFHD/colors/00A4C400.png" position="80,245" render="Progress" size="570,5" source="ServiceEvent" transparent="1" zPosition="1">
+    <eLabel backgroundColor="OE_Accent1" foregroundColor="OE_Accent1" position="81,244" size="570,1" />
+    <widget backgroundColor="OE_PreBlack2" borderWidth="0" pixmap="OctagonEightFHD/colors/00A4C400.png" position="80,242" render="Progress" size="570,5" source="ServiceEvent" transparent="1" zPosition="1">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget backgroundColor="OE_Background" font="Regular; 29" halign="left" position="80,260" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" render="OE_RunningText" size="570,565" source="ServiceEvent" transparent="1" valign="top">
+    <widget backgroundColor="OE_Background" font="Regular; 29" halign="left" position="80,260" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" render="OE_RunningText" size="570,563" source="ServiceEvent" transparent="1" valign="top">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-    <widget source="ServiceEvent" render="OE_NextEvents" position="80,835" size="570,192" noWrap="1" font="Regular;29" backgroundColor="OE_Background" foregroundColor="OE_Foreground" transparent="1" zPosition="5">
+    <widget source="ServiceEvent" render="OE_NextEvents" position="80,835" size="570,110" noWrap="1" font="Regular;29" backgroundColor="OE_Background" foregroundColor="OE_Foreground" transparent="1" zPosition="5">
       <convert type="ServiceName">Reference</convert>
     </widget>
-    <eLabel backgroundColor="blue_light" name="" position="680,142" size="550,2" zPosition="-9" foregroundColor="un5678a4" />
-    <eLabel backgroundColor="white" name="" position="80,830" size="570,2" zPosition="-9" foregroundColor="white" />
-    <!-- Button - Bar -->
+    <eLabel backgroundColor="blue_light" name="" position="680,142" size="700,2" zPosition="-9" foregroundColor="un5678a4" />
+    <eLabel backgroundColor="OE_Accent1" name="" position="80,830" size="570,1" zPosition="-9" foregroundColor="white" />
+    <widget source="ServiceEvent" render="Label" font="RegularBold; 28" backgroundColor="OE_NewBg2" foregroundColor="blue_light" position="80,953" size="570,45" transparent="1" zPosition="1">
+      <convert type="TransponderInfo">
+      </convert>
+    </widget>
+    <!-- Button -->
     <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_menu.png" position="1690,950" size="64,43" />
     <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_info.png" position="1776,950" size="64,43" />
     <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_red.png" position="680,950" size="40,40" />
@@ -1564,7 +1572,7 @@
     <widget alphatest="blend" position="500,77" render="OE_XPicon" size="100,60" source="Service" transparent="1" zPosition="5">
       <convert type="ServiceName">Reference</convert>
     </widget>
-    <widget name="list" itemHeight="50" setEventItemFont="RegularBold; 30" setColWidths="90,210" setColGap="40" setIconDistance="20" scrollbarMode="showOnDemand" position="680,160" size="1160,750" backgroundColor="OE_Background" transparent="1" />
+    <widget name="list" itemHeight="50" setEventItemFont="RegularBold; 30" setColWidths="120,220" setColGap="40" setIconDistance="20" scrollbarMode="showOnDemand" position="680,160" size="1160,750" backgroundColor="OE_Background" transparent="1" />
     <widget source="Event" font="FHD; 28" render="OE_RunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="80,149" size="570,770" transparent="1" halign="left" valign="top">
       <convert type="EventName">FullDescription</convert>
     </widget>
@@ -2876,7 +2884,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget name="number" font="FHD; 40" backgroundColor="OE_Background" position="170,485" size="200,52" transparent="1" valign="center" zPosition="3" foregroundColor="white" />
     <widget name="servicename" font="FHD; 30" backgroundColor="OE_Background" position="170,545" size="550,50" transparent="1" halign="center" valign="center" foregroundColor="white" />
   </screen>
-  <screen backgroundColor="white" flags="wfNoBorder" name="NumericalTextInputHelpDialog" position="100,750" size="912,240" zPosition="8">
+  <screen backgroundColor="white" flags="wfNoBorder" name="NumericalTextInputHelpDialog" position="80,650" size="912,240" zPosition="8">
     <widget font="RegularBold;30" halign="center" name="key1" position="3,3" size="300,55" valign="center" foregroundColor="white" backgroundColor="OE_NewBg2" />
     <widget font="RegularBold;30" halign="center" name="key2" position="306,3" size="300,55" valign="center" foregroundColor="white" backgroundColor="OE_NewBg2" />
     <widget font="RegularBold;30" halign="center" name="key3" position="609,3" size="300,55" valign="center" foregroundColor="white" backgroundColor="OE_NewBg2" />
@@ -3868,7 +3876,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9" />
     <!-- Widget -->
     <eLabel text="Streaming Clients Info" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1" />
-    <widget name="ScrollLabel" font="FHD; 32" split="1" dividechar=":" colposition="0" backgroundColor="OE_Background" foregroundColor="white" position="170,145" size="1300,850" transparent="1" />
+    <widget name="ScrollLabel" font="FHD; 32" backgroundColor="OE_Background" foregroundColor="white" position="170,145" size="1300,850" transparent="1" />
     <!-- Clock -->
     <panel name="ClockBg" />
   </screen>
@@ -4656,7 +4664,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget name="config" font="FHD; 32" backgroundColor="OE_Background" enableWrapAround="1" foregroundColor="OE_Foreground" position="240,662" size="1060,50" transparent="1" zPosition="4" />
     <!-- Buttons-->
     <eLabel backgroundColor="white" name="" position="240,770" size="1060,2" zPosition="-9" />
-    <ePixmap render="Pixmap" alphatest="blend" pixmap="OctagonEightFHD/buttons/key_red.png" position="240,785" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_red.png" position="240,785" size="40,40" />
     <widget source="cancelable" render="FixedLabel" text="Cancel" backgroundColor="OE_Background" font="Regular; 28" halign="left" position="290,785" size="320,40" transparent="1" zPosition="1">
       <convert type="ConditionalShowHide" />
     </widget>

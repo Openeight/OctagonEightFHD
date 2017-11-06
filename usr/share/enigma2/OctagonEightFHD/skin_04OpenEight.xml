@@ -688,4 +688,42 @@
     <panel name="ClockBg" />
   </screen>
 
+
+  <!-- Bootlogoselector -->
+  <screen name="BootlogosOctagon" title="" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1000,500" zPosition="-15" />
+    <eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="150,580" zPosition="-11" valign="center" />
+    <eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="240,355" size="760,2" zPosition="-9" />
+    <!-- Widget -->
+    <eLabel text="Bootlogo - Setup" font="FHD; 34" backgroundColor="OE_Background" position="240,298" size="760,50" transparent="1" valign="center" zPosition="3" foregroundColor="white" />
+    <widget name="bootlogohelperimage" position="382,center" size="400,226" zPosition="1" />
+    <widget name="config" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="240,365" size="760,50" transparent="1" />
+    <!-- Buttons-->
+    <eLabel backgroundColor="white" name="" position="240,720" size="760,2" zPosition="-9" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_red.png" position="240,735" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_green.png" position="560,735" size="40,40" />
+    <eLabel text="Cancel" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="290,735" size="260,40" transparent="1" zPosition="1" />
+    <eLabel text="Save" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="610,735" size="260,40" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <panel name="Clock1" />
+  </screen>
+  
+    <screen name="RadiologosOctagon" title="" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1000,500" zPosition="-15" />
+    <eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="150,580" zPosition="-11" valign="center" />
+    <eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="240,355" size="760,2" zPosition="-9" />
+    <!-- Widget -->
+    <eLabel text="Radiologo - Setup" font="FHD; 34" backgroundColor="OE_Background" position="240,298" size="760,50" transparent="1" valign="center" zPosition="3" foregroundColor="white" />
+    <widget name="bootlogohelperimage" position="382,center" size="400,226" zPosition="1" />
+    <widget name="config" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="240,365" size="760,50" transparent="1" />
+    <!-- Buttons-->
+    <eLabel backgroundColor="white" name="" position="240,720" size="760,2" zPosition="-9" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_red.png" position="240,735" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/buttons/key_green.png" position="560,735" size="40,40" />
+    <eLabel text="Cancel" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="290,735" size="260,40" transparent="1" zPosition="1" />
+    <eLabel text="Save" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="610,735" size="260,40" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <panel name="Clock1" />
+  </screen>
+
 </skin>
