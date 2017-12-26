@@ -5874,6 +5874,8 @@
     <!-- Clock -->
     <panel name="ClockBg" />
   </screen>
+
+
   <screen name="guncelle" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15" />
     <eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center" />
@@ -6343,6 +6345,8 @@
     <!-- Clock -->
     <panel name="ClockBg" />
   </screen>
+
+
   <screen name="plugin_gun" title="" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15" />
     <eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center" />

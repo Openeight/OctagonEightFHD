@@ -128,10 +128,24 @@
       <convert type="ServiceInfo">IsWidescreen</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap alphatest="blend" pixmap="OctagonEightFHD/my_icons/hd_off.png" position="1467,993" size="63,32" zPosition="1" />
+    <widget alphatest="blend" pixmap="OctagonEightFHD/my_icons/sd_on.png" position="1467,993" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="1">
+      <convert type="ServiceInfo">VideoWidth</convert>
+      <convert type="ValueRange">0,720</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
     <widget alphatest="blend" pixmap="OctagonEightFHD/my_icons/hd_on.png" position="1467,993" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="2">
       <convert type="ServiceInfo">VideoWidth</convert>
-      <convert type="ValueRange">721,1980</convert>
+      <convert type="ValueRange">721,1280</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="OctagonEightFHD/my_icons/fhd_on.png" position="1467,993" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="3">
+      <convert type="ServiceInfo">VideoWidth</convert>
+      <convert type="ValueRange">1281,1920</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="OctagonEightFHD/my_icons/uhd_on.png" position="1467,993" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="4">
+      <convert type="ServiceInfo">VideoWidth</convert>
+      <convert type="ValueRange">1921,3841</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget alphatest="blend" pixmap="OctagonEightFHD/my_icons/rec_on.png" position="1218,993" render="Pixmap" size="63,32" source="session.RecordState" zPosition="2">
