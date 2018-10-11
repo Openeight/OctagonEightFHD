@@ -5,7 +5,7 @@
 	<!-- ClockBg -->
     <!-- <panel name="ClockBg" /> -->
 	<screen name="ClockBg">
-	  <eLabel backgroundColor="OE_NewBg2" position="1520,70" size="400,74" transparent="0" zPosition="-20" foregroundColor="white" />
+      <eLabel backgroundColor="OE_NewBg2" position="1520,70" size="400,74" transparent="0" zPosition="-20" foregroundColor="white" />
       <eLabel backgroundColor="white" position="1525,106" size="180,2" transparent="0" zPosition="-10" />
       <widget backgroundColor="OE_NewBg" font="RegularBold; 45" halign="left" position="1715,76" render="Label" size="155,60" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
         <convert type="ClockToText">Format:%H:%M</convert>
