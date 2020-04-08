@@ -4961,4 +4961,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
       <convert type="ClockToText">Format:%A</convert>
     </widget>
   </screen>
+      <!-- SelectImage -->
+	<screen name="SelectImage" title="" position="fill" flags="wfNoBorder">
+		<panel name="ChoiceBox"/>
+        <panel name="BS4" />
+	</screen>
 </skin>
