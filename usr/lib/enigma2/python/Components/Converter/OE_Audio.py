@@ -11,8 +11,8 @@
 #  I don't take credits for solutions found in this plugin, it's just composition of
 #  codes found on web and sources on tuner
 #
-#  This plugin is licensed under the Creative Commons 
-#  Attribution-NonCommercial-ShareAlike 3.0 Unported 
+#  This plugin is licensed under the Creative Commons
+#  Attribution-NonCommercial-ShareAlike 3.0 Unported
 #  License. To view a copy of this license, visit
 #  http://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative
 #  Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
@@ -21,7 +21,7 @@
 #  is licensed by Dream Multimedia GmbH.
 
 #  This plugin is NOT free software. It is open source, you are allowed to
-#  modify it (if you keep the license), but it may not be commercially 
+#  modify it (if you keep the license), but it may not be commercially
 #  distributed other than under the conditions noted above.
 #
 
@@ -31,6 +31,7 @@ from Components.Element import cached
 from Tools.Directories import fileExists
 
 import re
+
 
 class OE_Audio(Converter, object):
 	PROV_CA_ID = 1
@@ -72,7 +73,7 @@ class OE_Audio(Converter, object):
 	def hex_str2dec(self, str):
 		ret = 0
 		try:
-			ret = int(re.sub("0x","",str),16)
+			ret = int(re.sub("0x", "", str), 16)
 		except:
 			pass
 		return ret
@@ -142,37 +143,37 @@ class OE_Audio(Converter, object):
 			return isInGParameter
 
 	def getCryptSystemName(self, caID):
-		caID=int(caID, 16)
-		if ((caID>=0x0100) and (caID<=0x01FF)):
-			syID="Seca Mediaguard"
-		elif((caID>=0x0500) and (caID<=0x05FF)):
-			syID="Viaccess"
-		elif((caID>=0x0600) and (caID<=0x06FF)):
-			syID="Irdeto"
-		elif((caID>=0x0900) and (caID<=0x09FF)):
-			syID="NDS Videoguard"
-		elif((caID>=0x0B00) and (caID<=0x0BFF)):
-			syID="Conax"
-		elif((caID>=0x0D00) and (caID<=0x0DFF)):
-			syID="Cryptoworks"
-		elif((caID>=0x0E00) and (caID<=0x0EFF)):
-			syID="PowerVu"
-		elif((caID>=0x1700) and (caID<=0x17FF)):
-			syID="Betacrypt"
-		elif((caID>=0x1800) and (caID<=0x18FF)):
-			syID="Nagravision"
-		elif((caID>=0x2200) and (caID<=0x22FF)):
-			syID="Codicrypt"
-		elif((caID>=0x2600) and (caID<=0x26FF)):
-			syID="EBU Biss"
-		elif((caID>=0x4A00) and (caID<=0x4AFF)):
-			syID="DreamCrypt"
-		elif((caID>=0x5500) and (caID<=0x55FF)):
-			syID="Griffin"
-		elif((caID>=0xA100) and (caID<=0xA1FF)):
-			syID="RusCrypt"
+		caID = int(caID, 16)
+		if ((caID >= 0x0100) and (caID <= 0x01FF)):
+			syID = "Seca Mediaguard"
+		elif((caID >= 0x0500) and (caID <= 0x05FF)):
+			syID = "Viaccess"
+		elif((caID >= 0x0600) and (caID <= 0x06FF)):
+			syID = "Irdeto"
+		elif((caID >= 0x0900) and (caID <= 0x09FF)):
+			syID = "NDS Videoguard"
+		elif((caID >= 0x0B00) and (caID <= 0x0BFF)):
+			syID = "Conax"
+		elif((caID >= 0x0D00) and (caID <= 0x0DFF)):
+			syID = "Cryptoworks"
+		elif((caID >= 0x0E00) and (caID <= 0x0EFF)):
+			syID = "PowerVu"
+		elif((caID >= 0x1700) and (caID <= 0x17FF)):
+			syID = "Betacrypt"
+		elif((caID >= 0x1800) and (caID <= 0x18FF)):
+			syID = "Nagravision"
+		elif((caID >= 0x2200) and (caID <= 0x22FF)):
+			syID = "Codicrypt"
+		elif((caID >= 0x2600) and (caID <= 0x26FF)):
+			syID = "EBU Biss"
+		elif((caID >= 0x4A00) and (caID <= 0x4AFF)):
+			syID = "DreamCrypt"
+		elif((caID >= 0x5500) and (caID <= 0x55FF)):
+			syID = "Griffin"
+		elif((caID >= 0xA100) and (caID <= 0xA1FF)):
+			syID = "RusCrypt"
 		else:
-			syID="Other"
+			syID = "Other"
 		return syID
 
 	def createAudioCodec(self):
@@ -187,7 +188,7 @@ class OE_Audio(Converter, object):
 					languages = "Polski"
 				elif "org" in languages:
 					languages = "Oryginalny"
-				description = i.getDescription();
+				description = i.getDescription()
 				return description + " " + languages
 			except:
 				return "nieznany"
@@ -211,11 +212,11 @@ class OE_Audio(Converter, object):
 		isCrypted = info.getInfo(iServiceInformation.sIsCrypted)
 		#f.write("Is crypted="+str(isCrypted)+"\n")
 		if isCrypted == 1:
-			id_ecm = "" 
+			id_ecm = ""
 			caID = ""
 			syID = ""
 			try:
-				file = open ( "/tmp/ecm.info", "r" )
+				file = open("/tmp/ecm.info", "r")
 			except:
 				#f.write("returns (0)="+"NULL"+"\n")
 				return ""
@@ -224,7 +225,7 @@ class OE_Audio(Converter, object):
 				line = file.readline().strip()
 				if line == "":
 					break
-				x = line.split(':',1)
+				x = line.split(':', 1)
 				if x[0] == "caid":
 					#Works for CCcam
 					caID = x[1].strip()
@@ -236,8 +237,8 @@ class OE_Audio(Converter, object):
 					cellmembers = line.split()
 					for x in range(len(cellmembers)):
 						if ("ECM" in cellmembers[x]):
-							if x<=(len(cellmembers)):
-								caID = cellmembers[x+3] # detekcja 0100,1801
+							if x <= (len(cellmembers)):
+								caID = cellmembers[x + 3] # detekcja 0100,1801
 								caID = caID.strip(",;.:-*_<>()[]{}")
 								sysID = self.getCryptSystemName(caID)
 								#f.write("returns (2)="+sysID+"\n")
@@ -247,11 +248,10 @@ class OE_Audio(Converter, object):
 			#return "FTA"
 			return ""
 
-
 	def getStreamInfo(self, ltype):
 #		print "============> getText PROV_CA_ID"
 		try:
-			file = open ( "/tmp/ecm.info", "r" )
+			file = open("/tmp/ecm.info", "r")
 		except:
 			return ""
 		ee = 0
@@ -261,7 +261,7 @@ class OE_Audio(Converter, object):
 			line = file.readline().strip()
 			if line == "":
 				break
-			x = line.split(':',1)
+			x = line.split(':', 1)
 			mo = self.pat_caid.search(line)
 			if mo:
 				caid = mo.group(1)
@@ -278,17 +278,17 @@ class OE_Audio(Converter, object):
 			return " "
 		else:
 			if (ltype == self.PROV_CA_ID):
-				return ( " " + self.norm_hex(caid) + " " + self.norm_hex(provid))
+				return (" " + self.norm_hex(caid) + " " + self.norm_hex(provid))
 			elif (ltype == self.PROV_ID):
 				return self.norm_hex(provid)
 			elif (ltype == self.CAID_ID):
 				return self.norm_hex(caid)
 		return ""
-	
+
 	def getSourceInfo(self, ltype):
 #		print "============> getText NETCARD_INFO"
 		try:
-			file = open ( "/tmp/ecm.info", "r" )
+			file = open("/tmp/ecm.info", "r")
 		except:
 			return ""
 		boxidString = ""
@@ -305,7 +305,7 @@ class OE_Audio(Converter, object):
 			line = file.readline().strip()
 			if line == "":
 				break
-			x = line.split(':',1)
+			x = line.split(':', 1)
 			if x[0] == "source":
 				address = x[1].strip()
 				ee = 2 # mgcamd
@@ -345,21 +345,21 @@ class OE_Audio(Converter, object):
 				msecIndex = x[0].find("msec")
 				if (msecIndex is not -1):
 					ecmtime = x[0].strip()
-					ecmtime = " TIME: "+ ecmtime
+					ecmtime = " TIME: " + ecmtime
 		file.close()
 
 		if(ee == 1):
-			emuExpertString = ((((((" ") + using)  + " " + address)  + " " + network) + reader + " " + hops + "  ") + ecmtime + " s ")
-		else: 
-			emuExpertString = (((((((" ") + using) + " " + address)  + " " + network) + reader + " " + ecmtime + " ") + (self.getExpertInfo(boxidString)) + " ") + self.isGParameter(boxidString, caIdString))
+			emuExpertString = ((((((" ") + using) + " " + address) + " " + network) + reader + " " + hops + "  ") + ecmtime + " s ")
+		else:
+			emuExpertString = (((((((" ") + using) + " " + address) + " " + network) + reader + " " + ecmtime + " ") + (self.getExpertInfo(boxidString)) + " ") + self.isGParameter(boxidString, caIdString))
 		return emuExpertString
 
 	def getTransponderType(self, info):
 		transponder = info.getInfoObject(iServiceInformation.sTransponderData)
-		tunerType=""
+		tunerType = ""
 		if isinstance(transponder, dict):
 			tunerType = transponder['tuner_type']
-			if tunerType == "DVB-S" and transponder['system']==1:
+			if tunerType == "DVB-S" and transponder['system'] == 1:
 				tunerType = "DVB-S2"
 		return tunerType
 
@@ -368,26 +368,26 @@ class OE_Audio(Converter, object):
 		self.DynamicTimer.start(500)
 		service = self.source.service
 		info = service and service.info()
-		
+
 		if not info:
 			return ""
-		
+
 		nazwaemu = "CI"
-		if (self.type == self.PROV_CA_ID or self.type == self.PROV_ID or self.type == self.CAID_ID) and (info.getInfo(iServiceInformation.sIsCrypted)==1):
+		if (self.type == self.PROV_CA_ID or self.type == self.PROV_ID or self.type == self.CAID_ID) and (info.getInfo(iServiceInformation.sIsCrypted) == 1):
 			return self.getStreamInfo(self.type)
-			
-		elif (self.type == self.NETCARD_INFO) and (info.getInfo(iServiceInformation.sIsCrypted)==1):
+
+		elif (self.type == self.NETCARD_INFO) and (info.getInfo(iServiceInformation.sIsCrypted) == 1):
 			return self.getSourceInfo(self.type)
-			
-		elif (self.type == self.PROV_CA_SOURCE) and (info.getInfo(iServiceInformation.sIsCrypted)==1):
+
+		elif (self.type == self.PROV_CA_SOURCE) and (info.getInfo(iServiceInformation.sIsCrypted) == 1):
 			first = self.getStreamInfo(self.PROV_CA_ID)
-			second = self.getSourceInfo(self.NETCARD_INFO)	
-			if ( len(second.strip())>0 ):
-				first = first+"  From:"+second
+			second = self.getSourceInfo(self.NETCARD_INFO)
+			if (len(second.strip()) > 0):
+				first = first + "  From:" + second
 			return first
-		elif (self.type == self.SOURCE) and (info.getInfo(iServiceInformation.sIsCrypted)==1):
+		elif (self.type == self.SOURCE) and (info.getInfo(iServiceInformation.sIsCrypted) == 1):
 			return self.getSourceInfo(self.NETCARD_INFO)
-			
+
 		elif (self.type == self.CRYPT_INFO):
 			return self.getCryptInfo()
 		elif (self.type == self.TEMPERATURE):
@@ -413,4 +413,3 @@ class OE_Audio(Converter, object):
 	def doSwitch(self):
 		self.DynamicTimer.stop()
 		Converter.changed(self, self.what)
-
