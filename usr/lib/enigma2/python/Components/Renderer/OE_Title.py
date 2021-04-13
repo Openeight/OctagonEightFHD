@@ -2,6 +2,7 @@ from Components.VariableText import VariableText
 from Renderer import Renderer
 from enigma import eLabel
 
+
 class OE_Title(VariableText, Renderer):
     def __init__(self):
         Renderer.__init__(self)

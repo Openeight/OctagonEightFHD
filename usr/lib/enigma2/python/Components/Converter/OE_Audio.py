@@ -32,6 +32,7 @@ from Tools.Directories import fileExists
 
 import re
 
+
 class OE_Audio(Converter, object):
 	PROV_CA_ID = 1
 	NETCARD_INFO = 2
@@ -246,7 +247,6 @@ class OE_Audio(Converter, object):
 			#f.write("returns (3)="+"FTA"+"\n")
 			#return "FTA"
 			return ""
-
 
 	def getStreamInfo(self, ltype):
 #		print "============> getText PROV_CA_ID"
