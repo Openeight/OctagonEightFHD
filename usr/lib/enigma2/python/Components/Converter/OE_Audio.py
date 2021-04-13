@@ -11,8 +11,8 @@
 #  I don't take credits for solutions found in this plugin, it's just composition of
 #  codes found on web and sources on tuner
 #
-#  This plugin is licensed under the Creative Commons 
-#  Attribution-NonCommercial-ShareAlike 3.0 Unported 
+#  This plugin is licensed under the Creative Commons
+#  Attribution-NonCommercial-ShareAlike 3.0 Unported
 #  License. To view a copy of this license, visit
 #  http://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative
 #  Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
@@ -21,7 +21,7 @@
 #  is licensed by Dream Multimedia GmbH.
 
 #  This plugin is NOT free software. It is open source, you are allowed to
-#  modify it (if you keep the license), but it may not be commercially 
+#  modify it (if you keep the license), but it may not be commercially
 #  distributed other than under the conditions noted above.
 #
 
@@ -212,7 +212,7 @@ class OE_Audio(Converter, object):
 		isCrypted = info.getInfo(iServiceInformation.sIsCrypted)
 		#f.write("Is crypted="+str(isCrypted)+"\n")
 		if isCrypted == 1:
-			id_ecm = "" 
+			id_ecm = ""
 			caID = ""
 			syID = ""
 			try:
@@ -284,7 +284,7 @@ class OE_Audio(Converter, object):
 			elif (ltype == self.CAID_ID):
 				return self.norm_hex(caid)
 		return ""
-	
+
 	def getSourceInfo(self, ltype):
 #		print "============> getText NETCARD_INFO"
 		try:
@@ -350,7 +350,7 @@ class OE_Audio(Converter, object):
 
 		if(ee == 1):
 			emuExpertString = ((((((" ") + using) + " " + address) + " " + network) + reader + " " + hops + "  ") + ecmtime + " s ")
-		else: 
+		else:
 			emuExpertString = (((((((" ") + using) + " " + address) + " " + network) + reader + " " + ecmtime + " ") + (self.getExpertInfo(boxidString)) + " ") + self.isGParameter(boxidString, caIdString))
 		return emuExpertString
 
@@ -368,26 +368,26 @@ class OE_Audio(Converter, object):
 		self.DynamicTimer.start(500)
 		service = self.source.service
 		info = service and service.info()
-		
+
 		if not info:
 			return ""
-		
+
 		nazwaemu = "CI"
 		if (self.type == self.PROV_CA_ID or self.type == self.PROV_ID or self.type == self.CAID_ID) and (info.getInfo(iServiceInformation.sIsCrypted) == 1):
 			return self.getStreamInfo(self.type)
-			
+
 		elif (self.type == self.NETCARD_INFO) and (info.getInfo(iServiceInformation.sIsCrypted) == 1):
 			return self.getSourceInfo(self.type)
-			
+
 		elif (self.type == self.PROV_CA_SOURCE) and (info.getInfo(iServiceInformation.sIsCrypted) == 1):
 			first = self.getStreamInfo(self.PROV_CA_ID)
-			second = self.getSourceInfo(self.NETCARD_INFO)	
+			second = self.getSourceInfo(self.NETCARD_INFO)
 			if (len(second.strip()) > 0):
 				first = first + "  From:" + second
 			return first
 		elif (self.type == self.SOURCE) and (info.getInfo(iServiceInformation.sIsCrypted) == 1):
 			return self.getSourceInfo(self.NETCARD_INFO)
-			
+
 		elif (self.type == self.CRYPT_INFO):
 			return self.getCryptInfo()
 		elif (self.type == self.TEMPERATURE):
@@ -413,4 +413,3 @@ class OE_Audio(Converter, object):
 	def doSwitch(self):
 		self.DynamicTimer.stop()
 		Converter.changed(self, self.what)
-
